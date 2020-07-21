@@ -24,11 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-
-    # Runs a set of commands using the runners shell
-    - name: Deploying in the GitHub Pages
-      run: npm run deploy-storybook
+    - name: Deploy storybook to Github Pages
+      run: npm run deploy-storybook -- --ci
+      env:
+          GH_TOKEN: MyCompany:${{ secrets.GITHUB_TOKEN }}
