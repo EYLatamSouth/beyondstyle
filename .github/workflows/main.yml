@@ -19,14 +19,15 @@ jobs:
     steps:        
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
-    - uses: actions/labeler@v2
-      with:
-        repo-token: ${{ secrets.REPO_DEPLOY_TOKEN }}
 
     # Runs a single command using the runners shell
     - name: Install dependencies
       run: npm install
+    
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     # Runs a set of commands using the runners shell
     - name: Deploying in the GitHub Pages
