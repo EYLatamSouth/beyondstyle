@@ -5,10 +5,18 @@ import { ProgressBar, PirateButton } from 'beyondstyle';
 import 'beyondstyle/dist/index.css';
 
 const App = () => {
+  const containerStyles = {
+    margin: 50
+  };
+
   return (
     <Fragment>
-      <ProgressBar bgcolor="#155CB4" completed={50} />
-      <PirateButton />
+      <div style={containerStyles}>
+        <ProgressBar bgcolor="#155CB4" completed={50} />
+      </div>
+      <div style={containerStyles}>
+        <PirateButton variant="contained" />
+      </div>
     </Fragment>
   );
 };

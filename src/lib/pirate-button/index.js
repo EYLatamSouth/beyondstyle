@@ -1,16 +1,22 @@
 import React from 'react';
+import { Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
-const PirateButton = () => {
-  const containerStyles = {
-    height: 20,
-    width: 'auto',
-    margin: 50
-  };
+const useStyles = makeStyles((theme) => ({
+  normalSize: {
+    minHeight: theme.spacing(7),
+    paddingRight: theme.spacing(3),
+    paddingLeft: theme.spacing(3)
+  }
+}));
+
+const PirateButton = (props) => {
+  const classes = useStyles();
 
   return (
-    <div style={containerStyles}>
-      <button>Pirate Button! 🏴‍☠️</button>
-    </div>
+    <Button {...props} className={classes.normalSize}>
+      Pirate Button!
+    </Button>
   );
 };
 
