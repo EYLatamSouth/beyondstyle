@@ -1,6 +1,7 @@
-import React from 'react'
-import styles from './styles.module.css'
+import ProgressBar from "./lib/progress-bar";
+import PirateButton from "./lib/pirate-button";
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export {
+  ProgressBar,
+  PirateButton
+};
