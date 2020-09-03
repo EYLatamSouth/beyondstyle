@@ -7,7 +7,7 @@ import 'beyondstyle/dist/index.css';
 const App = () => {
   return (
     <Fragment>
-      <ProgressBar bgcolor="#2e2e38" completed={50} />
+      <ProgressBar bgcolor="#155CB4" completed={50} />
       <PirateButton />
     </Fragment>
   );

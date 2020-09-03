@@ -3,7 +3,7 @@ import React from 'react';
 const PirateButton = () => {
   const containerStyles = {
     height: 20,
-    width: "auto",
+    width: 'auto',
     margin: 50
   };
 
