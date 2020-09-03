@@ -1,30 +1,43 @@
 {
   "name": "beyondstyle",
-  "version": "1.0.0",
-  "description": "The BeyondLabs' Design System",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "build-storybook-static": "build-storybook -c .storybook -o .out"
-  },
+  "version": "1.1.0",
+  "description": "Library of shared components of BeyondLabs.",
   "keywords": [
-    "design",
-    "system"
+    "design-system",
+    "react"
   ],
-  "author": "Michel Fernandes",
   "license": "ISC",
-  "dependencies": {},
+  "author": "Eduardo Basso <eduardo.basso@br.ey.com>",
+  "contributors": [
+    "Eduardo Basso <eduardo.basso@br.ey.com>",
+    "Michel Fernandes <michel.fernandes@br.ey.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EYLatamSouth/beyondstyle.git"
+  },
+  "main": "./lib/button.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/react": "^5.3.19",
-    "@storybook/storybook-deployer": "^2.8.6",
-    "@storybook/theming": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@material-ui/core": "^4.11.0",
+    "babel-loader": "^8.1.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
