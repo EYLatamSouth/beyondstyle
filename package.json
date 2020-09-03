@@ -1,10 +1,21 @@
 {
   "name": "beyondstyle",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Library of shared components of BeyondLabs.",
-  "author": "eduardobasso",
-  "license": "MIT",
-  "repository": "eduardobasso/beyondstyle",
+  "keywords": [
+    "design-system",
+    "react"
+  ],
+  "author": "Eduardo Basso <eduardo.basso@br.ey.com>",
+  "contributors": [
+    "Eduardo Basso <eduardo.basso@br.ey.com>",
+    "Michel Fernandes <michel.fernandes@br.ey.com>"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EYLatamSouth/beyondstyle.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
