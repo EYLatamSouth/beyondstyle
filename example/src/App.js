@@ -2,8 +2,6 @@ import React, { Fragment } from 'react'
 
 import { ProgressBar, PirateButton } from 'beyondstyle';
 
-import 'beyondstyle/dist/index.css';
-
 const App = () => {
   const containerStyles = {
     margin: 50
