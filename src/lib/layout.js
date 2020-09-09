@@ -11,28 +11,10 @@ import {
   EYInterstateBoldItalic,
   EYInterstateBlack
 } from '../theme/typography';
+import { palette } from '../theme/palette';
 
 const theme = createMuiTheme({
-  status: {
-    danger: 'red',
-  },
-  custonName: {
-    red: 'red'
-  },
-  palette: {
-    primary: {
-      light: '#575762',
-      main: '#2e2e38',
-      dark: '#040312',
-      contrastText: '#fff'
-    },
-    tertiary: {
-      light: '#fff27f',
-      main: '#ffd400',
-      dark: '#c7a000',
-      contrastText: 'rgba(0, 0, 0, 0.87)'
-    },
-  },
+  palette: {...palette},
   typography: {
     fontFamily: 'EYInterstate, Arial, sans-serif'
   },

@@ -4,15 +4,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../layout';
 
 const useStyles = makeStyles((theme) => {
-  console.log('asd', theme);
   return {
   root: {
-    color: theme.palette.tertiary.light,
-    backgroundColor: theme.palette.tertiary.dark
+    color: theme.palette.secondary.contrastText,
+    backgroundColor: theme.palette.grey[900]
   }
-}});
+}
+});
 
-const PirateButton = (props) => {
+const PirateButton = () => {
   const classes = useStyles();
 
   return (
