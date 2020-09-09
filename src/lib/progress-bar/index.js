@@ -1,4 +1,6 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import Layout from '../layout';
 
 const ProgressBar = ({ bgcolor, completed }) => {
   const containerStyles = {
@@ -24,11 +26,9 @@ const ProgressBar = ({ bgcolor, completed }) => {
   };
 
   return (
-    <div style={containerStyles}>
-      <div style={fillerStyles}>
-        <span style={labelStyles}>{`${completed}%`}</span>
-      </div>
-    </div>
+    <Layout>
+      <Typography variant="h3">People Advisory Services (qwe)</Typography>
+    </Layout>
   );
 };
 
