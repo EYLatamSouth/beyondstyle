@@ -3,23 +3,19 @@ import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../layout';
 
-const useStyles = makeStyles((theme) => {
-  return {
-  root: {
-    color: theme.palette.secondary.contrastText,
-    backgroundColor: theme.palette.grey[900]
-  }
-}
-});
+const PirateButton = ({ style }) => {
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      color: theme.palette[style].contrastText,
+      backgroundColor: theme.palette[style].main
+    },
+  }))
 
-const PirateButton = () => {
   const classes = useStyles();
 
   return (
-    <Button classes={{
-      root: classes.root,
-    }}
-    color="primary" variant="contained">
+    <Button className={classes.root}
+    variant="contained">
       Pirate Button!
     </Button>
   );
@@ -27,6 +23,11 @@ const PirateButton = () => {
 
 export default (props) => (
   <Layout>
-    <PirateButton {...props} />
+    <PirateButton style="primary" {...props} />
+    <PirateButton style="secondary" {...props} />
+    <PirateButton style="tertiary" {...props} />
+    <PirateButton style="error" {...props} />
+    <PirateButton style="success" {...props} />
+    <PirateButton style="grey" {...props} />
   </Layout>
 );
