@@ -1,28 +1,33 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/core';
-import { myTheme } from '../../theme/palette';
+import Layout from '../layout';
 
-
-const useStyles = makeStyles((theme) => ({
-  normalSize: {
-    minHeight: theme.spacing(7),
-    paddingRight: theme.spacing(3),
-    paddingLeft: theme.spacing(3)
+const useStyles = makeStyles((theme) => {
+  console.log('asd', theme);
+  return {
+  root: {
+    color: theme.palette.secondary.contrastText,
+    backgroundColor: theme.palette.grey[900]
   }
-}));
+}
+});
 
-const PirateButton = (props) => {
+const PirateButton = () => {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={myTheme}>
-      <Button {...props} color="secondary" className={classes.normalSize}>
-        Pirate Button!
-      </Button>
-    </ThemeProvider>
+    <Button classes={{
+      root: classes.root,
+    }}
+    color="default" variant="contained">
+      Pirate Button!
+    </Button>
   );
 };
 
-export default PirateButton;
+export default (props) => (
+  <Layout>
+    <PirateButton {...props} />
+  </Layout>
+);

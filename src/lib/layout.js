@@ -11,8 +11,10 @@ import {
   EYInterstateBoldItalic,
   EYInterstateBlack
 } from '../theme/typography';
+import { palette } from '../theme/palette';
 
 const theme = createMuiTheme({
+  palette: {...palette},
   typography: {
     fontFamily: 'EYInterstate, Arial, sans-serif'
   },
