@@ -19,7 +19,7 @@ const PirateButton = () => {
     <Button classes={{
       root: classes.root,
     }}
-    color="default" variant="contained">
+    color="primary" variant="contained">
       Pirate Button!
     </Button>
   );
