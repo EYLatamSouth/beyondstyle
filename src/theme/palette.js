@@ -11,9 +11,9 @@ export const primary = {
 };
 
 export const secondary = {
-  light: '#5b88e7',
-  main: '#155cb4',
-  dark: '#003484',
+  light: '#5780d7',
+  main: '#1354a5',
+  dark: '#002c75',
   contrastText: '#fff'
 };
 
@@ -21,13 +21,13 @@ export const tertiary = {
   light: '#fff27f',
   main: '#ffd400',
   dark: '#c7a000',
-  contrastText: 'rgba(0, 0, 0, 0.87)'
+  contrastText: '#2e2e38'
 };
 
 export const error = {
-  light: '#f25b45',
-  main: '#b9251c',
-  dark: '#810000',
+  light: '#de5542',
+  main: '#a62119',
+  dark: '#700000',
   contrastText: '#fff'
 };
 
@@ -35,7 +35,7 @@ export const warning = {
   light: '#ffc962',
   main: '#ff9831',
   dark: '#c66900',
-  contrastText: 'rgba(0, 0, 0, 0.87)'
+  contrastText: '#0c0c0e'
 };
 
 export const success = {
