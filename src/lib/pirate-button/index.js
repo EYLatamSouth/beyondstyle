@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core';
+import { myTheme } from '../../theme/palette';
+
 
 const useStyles = makeStyles((theme) => ({
   normalSize: {
@@ -14,9 +17,11 @@ const PirateButton = (props) => {
   const classes = useStyles();
 
   return (
-    <Button {...props} className={classes.normalSize}>
-      Pirate Button!
-    </Button>
+    <ThemeProvider theme={myTheme}>
+      <Button {...props} color="secondary" className={classes.normalSize}>
+        Pirate Button!
+      </Button>
+    </ThemeProvider>
   );
 };
 
