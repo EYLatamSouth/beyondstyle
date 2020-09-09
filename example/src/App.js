@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import { ProgressBar, PirateButton } from 'beyondstyle';
+import { ProgressBar, PirateButton, Button } from 'beyondstyle';
 
 const App = () => {
   const containerStyles = {
@@ -14,6 +14,9 @@ const App = () => {
       </div>
       <div style={containerStyles}>
         <PirateButton variant="contained" />
+      </div>
+      <div style={containerStyles}>
+        <Button variant="contained" />
       </div>
     </Fragment>
   );
