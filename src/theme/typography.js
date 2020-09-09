@@ -1,4 +1,3 @@
-const fontPath = "../assets/fonts/ey-interstate";
 const fontWeight = {
   light: 300,
   normal: 400,
@@ -14,9 +13,9 @@ export const EYInterstateLight = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-Light'),
-    url('${fontPath}/EYInterstate-Light.woff2') format('woff2'),
-    url('${fontPath}/EYInterstate-Light.woff') format('woff'),
-    url('${fontPath}/EYInterstate-Light.ttf') format('truetype')
+    url('fonts/ey-interstate/EYInterstate-Light.woff2') format('woff2'),
+    url('fonts/ey-interstate/EYInterstate-Light.woff') format('woff'),
+    url('fonts/ey-interstate/EYInterstate-Light.ttf') format('truetype')
   `
 };
 
@@ -28,8 +27,8 @@ export const EYInterstateLightItalic = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-LightItalic'),
-    url('${fontPath}/EYInterstate-LightItalic.woff') format('woff'),
-    url('${fontPath}/EYInterstate-LightItalic.ttf') format('truetype')
+    url('fonts/ey-interstate/EYInterstate-LightItalic.woff') format('woff'),
+    url('fonts/ey-interstate/EYInterstate-LightItalic.ttf') format('truetype')
   `
 };
 
@@ -41,9 +40,9 @@ export const EYInterstateRegular = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-Regular'),
-    url('${fontPath}/EYInterstate-Regular.woff2') format('woff2'),
-    url('${fontPath}/EYInterstate-Regular.woff') format('woff'),
-    url('${fontPath}/EYInterstate-Regular.ttf') format('truetype')
+    url('fonts/ey-interstate/EYInterstate-Regular.woff2') format('woff2'),
+    url('fonts/ey-interstate/EYInterstate-Regular.woff') format('woff'),
+    url('fonts/ey-interstate/EYInterstate-Regular.ttf') format('truetype')
   `
 };
 
@@ -55,7 +54,7 @@ export const EYInterstateItalic = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-Italic'),
-    url('${fontPath}/EYInterstate-Italic.ttf') format('truetype')
+    url('fonts/ey-interstate/EYInterstate-Italic.ttf') format('truetype')
   `
 };
 
@@ -67,9 +66,9 @@ export const EYInterstateBold = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-Bold'),
-    url('${fontPath}/EYInterstate-Bold.woff2') format('woff2'),
-    url('${fontPath}/EYInterstate-Bold.woff') format('woff'),
-    url('${fontPath}/EYInterstate-Bold.ttf') format('truetype')
+    url('fonts/ey-interstate/EYInterstate-Bold.woff2') format('woff2'),
+    url('fonts/ey-interstate/EYInterstate-Bold.woff') format('woff'),
+    url('fonts/ey-interstate/EYInterstate-Bold.ttf') format('truetype')
   `
 };
 
@@ -81,7 +80,7 @@ export const EYInterstateBoldItalic = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-BoldItalic'),
-    url('${fontPath}/EYInterstate-BoldItalic.ttf') format('truetype')
+    url('fonts/ey-interstate/EYInterstate-BoldItalic.ttf') format('truetype')
   `
 };
 
@@ -93,6 +92,6 @@ export const EYInterstateBlack = {
   src: `
     local('EYInterstate'),
     local('EYInterstate-Black'),
-    url('${fontPath}/EYInterstate-Black.woff') format('woff')
+    url('fonts/ey-interstate/EYInterstate-Black.woff') format('woff')
   `
 };
