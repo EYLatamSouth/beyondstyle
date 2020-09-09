@@ -10,6 +10,16 @@ Library of shared components of BeyondLabs.
 npm install --save beyondstyle
 ```
 
+## Font
+
+Add EYInterstate font files in the public folder.
+```
+- public
+ - fonts
+  - ey-interstate
+    ...files
+```
+
 ## Usage
 
 ```jsx
