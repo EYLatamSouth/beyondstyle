@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../layout';
 
 const useStyles = makeStyles((theme) => {
-  console.log('asd', theme);
   return {
   root: {
     color: theme.palette.secondary.contrastText,
