@@ -55,8 +55,28 @@ export const palette = {
     A400: '#333',
     A700: '#646464'
   },
+  text: {
+    primary: 'rgba(12, 12, 14, 0.87)',
+    secondary: 'rgba(12, 12, 14, 0.54)',
+    disabled: 'rgba(12, 12, 14, 0.38)',
+    hint: 'rgba(12, 12, 14, 0.38)'
+  },
+  divider: 'rgba(12, 12, 14, 0.12)',
   background: {
     paper: '#fff',
     default: '#f6f6fa'
+  },
+  action: {
+    active: 'rgba(12, 12, 14, 0.54)',
+    hover: 'rgba(12, 12, 14, 0.04)',
+    hoverOpacity: 0.04,
+    selected: 'rgba(12, 12, 14, 0.08)',
+    selectedOpacity: 0.08,
+    disabled: 'rgba(12, 12, 14, 0.38)',
+    disabledBackground: 'rgba(12, 12, 14, 0.12)',
+    disabledOpacity: 0.38,
+    focus: 'rgba(12, 12, 14, 0.12)',
+    focusOpacity: 0.12,
+    activatedOpacity: 0.12
   }
 };
