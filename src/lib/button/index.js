@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button as MuiButton } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, fade } from '@material-ui/core/styles';
 import Layout from '../layout';
 import PropTypes from 'prop-types';
 
@@ -22,10 +22,10 @@ const useStyles = makeStyles((theme) => ({
   ),
   outlined: props => (
     {
-      color: theme.palette[props.style].contrastText,
-      backgroundColor: `${theme.palette[props.style].background} !important`,
+      color: `${theme.palette.getContrastText(theme.palette.grey[300])} !important`,
+      backgroundColor: `transparent !important`,
       '&:hover': {
-        background: theme.palette[props.style].dark,
+        backgroundColor: `${fade(theme.palette[props.style].main, .12)} !important`,
       }
     }
     
