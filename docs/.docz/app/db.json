@@ -1,0 +1,192 @@
+{
+  "config": {
+    "title": "BeyondStyle",
+    "description": "Bla bla bla",
+    "menu": [
+      "Home",
+      "Components"
+    ],
+    "version": "1.0.0",
+    "repository": "https://github.com/EYLatamSouth/beyondstyle",
+    "native": false,
+    "themeConfig": {
+      "colors": {
+        "primary": "#1354A5",
+        "header": {
+          "text": "#FFFFFF",
+          "bg": "#2E2E38"
+        }
+      }
+    },
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/README.md",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/README.md",
+        "hidden": false,
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "docz-gatsby-example",
+            "depth": 1,
+            "value": "Docz Gatsby Example"
+          },
+          {
+            "slug": "using-create-docz-app",
+            "depth": 2,
+            "value": "Using  create-docz-app"
+          },
+          {
+            "slug": "download",
+            "depth": 2,
+            "value": "Download"
+          },
+          {
+            "slug": "setup",
+            "depth": 2,
+            "value": "Setup"
+          },
+          {
+            "slug": "start-developing",
+            "depth": 2,
+            "value": "Start developing"
+          },
+          {
+            "slug": "build",
+            "depth": 2,
+            "value": "Build"
+          },
+          {
+            "slug": "serve-built-app",
+            "depth": 2,
+            "value": "Serve built app"
+          },
+          {
+            "slug": "customizations",
+            "depth": 2,
+            "value": "Customizations"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/PirateButton.mdx",
+      "value": {
+        "name": "PirateButton",
+        "menu": "Components",
+        "id": "9a4754f6a085565c5abf1929c0258cc7",
+        "filepath": "src/components/PirateButton.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/PirateButton.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/PirateButton.mdx",
+        "hidden": false,
+        "slug": "src-components-pirate-button",
+        "route": "/src-components-pirate-button",
+        "headings": [
+          {
+            "slug": "piratebutton",
+            "depth": 1,
+            "value": "PirateButton"
+          },
+          {
+            "slug": "best-practices",
+            "depth": 3,
+            "value": "Best practices"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/ProgressBar.mdx",
+      "value": {
+        "name": "ProgressBar",
+        "menu": "Components",
+        "id": "4b08aad190ac292944eb10177cbd6ee4",
+        "filepath": "src/components/ProgressBar.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/ProgressBar.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/ProgressBar.mdx",
+        "hidden": false,
+        "slug": "src-components-progress-bar",
+        "route": "/src-components-progress-bar",
+        "headings": [
+          {
+            "slug": "progressbar",
+            "depth": 1,
+            "value": "ProgressBar"
+          },
+          {
+            "slug": "best-practices",
+            "depth": 3,
+            "value": "Best practices"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/index.mdx",
+      "value": {
+        "name": "Home",
+        "route": "/",
+        "id": "522b7407e210088f3588b943aec44115",
+        "filepath": "src/pages/index.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/pages/index.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/pages/index.mdx",
+        "hidden": false,
+        "slug": "src-pages-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "home",
+            "depth": 1,
+            "value": "Home"
+          },
+          {
+            "slug": "consistency",
+            "depth": 2,
+            "value": "Consistency"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/gatsby-theme-docz/components/_Logo/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logo",
+          "methods": [],
+          "actualName": "Logo"
+        }
+      ]
+    }
+  ]
+}
