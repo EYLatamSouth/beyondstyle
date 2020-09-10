@@ -6,13 +6,16 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 const App = () => {
   const containerStyles = {
     margin: 50,
-    width: '20%',
+    width: '50%',
     marginTop: '5%',
+    marginLeft: '5%'
   };
 
   return (
     <Fragment>
       <div style={containerStyles}>
+        <div><p>Icons</p></div>
+        <hr />
         <h1>Icon button</h1>
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -67,6 +70,8 @@ const App = () => {
         </div>
       </div>
       <div style={containerStyles}>
+      <div><p>Floating action buttons</p></div>
+        <hr />
         <h1>Floating button</h1>
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -116,7 +121,7 @@ const App = () => {
           </Fab>
         </div>
       </div>
-      <div style={{ width: '50%' }}>
+      <div style={{ width: '50%', marginLeft: '5%' }}>
         <h1>Floating button with text</h1>
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -146,7 +151,7 @@ const App = () => {
           </Fab>
         </div>
       </div>
-      <div style={{ width: '50%' }}>
+      <div style={{ width: '50%', marginLeft: '5%' }}>
         <h1>Floating button with text small</h1>
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -192,34 +197,31 @@ const App = () => {
           </Fab>
         </div>
       </div>
-      <div style={{ width: '50%' }}>
-        <div style={{ width: '50%', marginTop: '5%' }}><h1>Component Button</h1></div>
-        <h1>Primary (contained | outlined)</h1>
+      <div style={containerStyles}>
+        <div><p>Button</p></div>
         <hr />
+        <h1>Primary (contained | outlined)</h1>
         <Button variant="contained" color="primary" >Button</Button>
         <Button variant="outlined" color="primary" >Button</Button>
         <Button variant="contained" color="primary" size="small" >Button</Button>
         <Button variant="outlined" color="primary" size="small" >Button</Button>
       </div>
-      <div style={{ width: '50%' }}>
+      <div style={containerStyles}>
         <h1>Secondary (contained | outlined)</h1>
-        <hr />
         <Button variant="contained" color="secondary" >Button</Button>
         <Button variant="outlined" color="secondary" >Button</Button>
         <Button variant="contained" color="secondary" size="small" >Button</Button>
         <Button variant="outlined" color="secondary" size="small" >Button</Button>
       </div>
-      <div style={{ width: '50%' }}>
+      <div style={containerStyles}>
         <h1>Tertiary (contained | outlined)</h1>
-        <hr />
         <Button variant="contained" color="tertiary" >Button</Button>
         <Button variant="outlined" color="tertiary" >Button</Button>
         <Button variant="contained" color="tertiary" size="small" >Button</Button>
         <Button variant="outlined" color="tertiary" size="small" >Button</Button>
       </div>
-      <div style={{ width: '50%' }}>
+      <div style={containerStyles}>
         <h1>Disabeld (default | outlined)</h1>
-        <hr />
         <Button variant="contained" color="tertiary" disabled>Button</Button>
         <Button variant="outlined" color="tertiary" size="small" disabled>Button</Button>
       </div>
