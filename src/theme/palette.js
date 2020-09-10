@@ -58,5 +58,5 @@ export const  palette = {
         common: {
           black: '#0c0c0e',
           white: '#fff'
-        }    
-      }  
+        }
+      }
