@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import { ProgressBar, PirateButton } from 'beyondstyle';
+import { TextField } from 'beyondstyle';
 
 const App = () => {
   const containerStyles = {
@@ -10,10 +10,9 @@ const App = () => {
   return (
     <Fragment>
       <div style={containerStyles}>
-        <ProgressBar bgcolor="#155CB4" completed={50} />
-      </div>
-      <div style={containerStyles}>
-        <PirateButton variant="contained" />
+        <TextField id="filled-basic" label="Filled" variant="filled" />
+        <hr />
+        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
       </div>
     </Fragment>
   );
