@@ -1,29 +1,37 @@
 {
-  "name": "BeyondStyle",
-  "private": true,
-  "description": "Example of how to integrate docz with gatsby as a theme",
-  "version": "1.0.0",
+  "name": "beyondstyle-docs",
+  "description": "Components explorer of BeyondLabs.",
+  "version": "1.0.1",
   "keywords": [
+    "design-system",
     "gatsby",
     "docz"
   ],
+  "homepage": "https://eylatamsouth.github.io/beyondstyle",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EYLatamSouth/beyondstyle/issues"
-  },
+  "author": "Michel Fernandes <michel.fernandes@br.ey.com>",
+  "contributors": [
+    "Michel Fernandes <michel.fernandes@br.ey.com>",
+    "Eduardo Basso <eduardo.basso@br.ey.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/EYLatamSouth/beyondstyle.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
+    "start": "gatsby develop --port=3001 --open",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
+    "@material-ui/core": "file:../node_modules/@material-ui/core",
+    "@material-ui/icons": "file:../node_modules/@material-ui/icons",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "beyondstyle": "file:.."
+  },
+  "devDependencies": {
     "@mdx-js/mdx": "^1.6.16",
-    "beyondstyle": "^1.1.4",
     "docz": "^2.2.0",
     "gatsby": "^2.24.56",
     "gatsby-plugin-offline": "^2.2.7",
@@ -31,8 +39,6 @@
     "gatsby-theme-docz": "latest",
     "gatsby-transformer-sharp": "^2.2.7",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
     "react-helmet-async": "^1.0.6"
   }
 }
