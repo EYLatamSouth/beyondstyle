@@ -1,0 +1,44 @@
+{
+  "name": "beyondstyle-docs",
+  "description": "Components explorer of BeyondLabs.",
+  "version": "1.0.1",
+  "keywords": [
+    "design-system",
+    "gatsby",
+    "docz"
+  ],
+  "homepage": "https://eylatamsouth.github.io/beyondstyle",
+  "license": "MIT",
+  "author": "Michel Fernandes <michel.fernandes@br.ey.com>",
+  "contributors": [
+    "Michel Fernandes <michel.fernandes@br.ey.com>",
+    "Eduardo Basso <eduardo.basso@br.ey.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EYLatamSouth/beyondstyle.git"
+  },
+  "scripts": {
+    "start": "gatsby develop --port=3001 --open",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@material-ui/core": "file:../node_modules/@material-ui/core",
+    "@material-ui/icons": "file:../node_modules/@material-ui/icons",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "beyondstyle": "file:.."
+  },
+  "devDependencies": {
+    "@mdx-js/mdx": "^1.6.16",
+    "docz": "^2.2.0",
+    "gatsby": "^2.24.56",
+    "gatsby-plugin-offline": "^2.2.7",
+    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-theme-docz": "latest",
+    "gatsby-transformer-sharp": "^2.2.7",
+    "prop-types": "^15.7.2",
+    "react-helmet-async": "^1.0.6"
+  }
+}

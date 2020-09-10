@@ -1,0 +1,219 @@
+{
+  "config": {
+    "title": "BeyondStyle",
+    "description": "Components explorer of BeyondLabs.",
+    "menu": [
+      "Home",
+      "Components"
+    ],
+    "version": "1.0.1",
+    "repository": "https://github.com/EYLatamSouth/beyondstyle.git",
+    "native": false,
+    "themeConfig": {
+      "colors": {
+        "primary": "#2e2e38",
+        "header": {
+          "text": "rgba(12, 12, 14, 0.87)",
+          "bg": "#f6f6fa"
+        }
+      }
+    },
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/README.md",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/README.md",
+        "hidden": false,
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "beyondstule-style-guide",
+            "depth": 1,
+            "value": "Beyondstule Style Guide"
+          },
+          {
+            "slug": "prerequisites",
+            "depth": 3,
+            "value": "Prerequisites"
+          },
+          {
+            "slug": "installing",
+            "depth": 3,
+            "value": "Installing"
+          },
+          {
+            "slug": "basic-usage_optional",
+            "depth": 2,
+            "value": "Basic usage_optional"
+          },
+          {
+            "slug": "customizations",
+            "depth": 2,
+            "value": "Customizations"
+          },
+          {
+            "slug": "deployment",
+            "depth": 2,
+            "value": "Deployment"
+          },
+          {
+            "slug": "built-with",
+            "depth": 2,
+            "value": "Built With"
+          },
+          {
+            "slug": "contributing",
+            "depth": 2,
+            "value": "Contributing"
+          },
+          {
+            "slug": "authors",
+            "depth": 2,
+            "value": "Authors"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/PirateButton.mdx",
+      "value": {
+        "name": "PirateButton",
+        "menu": "Components",
+        "id": "9a4754f6a085565c5abf1929c0258cc7",
+        "filepath": "src/components/PirateButton.mdx",
+        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/PirateButton.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/PirateButton.mdx",
+        "hidden": false,
+        "slug": "src-components-pirate-button",
+        "route": "/src-components-pirate-button",
+        "headings": [
+          {
+            "slug": "piratebutton",
+            "depth": 1,
+            "value": "PirateButton"
+          },
+          {
+            "slug": "best-practices",
+            "depth": 3,
+            "value": "Best practices"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/ProgressBar.mdx",
+      "value": {
+        "name": "ProgressBar",
+        "menu": "Components",
+        "id": "4b08aad190ac292944eb10177cbd6ee4",
+        "filepath": "src/components/ProgressBar.mdx",
+        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/ProgressBar.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/ProgressBar.mdx",
+        "hidden": false,
+        "slug": "src-components-progress-bar",
+        "route": "/src-components-progress-bar",
+        "headings": [
+          {
+            "slug": "progressbar",
+            "depth": 1,
+            "value": "ProgressBar"
+          },
+          {
+            "slug": "best-practices",
+            "depth": 3,
+            "value": "Best practices"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/index.mdx",
+      "value": {
+        "name": "Home",
+        "route": "/",
+        "id": "522b7407e210088f3588b943aec44115",
+        "filepath": "src/pages/index.mdx",
+        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/pages/index.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/pages/index.mdx",
+        "hidden": false,
+        "slug": "src-pages-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "home",
+            "depth": 1,
+            "value": "Home"
+          },
+          {
+            "slug": "consistency",
+            "depth": 2,
+            "value": "Consistency"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/gatsby-theme-docz/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Theme",
+          "methods": [],
+          "actualName": "Theme"
+        }
+      ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Logo/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logo",
+          "methods": [],
+          "actualName": "Logo"
+        }
+      ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Header/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "actualName": "Header"
+        }
+      ]
+    }
+  ]
+}
