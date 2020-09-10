@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import { IconButton, Fab, Button } from 'beyondstyle';
 import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
@@ -38,8 +37,6 @@ const App = () => {
           </IconButton>
         </div>
       </div>
-
-
       <div style={containerStyles}>
         <h1>contained icon button</h1>
 
@@ -226,7 +223,6 @@ const App = () => {
         <Button variant="contained" color="tertiary" disabled>Button</Button>
         <Button variant="outlined" color="tertiary" size="small" disabled>Button</Button>
       </div>
-    
     </Fragment>
   );
 };
