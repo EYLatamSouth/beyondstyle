@@ -8,7 +8,8 @@ const App = () => {
     margin: 50,
     width: '50%',
     marginTop: '5%',
-    marginLeft: '5%'
+    marginLeft: '5%',
+    // backgroundColor: '#2e2e38'
   };
 
   return (
@@ -215,7 +216,7 @@ const App = () => {
       </div>
       <div style={containerStyles}>
         <h1>Tertiary (contained | outlined)</h1>
-        <Button variant="contained" color="tertiary" >Button</Button>
+        <Button variant="text" href="#text-buttons" color="tertiary" >Button</Button>
         <Button variant="outlined" color="tertiary" >Button</Button>
         <Button variant="contained" color="tertiary" size="small" >Button</Button>
         <Button variant="outlined" color="tertiary" size="small" >Button</Button>

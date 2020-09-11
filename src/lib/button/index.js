@@ -5,10 +5,9 @@ import Layout from '../layout';
 import PropTypes from 'prop-types';
 
 const useStyles = makeStyles((theme) => ({
-
   root: props => (
     {
-      color: theme.palette[props.color] ? theme.palette[props.color].main : '',
+     color: `${theme.palette[props.style].contrastText} !important`,
       backgroundColor: theme.palette[props.style].main,
       '&:hover': {
         backgroundColor: theme.palette[props.style].dark,
@@ -16,18 +15,19 @@ const useStyles = makeStyles((theme) => ({
       minHeight: theme.spacing(7), // same as 56px
       paddingRight: theme.spacing(3.75), // 30px
       paddingLeft: theme.spacing(3.75), // 30px
+      
     }
     
   ),
   outlined: props => (
     {
-      color: `${theme.palette.getContrastText(theme.palette.grey[300])} !important`,
+      color: `${theme.palette[props.style].main} !important`,
       backgroundColor: `transparent !important`,
+      borderColor: `${theme.palette[props.style].main} !important`,
       '&:hover': {
         backgroundColor: `${fade(theme.palette[props.style].main, .12)} !important`,
       }
-    }
-    
+    }   
   ),
   sizeSmall: props => (
     {
@@ -51,7 +51,7 @@ const Button = (props) => {
           outlined: classes.outlined,
           sizeMedium: classes.sizeMedium,
           sizeLarge: classes.sizeLarge,
-          sizeSmall: classes.sizeSmall,
+          sizeSmall: classes.sizeSmall
         }} color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}>
           {props.children}
         </MuiButton>
@@ -61,7 +61,6 @@ const Button = (props) => {
 Button.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   children: PropTypes.node.isRequired,
-  disabled: PropTypes.boolean,
 }
 
 Button.defaultProps = {
