@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 const useStyles = makeStyles((theme) => ({
   root: props => (
     {
-     color: `${theme.palette[props.style].contrastText} !important`,
-      backgroundColor: theme.palette[props.style].main,
+     color: theme.palette[props.style] ? `${theme.palette[props.style].contrastText} !important` : theme.palette.contrastText,
+      backgroundColor: theme.palette[props.style] ? theme.palette[props.style].main : theme.palette.grey[300],
       '&:hover': {
-        backgroundColor: theme.palette[props.style].dark,
+        backgroundColor: theme.palette[props.style] ? theme.palette[props.style].dark : theme.palette.grey[300],
       },
       minHeight: theme.spacing(7), // same as 56px
       paddingRight: theme.spacing(3.75), // 30px
@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
   ),
   outlined: props => (
     {
-      color: `${theme.palette[props.style].main} !important`,
+      color: theme.palette[props.style] ? `${theme.palette[props.style].main} !important`: theme.palette.grey[300],
       backgroundColor: `transparent !important`,
-      borderColor: `${theme.palette[props.style].main} !important`,
+      borderColor: theme.palette[props.style] ? `${theme.palette[props.style].main} !important` : theme.palette.grey[300],
       '&:hover': {
-        backgroundColor: `${fade(theme.palette[props.style].main, .12)} !important`,
+        backgroundColor: theme.palette[props.style] ? `${fade(theme.palette[props.style].main, .12)} !important` : theme.palette.grey[300],
       }
     }   
   ),
