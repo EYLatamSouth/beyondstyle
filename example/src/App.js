@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { IconButton, Fab, Button } from 'beyondstyle';
+import { IconButton, Fab, Button, Text } from 'beyondstyle';
 import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <Fragment>
-          <div style={containerStyles}>
+      <div style={containerStyles}>
         <div><p>Icons</p></div>
         <hr />
         <h1>Icon button</h1>
@@ -71,7 +71,9 @@ const App = () => {
         </div>
       </div>
       <div style={containerStyles}>
-      <div><p>Floating action buttons</p></div>
+        <Text variant="p" component="h2" gutterBottom>
+        Floating action buttons
+        </Text>
         <hr />
         <h1>Floating button</h1>
 
@@ -199,7 +201,9 @@ const App = () => {
         </div>
       </div>
       <div style={containerStyles}>
-        <div><p>Button</p></div>
+        <Text variant="p" component="h2" gutterBottom>
+        Button
+        </Text>
         <hr />
         <h1>Primary (contained | outlined | text)</h1>
         <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
@@ -257,6 +261,55 @@ const App = () => {
           <Button color="tertiary" disabled>Button</Button>
           <Button color="tertiary" size="small">Button</Button>
         </div>
+      </div>
+      <div style={containerStyles}>
+        <Text variant="p" component="h2" gutterBottom>
+          Text
+        </Text>
+        <hr />
+        <Text variant="h1" component="h2" gutterBottom>
+          h1. Heading
+        </Text>
+        <Text variant="h2" gutterBottom>
+          h2. Heading
+        </Text>
+        <Text variant="h3" gutterBottom>
+          h3. Heading
+        </Text>
+        <Text variant="h4" gutterBottom>
+          h4. Heading
+        </Text>
+        <Text variant="h5" gutterBottom>
+          h5. Heading
+        </Text>
+        <Text variant="h6" gutterBottom>
+          h6. Heading
+        </Text>
+        <Text variant="subtitle1" gutterBottom>
+          subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+        </Text>
+        <Text variant="subtitle2" gutterBottom>
+          subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+        </Text>
+        <Text variant="body1" gutterBottom>
+          body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+          unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
+          dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+        </Text>
+        <Text variant="body2" gutterBottom>
+          body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+          unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
+          dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+        </Text>
+        <Text variant="button" display="block" gutterBottom>
+          button text
+        </Text>
+        <Text variant="caption" display="block" gutterBottom>
+          caption text
+        </Text>
+        <Text variant="overline" display="block" gutterBottom>
+          overline text
+        </Text>
       </div>
     </Fragment>
   );
