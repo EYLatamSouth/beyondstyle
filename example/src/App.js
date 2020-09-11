@@ -428,7 +428,28 @@ const App = () => {
           <p>Radio Button</p>
         </div>
         <hr />
-        <RadioButton>RadioButton</RadioButton>
+        <p>Selected</p>
+        <RadioButton color="primary" disabled="true" checked="true">
+          RadioButton
+        </RadioButton>
+        <RadioButton color="secondary" checked="true">
+          RadioButton
+        </RadioButton>
+        <RadioButton color="tertiary" checked="true">
+          RadioButton
+        </RadioButton>
+      </div>
+      <div style={containerStyles}>
+      <p>Deslected</p>
+        <RadioButton color="primary" disabled="true">
+          RadioButton
+        </RadioButton>
+        <RadioButton color="secondary" >
+          RadioButton
+        </RadioButton>
+        <RadioButton color="tertiary" >
+          RadioButton
+        </RadioButton>
       </div>
     </Fragment>
   );
