@@ -8,15 +8,14 @@ const App = () => {
     margin: 50,
     width: '50%',
     marginTop: '5%',
-    marginLeft: '5%'
+    marginLeft: '5%',
+    // backgroundColor: '#2e2e38'
   };
 
   return (
     <Fragment>
       <div style={containerStyles}>
-        <Text variant="p" component="h2" gutterBottom>
-          Icons
-        </Text>
+        <div><p>Icons</p></div>
         <hr />
         <h1>Icon button</h1>
 
@@ -206,30 +205,62 @@ const App = () => {
         Button
         </Text>
         <hr />
-        <h1>Primary (contained | outlined)</h1>
-        <Button variant="contained" color="primary" >Button</Button>
-        <Button variant="outlined" color="primary" >Button</Button>
-        <Button variant="contained" color="primary" size="small" >Button</Button>
-        <Button variant="outlined" color="primary" size="small" >Button</Button>
+        <h1>Primary (contained | outlined | text)</h1>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button variant="contained" color="primary">Button</Button>
+          <Button variant="contained" color="primary" disabled>Button</Button>
+          <Button variant="contained" color="primary" size="small">Button</Button>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button variant="outlined" color="primary">Button</Button>
+          <Button variant="outlined" color="primary" disabled>Button</Button>
+          <Button variant="outlined" color="primary" size="small">Button</Button>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button color="primary">Button</Button>
+          <Button color="primary" disabled>Button</Button>
+          <Button color="primary" size="small">Button</Button>
+        </div>
       </div>
       <div style={containerStyles}>
-        <h1>Secondary (contained | outlined)</h1>
-        <Button variant="contained" color="secondary" >Button</Button>
-        <Button variant="outlined" color="secondary" >Button</Button>
-        <Button variant="contained" color="secondary" size="small" >Button</Button>
-        <Button variant="outlined" color="secondary" size="small" >Button</Button>
+        <div><p>Button</p></div>
+        <hr />
+        <h1>Secondary (contained | outlined | text)</h1>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button variant="contained" color="secondary">Button</Button>
+          <Button variant="contained" color="secondary" disabled>Button</Button>
+          <Button variant="contained" color="secondary" size="small">Button</Button>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button variant="outlined" color="secondary">Button</Button>
+          <Button variant="outlined" color="secondary" disabled>Button</Button>
+          <Button variant="outlined" color="secondary" size="small">Button</Button>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button color="secondary">Button</Button>
+          <Button color="secondary" disabled>Button</Button>
+          <Button color="secondary" size="small">Button</Button>
+        </div>
       </div>
       <div style={containerStyles}>
-        <h1>Tertiary (contained | outlined)</h1>
-        <Button variant="contained" color="tertiary" >Button</Button>
-        <Button variant="outlined" color="tertiary" >Button</Button>
-        <Button variant="contained" color="tertiary" size="small" >Button</Button>
-        <Button variant="outlined" color="tertiary" size="small" >Button</Button>
-      </div>
-      <div style={containerStyles}>
-        <h1>Disabeld (default | outlined)</h1>
-        <Button variant="contained" color="tertiary" disabled>Button</Button>
-        <Button variant="outlined" color="tertiary" size="small" disabled>Button</Button>
+        <div><p>Button</p></div>
+        <hr />
+        <h1>Tertiary (contained | outlined | text)</h1>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button variant="contained" color="tertiary">Button</Button>
+          <Button variant="contained" color="tertiary" disabled>Button</Button>
+          <Button variant="contained" color="tertiary" size="small">Button</Button>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button variant="outlined" color="tertiary">Button</Button>
+          <Button variant="outlined" color="tertiary" disabled>Button</Button>
+          <Button variant="outlined" color="tertiary" size="small">Button</Button>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <Button color="tertiary">Button</Button>
+          <Button color="tertiary" disabled>Button</Button>
+          <Button color="tertiary" size="small">Button</Button>
+        </div>
       </div>
       <div style={containerStyles}>
         <Text variant="p" component="h2" gutterBottom>
