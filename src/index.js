@@ -1,6 +1,6 @@
-import IconButton from './lib/icon-button';
-import Fab from './lib/floating-button';
-import TextField from './lib/text-field';
+import IconButton from './lib/IconButton';
+import Fab from './lib/FloatingButton';
+import TextField from './lib/TextField';
 
 export {
   IconButton,
