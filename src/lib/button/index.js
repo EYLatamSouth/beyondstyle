@@ -4,18 +4,14 @@ import { makeStyles, fade } from '@material-ui/core/styles';
 import Layout from '../layout';
 import PropTypes from 'prop-types';
 
-
 const useStyles = makeStyles((theme) => ({
 
   root: props => (
     {
-      color: theme.palette[props.style].contrastText,
+      color: theme.palette[props.color] ? theme.palette[props.color].main : '',
       backgroundColor: theme.palette[props.style].main,
       '&:hover': {
-        backgroundColor: fade(
-          theme.palette[props.color] ? theme.palette[props.color].main : theme.palette.action.active,
-          theme.palette.action.hoverOpacity
-        ),
+        backgroundColor: theme.palette[props.style].dark,
       },
       minHeight: theme.spacing(7), // same as 56px
       paddingRight: theme.spacing(3.75), // 30px
@@ -48,23 +44,22 @@ const useStyles = makeStyles((theme) => ({
 
 const Button = (props) => {
   const classes = useStyles({style: props.color});
-
-  return (
-      <MuiButton {...props}
-      classes={{
-        root: classes.root,
-        outlined: classes.outlined,
-        sizeMedium: classes.sizeMedium,
-        sizeLarge: classes.sizeLarge,
-        sizeSmall: classes.sizeSmall,
-      }} color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}>
-        {props.children}
-      </MuiButton>
-  );
+    return (
+        <MuiButton {...props}
+        classes={{
+          root: classes.root,
+          outlined: classes.outlined,
+          sizeMedium: classes.sizeMedium,
+          sizeLarge: classes.sizeLarge,
+          sizeSmall: classes.sizeSmall,
+        }} color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}>
+          {props.children}
+        </MuiButton>
+    );
 };
 
 Button.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   children: PropTypes.node.isRequired,
   disabled: PropTypes.boolean,
 }
@@ -76,6 +71,6 @@ Button.defaultProps = {
 
 export default (props) => (
   <Layout>
-    <Button {...props}></Button>
+    <Button {...props}/>
   </Layout>
 );
