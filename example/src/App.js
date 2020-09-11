@@ -5,6 +5,8 @@ import Visibility from '@material-ui/icons/Visibility';
 import { IconButton, Fab, TextField } from 'beyondstyle';
 import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+import { Grid, Container } from '@material-ui/core';
+
 
 const App = () => {
   const containerStyles = {
@@ -13,45 +15,106 @@ const App = () => {
   };
 
   return (
-    <Fragment>
-      <div style={containerStyles}>
-        <TextField disabled id="filled-basic" label="Filled" variant="filled" value='Asd' />
-        <hr />
-        <TextField
-          id="input-with-icon-textfield"
-          disabled
-          label="button"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <AccountCircle />
-              </InputAdornment>
-            ),
-          }}
-        />
-        <hr />
-        <TextField
-          id="input-with-icon-textfield"
-          disabled
-          label="2 buttton"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <AccountCircle />
-              </InputAdornment>
-            ),
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="toggle password visibility"
-                  edge="end"
-                >
-                  <Visibility />
-                </IconButton>
-              </InputAdornment>
-            )
-          }}
-        />
+    <Container>
+      <Grid container style={{ margin: 50 }}>
+        <Grid item xs={12}>
+          <h1>Primary</h1>
+        </Grid>
+        <Grid item xs={4}>
+          <TextField disabled type="date" id="standard-error" label="Error" defaultValue="Hello World" helperText="Incorrect entry." InputLabelProps={{
+      shrink: true,
+    }} />
+        </Grid>
+        <Grid item xs={4}>
+          <TextField
+            id="input-with-icon-textfield"
+            helperText="Incorrect entry."
+            label="button"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <AccountCircle />
+                </InputAdornment>
+              ),
+            }}
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <TextField
+            id="input-with-icon-textfield"
+            disabled
+            helperText="Incorrect entry."
+            label="2 buttton"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <AccountCircle />
+                </InputAdornment>
+              ),
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    edge="end"
+                  >
+                    <Visibility />
+                  </IconButton>
+                </InputAdornment>
+              )
+            }}
+          />
+        </Grid>
+      </Grid>
+      <Grid container style={{ margin: 50 }}>
+        <Grid item xs={12}>
+          <h1>Secondary</h1>
+        </Grid>
+        <Grid item xs={4}>
+          <TextField color="secondary" id="standard-error" label="Error" defaultValue="Hello World" helperText="Incorrect entry." />
+        </Grid>
+        <Grid item xs={4}>
+          <TextField
+            id="input-with-icon-textfield"
+            color="secondary"
+            helperText="Incorrect entry."
+            label="button"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <AccountCircle />
+                </InputAdornment>
+              ),
+            }}
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <TextField
+            color="secondary"
+            id="input-with-icon-textfield"
+            disabled
+            helperText="Incorrect entry."
+            label="2 buttton"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <AccountCircle />
+                </InputAdornment>
+              ),
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    edge="end"
+                  >
+                    <Visibility />
+                  </IconButton>
+                </InputAdornment>
+              )
+            }}
+          />
+        </Grid>
+      </Grid>
+        <div>
         {/* <hr />
         <TextField
           id="standard-multiline-flexible"
@@ -68,7 +131,7 @@ const App = () => {
           defaultValue="Default Value"
         /> */}
       </div>
-      <div style={containerStyles}>
+      {/* <div style={containerStyles}>
         <h1>Icon button</h1>
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -224,7 +287,8 @@ const App = () => {
           </Fab>
         </div>
       </div>
-    </Fragment>
+      */}
+    </Container>
   );
 };
 

@@ -5,8 +5,13 @@ import { makeStyles, fade } from '@material-ui/core/styles';
 import Layout from '../layout';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    '& .MuiFormHelperText-root': {
+      letterSpacing: '0.004em',
+      lineHeight: theme.typography.pxToRem(20),
+    }
+  },
   labelFilledRoot: {
-    color: `${theme.palette.grey[600]} !important`,
     lineHeight: theme.typography.pxToRem(24),
     fontSize: theme.typography.pxToRem(16),
   },
@@ -22,7 +27,10 @@ const useStyles = makeStyles((theme) => ({
   labelFilledDisabled: {
     color: `${fade(theme.palette.primary.main, 0.3)} !important`
   },
-  filled: props => ({
+  labelFilledError: {
+    color: `${theme.palette.error.main} !important`
+  },
+  filled: {
     backgroundColor: theme.palette.grey[100],
     '&:hover': {
       backgroundColor: theme.palette.grey[100],
@@ -36,18 +44,12 @@ const useStyles = makeStyles((theme) => ({
       '& .MuiIconButton-root': {
         color: theme.palette.grey[600],
       }
-    },
-  }),
+    }
+  },
   filledUnderline: props => ({
     '&:before': {
       borderColor: theme.palette.grey[300],
-    },
-    '&:hover:before': {
-      borderColor: theme.palette.primary.main,
-    },
-    '&:after': {
-      borderColor: theme.palette.primary.main,
-    },
+    }
   }),
   filledFocused: {
     backgroundColor: `${theme.palette.grey[100]} !important`
@@ -109,18 +111,21 @@ const TextField = (props) => {
       />
     )
   }
+
   return (
     <Field
       {...props}
       ref={inputRef}
       variant="filled"
+      classes={{ root: classes.root }}
       InputLabelProps={{
-        shrink: shrink,
+        shrink: props.InputLabelProps?.shrink ? true : shrink,
         classes: {
           root: classes.labelFilledRoot,
           filled: classes.labelFilled,
           shrink: classes.labelFilledShrink,
-          disabled: classes.labelFilledDisabled
+          disabled: classes.labelFilledDisabled,
+          error: classes.labelFilledError
         }
       }}
       InputProps={{

@@ -67,14 +67,11 @@ const ButtonWithIcon = (props) => {
 ButtonWithIcon.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
-  disabled: PropTypes.boolean,
   variant: PropTypes.string
 }
 
 ButtonWithIcon.defaultProps = {
   color: 'default',
-  disabled: false,
-  ariaLabel: '',
   variant: 'outlined'
 };
 
