@@ -12,7 +12,10 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette[props.style].contrastText,
       backgroundColor: theme.palette[props.style].main,
       '&:hover': {
-        background: theme.palette[props.style].dark,
+        backgroundColor: fade(
+          theme.palette[props.color] ? theme.palette[props.color].main : theme.palette.action.active,
+          theme.palette.action.hoverOpacity
+        ),
       },
       minHeight: theme.spacing(7), // same as 56px
       paddingRight: theme.spacing(3.75), // 30px
@@ -54,7 +57,7 @@ const Button = (props) => {
         sizeMedium: classes.sizeMedium,
         sizeLarge: classes.sizeLarge,
         sizeSmall: classes.sizeSmall,
-      }} >
+      }} color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}>
         {props.children}
       </MuiButton>
   );
