@@ -63,5 +63,9 @@
     "node": ">=10"
   },
   "module": "dist/index.modern.js",
-  "source": "src/index.js"
+  "source": "src/index.js",
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "prop-types": "^15.7.2"
+  }
 }
