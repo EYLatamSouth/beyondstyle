@@ -1,6 +1,9 @@
-import ProgressBar from './lib/progress-bar';
-import PirateButton from './lib/pirate-button';
-
+import IconButton from './lib/icon-button';
+import Fab from './lib/floating-button';
 import TextField from './lib/text-field';
 
-export { ProgressBar, PirateButton, TextField };
+export {
+  IconButton,
+  Fab,
+  TextField
+};
