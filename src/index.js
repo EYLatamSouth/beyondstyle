@@ -1,11 +1,13 @@
-import IconButton from './lib/icon-button';
-import Fab from './lib/floating-button';
-import Button from './lib/button';
-import Text from './lib/text';
+import Button from './lib/Button';
+import Fab from './lib/Fab';
+import IconButton from './lib/IconButton';
+import Layout from './lib/layout';
+import Text from './lib/Text';
 
 export {
-  IconButton,
-  Fab,
   Button,
+  Fab,
+  IconButton,
+  Layout,
   Text
 };
