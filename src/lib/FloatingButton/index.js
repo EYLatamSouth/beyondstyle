@@ -57,9 +57,10 @@ const FloatingButton = (props) => {
   return (
     <Fab
       {...props}
-      variant={props.variant !== 'extended' ? 'round' : 'extended'}
-      size={props.size !== 'large' ? 'medium' : 'large'}
       classes={{...classes}}
+      size={props.size !== 'large' ? 'medium' : 'large'}
+      variant={props.variant !== 'extended' ? 'round' : 'extended'}
+      color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}
     >
       {props.children}
     </Fab>
@@ -68,16 +69,13 @@ const FloatingButton = (props) => {
 
 FloatingButton.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string,
-  disabled: PropTypes.boolean,
+  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   variant: PropTypes.oneOf(['extended', 'round']),
   size: PropTypes.oneOf(['large', 'small'])
 }
 
 FloatingButton.defaultProps = {
   color: 'primary',
-  disabled: false,
-  ariaLabel: '',
   variant: 'round',
   size: 'large'
 };
