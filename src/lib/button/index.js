@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
       '&:hover': {
         backgroundColor: theme.palette[props.style] ? theme.palette[props.style].dark : theme.palette.grey[300],
       },
+      lineHeight: '16px',
+      letterSpacing: '0.1em',
+      fontSize: '14px',
       minHeight: theme.spacing(7), 
       paddingRight: theme.spacing(3.75),
       paddingLeft: theme.spacing(3.75),
