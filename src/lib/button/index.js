@@ -12,9 +12,9 @@ const useStyles = makeStyles((theme) => ({
       '&:hover': {
         backgroundColor: theme.palette[props.style] ? theme.palette[props.style].dark : theme.palette.grey[300],
       },
-      minHeight: theme.spacing(7), // same as 56px
-      paddingRight: theme.spacing(3.75), // 30px
-      paddingLeft: theme.spacing(3.75), // 30px
+      minHeight: theme.spacing(7), 
+      paddingRight: theme.spacing(3.75),
+      paddingLeft: theme.spacing(3.75),
       
     }
     
@@ -31,11 +31,11 @@ const useStyles = makeStyles((theme) => ({
   ),
   sizeSmall: props => (
     {
-      minHeight: theme.spacing(1), // same as 56px
-      paddingRight: theme.spacing(2.25), // 18px
-      paddingLeft: theme.spacing(2.25), // 18px
-      paddingTop: theme.spacing(1.25), // 10x
-      paddingBottom: theme.spacing(1.25), // 10x
+      minHeight: theme.spacing(4.5), 
+      paddingRight: theme.spacing(2.25), 
+      paddingLeft: theme.spacing(2.25),
+      paddingTop: theme.spacing(0.851),
+      paddingBottom: theme.spacing(0.851),
     }
     
   )
