@@ -10,13 +10,14 @@ import {
   EYInterstateBold,
   EYInterstateBoldItalic,
   EYInterstateBlack
-} from '../theme/typography';
-import { palette } from '../theme/palette';
+} from '../../theme/typography';
+import { palette } from '../../theme/palette';
 
 const theme = createMuiTheme({
   palette: {...palette},
   typography: {
-    fontFamily: 'EYInterstate, Arial, sans-serif'
+    fontFamily: '"EYInterstate", sans-serif',
+    fontWeightMedium: 400
   },
   overrides: {
     MuiCssBaseline: {

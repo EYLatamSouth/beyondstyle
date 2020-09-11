@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Layout from '../layout';
+import Layout from '../Layout';
 import PropTypes from 'prop-types';
 
 const Text = (props) => {

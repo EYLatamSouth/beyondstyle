@@ -1,0 +1,55 @@
+---
+name: Floating action buttons
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { Fab } from 'beyondstyle';
+import { AddRounded } from '@material-ui/icons';
+
+# Floating action buttons
+
+A floating action button (FAB) represents the primary action of a screen.
+
+### About
+
+A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center.
+
+Only use a FAB if it is the most suitable way to present a screen's primary action.
+
+## Properties
+
+<Props of={Fab} />
+
+## Import
+
+```js
+import { Fab } from 'beyondstyle';
+```
+
+## Usage
+
+<Playground>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ margin: 8 }}>
+      <Fab aria-label="primary" color="primary">
+        <AddRounded />
+      </Fab>
+    </div>
+    <div style={{ margin: 8 }}>
+      <Fab aria-label="secondary" color="secondary">
+        <AddRounded />
+      </Fab>
+    </div>
+    <div style={{ margin: 8 }}>
+      <Fab aria-label="tertiary" color="tertiary">
+        <AddRounded />
+      </Fab>
+    </div>
+    <div style={{ margin: 8 }}>
+      <Fab aria-label="primary" disabled color="primary">
+        <AddRounded />
+      </Fab>
+    </div>
+  </div>
+</Playground>
