@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 const Button = (props) => {
   const classes = useStyles({style: props.color});
     return (
-        <MuiButton {...props}
+        <MuiButton {...props} 
         classes={{
           root: classes.root,
           outlined: classes.outlined,
@@ -63,12 +63,15 @@ const Button = (props) => {
 
 Button.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  size: PropTypes.oneOf(['large', 'small', 'medium']),
+  variant: PropTypes.oneOf(['contained', 'outlined', 'text']),
   children: PropTypes.node.isRequired,
 }
 
 Button.defaultProps = {
   color: 'default',
   disabled: false,
+  variant: 'contained',
 };
 
 export default (props) => (
