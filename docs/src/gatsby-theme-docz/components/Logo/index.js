@@ -1,7 +1,9 @@
 import React from 'react';
+import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import logo from './logo.png';
+import logoInverted from './beyondlabs-logo_inverted.png';
+import logoMiniInverted from './beyondlabs-logo_mini-inverted.png';
 
 const useStyles = makeStyles((theme) => ({
   logoContainer: {
@@ -16,7 +18,12 @@ export const Logo = () => {
 
   return (
     <div className={classes.logoContainer}>
-      <img src={logo} alt="BeyondLabs logo" width="auto" height="32" />
+      <Hidden only='xs'>
+        <img src={logoInverted} alt="BeyondLabs logo" width="auto" height="32" />
+      </Hidden>
+      <Hidden smUp>
+        <img src={logoMiniInverted} alt="BeyondLabs logo" width="auto" height="32" />
+      </Hidden>
     </div>
   );
 }

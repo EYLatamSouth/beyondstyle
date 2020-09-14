@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as MuiButton } from '@material-ui/core';
 import { makeStyles, fade } from '@material-ui/core/styles';
-import Layout from '../layout';
+import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
   root: props => (

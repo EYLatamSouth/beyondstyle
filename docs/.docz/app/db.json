@@ -83,27 +83,27 @@
       }
     },
     {
-      "key": "src/components/PirateButton.mdx",
+      "key": "src/components/FloatingActionButtons.mdx",
       "value": {
-        "name": "PirateButton",
+        "name": "Floating action buttons",
         "menu": "Components",
-        "id": "9a4754f6a085565c5abf1929c0258cc7",
-        "filepath": "src/components/PirateButton.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/PirateButton.mdx",
-        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/PirateButton.mdx",
+        "id": "d8353ccaef934e9518561f222a03c14c",
+        "filepath": "src/components/FloatingActionButtons.mdx",
+        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/FloatingActionButtons.mdx",
+        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/FloatingActionButtons.mdx",
         "hidden": false,
-        "slug": "src-components-pirate-button",
-        "route": "/src-components-pirate-button",
+        "slug": "src-components-floating-action-buttons",
+        "route": "/src-components-floating-action-buttons",
         "headings": [
           {
-            "slug": "piratebutton",
+            "slug": "floating-action-buttons",
             "depth": 1,
-            "value": "PirateButton"
+            "value": "Floating action buttons"
           },
           {
-            "slug": "best-practices",
+            "slug": "about",
             "depth": 3,
-            "value": "Best practices"
+            "value": "About"
           },
           {
             "slug": "properties",
@@ -111,45 +111,14 @@
             "value": "Properties"
           },
           {
-            "slug": "basic-usage",
+            "slug": "import",
             "depth": 2,
-            "value": "Basic usage"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/ProgressBar.mdx",
-      "value": {
-        "name": "ProgressBar",
-        "menu": "Components",
-        "id": "4b08aad190ac292944eb10177cbd6ee4",
-        "filepath": "src/components/ProgressBar.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/ProgressBar.mdx",
-        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/ProgressBar.mdx",
-        "hidden": false,
-        "slug": "src-components-progress-bar",
-        "route": "/src-components-progress-bar",
-        "headings": [
-          {
-            "slug": "progressbar",
-            "depth": 1,
-            "value": "ProgressBar"
+            "value": "Import"
           },
           {
-            "slug": "best-practices",
-            "depth": 3,
-            "value": "Best practices"
-          },
-          {
-            "slug": "properties",
+            "slug": "usage",
             "depth": 2,
-            "value": "Properties"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
+            "value": "Usage"
           }
         ]
       }
@@ -182,17 +151,6 @@
     }
   ],
   "props": [
-    {
-      "key": "src/gatsby-theme-docz/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Theme",
-          "methods": [],
-          "actualName": "Theme"
-        }
-      ]
-    },
     {
       "key": "src/gatsby-theme-docz/components/Logo/index.js",
       "value": [
