@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Radio as MuiRadio } from '@material-ui/core';
+import { Radio } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../layout';
 
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 const RadioButton = (props) => {
   const classes = useStyles({ style: props.color });
   return (
-    <MuiRadio
+    <Radio
       {...props}
       classes={{ ...classes }}
       color={
