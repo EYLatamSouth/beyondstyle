@@ -2,6 +2,12 @@ import React, { Fragment } from 'react';
 import { IconButton, Fab, Button, Text, MyCheckbox } from 'beyondstyle';
 import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+import {
+  FormGroup,
+  FormControlLabel,
+  FormControl,
+  FormLabel
+} from '@material-ui/core';
 
 const App = () => {
   const containerStyles = {
@@ -434,10 +440,28 @@ const App = () => {
             marginLeft: '5%'
           }}
         >
-          <MyCheckbox label='Primary' />
-          <MyCheckbox label='Secondary' />
-          <MyCheckbox label='Tertiary' />
-          <MyCheckbox label='Disabled' disabled />
+          <FormGroup row>
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='primary' />}
+              label='Primary'
+            />
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='secondary' />}
+              label='Secondary'
+            />
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='tertiary' />}
+              label='Tertiary'
+            />
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='primary' label='Disabled' disabled />}
+              label='Disabled'
+            />
+          </FormGroup>
         </div>
       </div>
 
@@ -452,10 +476,118 @@ const App = () => {
             marginLeft: '5%'
           }}
         >
-          <MyCheckbox label='Primary' indeterminate />
-          <MyCheckbox label='Secondary' indeterminate />
-          <MyCheckbox label='Tertiary' indeterminate />
-          <MyCheckbox label='Disabled' indeterminate disabled />
+          <FormGroup row>
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='primary' indeterminate />}
+              label='Primary'
+            />
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='secondary' indeterminate />}
+              label='Secondary'
+            />
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='tertiary' indeterminate />}
+              label='Tertiary'
+            />
+            <FormControlLabel
+              labelPlacement='top'
+              control={<MyCheckbox color='primary' indeterminate disabled />}
+              label='Disabled'
+            />
+          </FormGroup>
+        </div>
+      </div>
+
+      <div style={containerStyles}>
+        <p>Checkbox Group</p>
+        <hr />
+
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-evenly'
+          }}
+        >
+          <FormControl component='fieldset'>
+            <FormLabel component='legend'>Primary</FormLabel>
+            <FormGroup>
+              <FormControlLabel
+                control={<MyCheckbox color='primary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='primary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='primary' />}
+                label='item'
+              />
+            </FormGroup>
+          </FormControl>
+
+          <FormControl component='fieldset'>
+            <FormLabel component='legend'>Secondary</FormLabel>
+            <FormGroup>
+              <FormControlLabel
+                control={<MyCheckbox color='secondary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='secondary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='secondary' />}
+                label='item'
+              />
+            </FormGroup>
+          </FormControl>
+
+          <FormControl component='fieldset'>
+            <FormLabel component='legend'>Tertiary</FormLabel>
+            <FormGroup>
+              <FormControlLabel
+                control={<MyCheckbox color='tertiary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='tertiary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='tertiary' />}
+                label='item'
+              />
+            </FormGroup>
+          </FormControl>
+
+          <FormControl
+            style={{
+              backgroundColor: '#2e2e38',
+              padding: '10px'
+            }}
+            component='fieldset'
+          >
+            {/* <FormLabel component='legend'>Tertiary</FormLabel> */}
+            <FormGroup>
+              <FormControlLabel
+                control={<MyCheckbox color='tertiary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='tertiary' />}
+                label='item'
+              />
+              <FormControlLabel
+                control={<MyCheckbox color='tertiary' />}
+                label='item'
+              />
+            </FormGroup>
+          </FormControl>
         </div>
       </div>
     </Fragment>
