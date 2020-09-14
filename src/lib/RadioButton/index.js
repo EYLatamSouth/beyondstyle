@@ -1,20 +1,25 @@
-import React, { Fragment, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Radio as MuiRadio } from '@material-ui/core';
-import { makeStyles, fade } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
+import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../layout';
 
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
-    color: theme.palette[props.style].main,
+    color: theme.palette[props.style]
+      ? theme.palette[props.style].main
+      : theme.palette.grey[300],
     '&:hover': {
-      color: `${theme.palette[props.style].dark} !important`
+      color: theme.palette[props.style]
+        ? `${theme.palette[props.style].dark} !important`
+        : theme.palette.grey[300]
     },
     '&.MuiIconButton-colorSecondary': {
-      color: theme.palette[props.style].main
+      color: theme.palette[props.style]
+        ? theme.palette[props.style].main
+        : theme.palette.grey[300]
     },
-    '&.MuiIconButton-colorSecondary.Mui-disabled': {
+    '&.Mui-disabled': {
       color: theme.palette.action.disabledBackground
     }
   })
@@ -23,19 +28,29 @@ const useStyles = makeStyles((theme) => ({
 const RadioButton = (props) => {
   const classes = useStyles({ style: props.color });
   return (
-    <Fragment>
-      <MuiRadio
-        classes={{ ...classes }}
-        disabled={props.disabled}
-        checked={props.checked}
-      />
-    </Fragment>
+    <MuiRadio
+      {...props}
+      classes={{ ...classes }}
+      color={
+        props.color == 'primary' || props.color == 'secondary'
+          ? props.color
+          : 'default'
+      }
+    />
   );
 };
 
-RadioButton.propTypes = {};
+RadioButton.propTypes = {
+  checked: PropTypes.bool,
+  classes: PropTypes.object,
+  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary'])
+};
 
-RadioButton.defaultProps = {};
+RadioButton.defaultProps = {
+  color: 'default',
+  disabled: false,
+  ariaLabel: ''
+};
 
 export default (props) => (
   <Layout>

@@ -2,14 +2,24 @@ import React, { Fragment } from 'react';
 import { IconButton, Fab, Button, Text, RadioButton } from 'beyondstyle';
 import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
 
 const App = () => {
   const containerStyles = {
     margin: 50,
     width: '50%',
     marginTop: '5%',
-    marginLeft: '5%',
+    marginLeft: '5%'
     // backgroundColor: '#2e2e38'
+  };
+
+  const [value, setValue] = React.useState('item1');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
   };
 
   return (
@@ -424,32 +434,106 @@ const App = () => {
         </Text>
       </div>
       <div style={containerStyles}>
-        <div>
-          <p>Radio Button</p>
-        </div>
+        <p>Radio Button</p>
         <hr />
-        <p>Selected</p>
-        <RadioButton color="primary" disabled="true" checked="true">
-          RadioButton
-        </RadioButton>
-        <RadioButton color="secondary" checked="true">
-          RadioButton
-        </RadioButton>
-        <RadioButton color="tertiary" checked="true">
-          RadioButton
-        </RadioButton>
       </div>
-      <div style={containerStyles}>
-      <p>Deslected</p>
-        <RadioButton color="primary" disabled="true">
-          RadioButton
-        </RadioButton>
-        <RadioButton color="secondary" >
-          RadioButton
-        </RadioButton>
-        <RadioButton color="tertiary" >
-          RadioButton
-        </RadioButton>
+      <div style={{ width: '70%', marginLeft: '5%' }}>
+        <FormControl component='fieldset'>
+          <FormLabel component='legend'>Primary</FormLabel>
+          <RadioGroup
+            aria-label='radio buttons'
+            name='radio2'
+            value={value}
+            onChange={handleChange}
+          >
+            <FormControlLabel
+              value='item1'
+              control={<RadioButton color='primary' />}
+              label='Item 1'
+            />
+            <FormControlLabel
+              value='item2'
+              control={<RadioButton color='primary' />}
+              label='Item 2'
+            />
+            <FormControlLabel
+              value='item3'
+              control={<RadioButton color='primary' />}
+              label='Item 3'
+            />
+            <FormControlLabel
+              value='disabled'
+              disabled
+              control={<RadioButton color='primary' />}
+              label='(Disabled option)'
+            />
+          </RadioGroup>
+        </FormControl>
+
+        <FormControl component='fieldset'>
+          <FormLabel component='legend'>Secondary</FormLabel>
+          <RadioGroup
+            aria-label='radio buttons'
+            name='radio2'
+            value={value}
+            onChange={handleChange}
+          >
+            <FormControlLabel
+              value='item1'
+              control={<RadioButton color='secondary' />}
+              label='Item 1'
+            />
+            <FormControlLabel
+              value='item2'
+              control={<RadioButton color='secondary' />}
+              label='Item 2'
+            />
+            <FormControlLabel
+              value='item3'
+              control={<RadioButton color='secondary' />}
+              label='Item 3'
+            />
+            <FormControlLabel
+              value='disabled'
+              disabled
+              control={<RadioButton color='secondary' />}
+              label='(Disabled option)'
+            />
+          </RadioGroup>
+        </FormControl>
+
+        <FormControl component='fieldset'>
+          <FormLabel component='legend'>Tertiary</FormLabel>
+          <RadioGroup
+            aria-label='radio buttons'
+            name='radio2'
+            value={value}
+            onChange={handleChange}
+          >
+            <FormControlLabel
+              value='item1'
+              control={<RadioButton color='tertiary' />}
+              label='Item 1'
+            />
+            <FormControlLabel
+              value='item2'
+              control={<RadioButton color='tertiary' />}
+              label='Item 2'
+            />
+            <FormControlLabel
+              value='item3'
+              control={<RadioButton color='tertiary' />}
+              label='Item 3'
+            />
+            <FormControlLabel
+              value='disabled'
+              disabled
+              checked
+              control={<RadioButton color='tertiary' />}
+              label='(Disabled option)'
+            />
+          </RadioGroup>
+        </FormControl>
       </div>
     </Fragment>
   );
