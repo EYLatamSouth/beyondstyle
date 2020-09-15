@@ -72,7 +72,7 @@ const App = () => {
             label="Multiline"
             multiline
             rowsMax={4}
-            maxLength={5}
+            caractereslength={5}
             helperText="teste"
           />
         </Grid>
@@ -82,7 +82,7 @@ const App = () => {
             label="Multiline"
             multiline
             rows={4}
-            maxLength={5}
+            caractereslength={5}
             defaultValue="Default Value"
           />
         </Grid>
@@ -155,7 +155,7 @@ const App = () => {
             label="Multiline"
             multiline
             rowsMax={4}
-            maxLength={5}
+            caractereslength={5}
             helperText="teste"
             color="secondary"
           />
@@ -166,7 +166,7 @@ const App = () => {
             label="Multiline"
             multiline
             rows={4}
-            maxLength={5}
+            caractereslength={5}
             defaultValue="Default Value"
             color="secondary"
           />
@@ -242,7 +242,7 @@ const App = () => {
             variant="outlined"
             multiline
             rowsMax={4}
-            maxLength={5}
+            caractereslength={5}
             helperText="teste"
           />
         </Grid>
@@ -253,7 +253,7 @@ const App = () => {
             variant="outlined"
             multiline
             rows={4}
-            maxLength={5}
+            caractereslength={5}
             defaultValue="Default Value"
           />
         </Grid>
@@ -330,7 +330,7 @@ const App = () => {
             label="Multiline"
             multiline
             rowsMax={4}
-            maxLength={5}
+            caractereslength={5}
             helperText="teste"
             color="secondary"
             variant="outlined"
@@ -342,7 +342,7 @@ const App = () => {
             label="Multiline"
             multiline
             rows={4}
-            maxLength={5}
+            caractereslength={5}
             defaultValue="Default Value"
             color="secondary"
             variant="outlined"

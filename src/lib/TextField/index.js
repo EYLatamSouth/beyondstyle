@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   outilneError: {
-    '& .MuioutlinedInput-notchedOutline': {
+    '& .MuiOutlinedInput-notchedOutline': {
       borderColor: `${theme.palette.error.main} !important`
     }
   }
@@ -86,6 +86,7 @@ const TextField = (props) => {
   const inputRef = useRef();
   const [shrink, setShrink] = useState(false);
   const [valueLength, setValueLength] = useState(0);
+  let helperTextComponent = 'p';
 
   const classes = useStyles({
     color: props.color,
@@ -126,11 +127,12 @@ const TextField = (props) => {
 
   const renderCountElement = () => {
     if (!props.multiline) return props.helperText;
-    if (!props.maxLength) return props.helperText;
+    if (!props.caractereslength) return props.helperText;
 
+    helperTextComponent = 'div';
     return (
       <div className='textarea-count-help'>
-        <span>{valueLength}</span>/{props.maxLength} caracteres
+        <span>{valueLength}</span>/{props.caractereslength} caracteres
       </div>
     );
   };
@@ -142,6 +144,7 @@ const TextField = (props) => {
         ref={inputRef}
         variant='outlined'
         helperText={renderCountElement()}
+        FormHelperTextProps={{ component: helperTextComponent }}
         classes={{
           root: classes.root
         }}
@@ -169,6 +172,7 @@ const TextField = (props) => {
       classes={{ root: classes.root }}
       onChange={onChange}
       helperText={renderCountElement()}
+      FormHelperTextProps={{ component: helperTextComponent }}
       InputLabelProps={{
         shrink: props.InputLabelProps?.shrink ? true : shrink,
         classes: {
@@ -197,14 +201,14 @@ const TextField = (props) => {
 TextField.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary']),
   variant: PropTypes.oneOf(['filled', 'outlined']),
-  maxLength: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
+  caractereslength: PropTypes.number,
   onChange: PropTypes.func
 };
 
 TextField.defaultProps = {
   color: 'primary',
   variant: 'filled',
-  maxLength: false,
+  caractereslength: 0,
   onChange: () => {}
 };
 
