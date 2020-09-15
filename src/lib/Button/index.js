@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
     }
 
   ),
+  label: {
+    '& svg[class^="MuiSvgIcon-root-"]': {
+      marginRight: 10
+    },
+  },
   contained: props => (
     {
       color: theme.palette[props.style] ? `${theme.palette[props.style].contrastText}` : theme.palette.contrastText,

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles, fade } from '@material-ui/core/styles';
-// import Checkbox from '@material-ui/core/Checkbox';
 import { Checkbox as MuiCheck } from '@material-ui/core';
 import {
   CheckBoxRounded,
@@ -21,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
         : theme.palette.grey[300],
       backgroundColor: fade(theme.palette.action.hover, 0.04)
     },
-    '&.MuiIconButton-colorSecondary, &.PrivateSwitchBase-checked-162': {
+    '&.MuiIconButton-colorSecondary, &.Mui-checked ': {
       color: theme.palette[props.style]
         ? theme.palette[props.style].main
         : theme.palette.grey[300]
     },
     '&.MuiCheckbox-indeterminate': {
-      '&:not(.PrivateSwitchBase-checked-162)': {
+      '&:not(.Mui-checked )': {
         color: theme.palette.action.disabledBackground
       }
     },
@@ -37,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   })
 }));
 
-const Checkbox = (props) => {
+const CheckBox = (props) => {
   const classes = useStyles({ style: props.color });
   return (
     <MuiCheck
@@ -51,7 +50,7 @@ const Checkbox = (props) => {
       onChange={props.handleChange}
       classes={{ ...classes }}
       color={
-        props.color == 'primary' || props.color === 'secondary'
+        props.color === 'primary' || props.color === 'secondary'
           ? props.color
           : 'default'
       }
@@ -59,19 +58,19 @@ const Checkbox = (props) => {
   );
 };
 
-Checkbox.propTypes = {
+CheckBox.propTypes = {
   checked: PropTypes.bool,
   checkedIcon: PropTypes.node,
   indeterminateIcon: PropTypes.node,
   classes: PropTypes.object,
-  color: PropTypes.oneOf(['default', 'primary', 'secondary']),
+  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   disabled: PropTypes.bool,
   indeterminate: PropTypes.bool,
   onChange: PropTypes.func,
   value: PropTypes.any
 };
 
-Checkbox.defaultProps = {
+CheckBox.defaultProps = {
   color: 'default',
   disabled: false,
   ariaLabel: ''
@@ -79,6 +78,6 @@ Checkbox.defaultProps = {
 
 export default (props) => (
   <Layout>
-    <Checkbox {...props} />
+    <CheckBox {...props} />
   </Layout>
 );

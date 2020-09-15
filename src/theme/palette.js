@@ -22,9 +22,9 @@ export const palette = {
     contrastText: '#2e2e38'
   },
   error: {
-    light: '#de5542',
-    main: '#a62119',
-    dark: '#700000',
+    light: '#F25B45',
+    main: '#B9251C',
+    dark: '#810000',
     contrastText: '#fff'
   },
   warning: {
