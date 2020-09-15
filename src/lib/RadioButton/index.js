@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Radio } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Layout from '../layout';
+import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
@@ -35,7 +35,7 @@ const RadioButton = (props) => {
       name={props.name}
       value={props.value}
       color={
-        props.color == 'primary' || props.color == 'secondary'
+        props.color === 'primary' || props.color === 'secondary'
           ? props.color
           : 'default'
       }

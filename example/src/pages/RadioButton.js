@@ -103,6 +103,33 @@ const App = () => {
             </RadioGroup>
           </FormControl>
         </Grid>
+        <Grid item xs={2} style={{ backgroundColor: '#2e2e38' }}>
+          <FormControl component='fieldset'>
+            <FormLabel component='legend' style={{ color: 'white' }}>
+              Tertiary | primary-main bg
+            </FormLabel>
+            <RadioGroup aria-label='radio buttons' name='radio2'>
+              <FormControlLabel
+                style={{ color: '#fff' }}
+                value='item1'
+                control={<RadioButton color='tertiary' />}
+                label='Item 1'
+              />
+              <FormControlLabel
+                value='item2'
+                style={{ color: '#fff' }}
+                control={<RadioButton color='tertiary' />}
+                label='Item 2'
+              />
+              <FormControlLabel
+                value='item3'
+                style={{ color: '#fff' }}
+                control={<RadioButton color='tertiary' />}
+                label='Item 3'
+              />
+            </RadioGroup>
+          </FormControl>
+        </Grid>
       </Grid>
     </Container>
   );
