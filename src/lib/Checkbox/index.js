@@ -72,8 +72,7 @@ CheckBox.propTypes = {
 
 CheckBox.defaultProps = {
   color: 'default',
-  disabled: false,
-  ariaLabel: ''
+  disabled: false
 };
 
 export default (props) => (
