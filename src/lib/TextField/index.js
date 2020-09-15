@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   outilneError: {
-    '& .MuiOutlinedInput-notchedOutline': {
+    '& .MuioutlinedInput-notchedOutline': {
       borderColor: `${theme.palette.error.main} !important`
     }
   }
