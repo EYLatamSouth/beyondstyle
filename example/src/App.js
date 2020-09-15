@@ -430,7 +430,7 @@ const App = () => {
         </Text>
       </div>
       <div style={containerStyles}>
-        <p>Default Checkboxes</p>
+        <p>Standalone Checkboxes</p>
         <hr />
 
         <div
@@ -572,17 +572,19 @@ const App = () => {
             }}
             component='fieldset'
           >
-            {/* <FormLabel component='legend'>Tertiary</FormLabel> */}
             <FormGroup>
               <FormControlLabel
+                style={{ color: '#ffd400' }}
                 control={<MyCheckbox color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
+                style={{ color: '#ffd400' }}
                 control={<MyCheckbox color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
+                style={{ color: '#ffd400' }}
                 control={<MyCheckbox color='tertiary' />}
                 label='item'
               />

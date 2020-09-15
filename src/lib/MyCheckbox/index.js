@@ -1,8 +1,11 @@
 import React from 'react';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { makeStyles } from '@material-ui/core/styles';
 import Checkbox from '@material-ui/core/Checkbox';
+import {
+  CheckBoxRounded,
+  CheckBoxOutlineBlankRounded,
+  IndeterminateCheckBoxRounded
+} from '@material-ui/icons';
 import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
@@ -15,10 +18,15 @@ const useStyles = makeStyles((theme) => ({
         ? `${theme.palette[props.style].dark} !important`
         : theme.palette.grey[300]
     },
-    '&.MuiIconButton-colorSecondary': {
+    '&.MuiIconButton-colorSecondary, &.PrivateSwitchBase-checked-162': {
       color: theme.palette[props.style]
         ? theme.palette[props.style].main
         : theme.palette.grey[300]
+    },
+    '&.MuiCheckbox-indeterminate': {
+      '&:not(.PrivateSwitchBase-checked-162)': {
+        color: theme.palette.action.disabledBackground
+      }
     },
     '&.Mui-disabled': {
       color: theme.palette.action.disabledBackground
@@ -32,13 +40,16 @@ const MyCheckbox = (props) => {
     <Checkbox
       {...props}
       checked={props.checked}
+      checkedIcon={<CheckBoxRounded />}
+      icon={<CheckBoxOutlineBlankRounded />}
+      indeterminateIcon={<IndeterminateCheckBoxRounded />}
       classes={{ ...classes }}
       color={
         props.color == 'primary' || props.color === 'secondary'
           ? props.color
           : 'default'
       }
-    ></Checkbox>
+    />
   );
 };
 
