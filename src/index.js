@@ -4,6 +4,7 @@ import Button from './lib/Button';
 import IconButton from './lib/IconButton';
 import Fab from './lib/Fab';
 import TextField from './lib/TextField';
+import Select from './lib/Select';
 
 export {
   Button,
@@ -11,5 +12,6 @@ export {
   IconButton,
   Layout,
   Text,
-  TextField
+  TextField,
+  Select
 };

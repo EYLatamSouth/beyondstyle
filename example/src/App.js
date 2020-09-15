@@ -7,6 +7,7 @@ import IconButton from './pages/IconButton';
 import Fab from './pages/Fab';
 import Text from './pages/Text';
 import TextField from './pages/TextField';
+import Select from './pages/Select';
 import NotFoundPage from './pages/NotFoundPage';
 
 
@@ -21,6 +22,7 @@ class App extends React.Component {
           <Route exact path='/fab' component={Fab} />
           <Route exact path='/text' component={Text} />
           <Route exact path='/text-field' component={TextField} />
+          <Route exact path='/select' component={Select} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
       </BrowserRouter>

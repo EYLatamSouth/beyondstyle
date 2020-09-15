@@ -26,6 +26,9 @@ const Page = () => (
       <Grid item xs={12}>
         <Link to="/text-field">TextField</Link>
       </Grid>
+      <Grid item xs={12}>
+        <Link to="/select">Select</Link>
+      </Grid>
     </Grid>
   </Container>
 );
