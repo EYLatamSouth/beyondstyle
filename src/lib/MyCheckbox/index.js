@@ -40,6 +40,7 @@ const MyCheckbox = (props) => {
     <Checkbox
       {...props}
       checked={props.checked}
+      name={props.name}
       checkedIcon={<CheckBoxRounded />}
       icon={<CheckBoxOutlineBlankRounded />}
       indeterminateIcon={<IndeterminateCheckBoxRounded />}
