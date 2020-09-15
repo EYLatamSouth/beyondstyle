@@ -139,6 +139,14 @@ const Select = (props) => {
         onClose={onBlur}
         onOpen={onFocus}
         IconComponent={UnfoldMoreRoundedIcon}
+        classes={{
+          filled: classes.filled
+        }}
+        MenuProps={{
+          PaperProps: {
+            elevation: 3
+          }
+        }}
         input={
           <InputComponent
             startAdornment={startAdornment}
