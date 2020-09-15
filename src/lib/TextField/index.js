@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'right'
     }
   },
-  labelFilledRoot: {
+  labelRoot: {
     lineHeight: theme.typography.pxToRem(24),
     fontSize: theme.typography.pxToRem(16)
   },
@@ -31,10 +31,10 @@ const useStyles = makeStyles((theme) => ({
         : 'translate(12px, 8px) scale(0.75)'
     }
   }),
-  labelFilledDisabled: {
+  labelDisabled: {
     color: `${fade(theme.palette.primary.main, 0.3)} !important`
   },
-  labelFilledError: {
+  labelError: {
     color: `${theme.palette.error.main} !important`
   },
   filled: {
@@ -73,6 +73,11 @@ const useStyles = makeStyles((theme) => ({
         borderColor: theme.palette.grey[300],
         borderWidth: 2
       }
+    }
+  },
+  outilneError: {
+    '& .MuiOutlinedInput-notchedOutline': {
+      borderColor: `${theme.palette.error.main} !important`
     }
   }
 }));
@@ -134,7 +139,21 @@ const TextField = (props) => {
         {...props}
         ref={inputRef}
         variant='outlined'
-        classes={{ ...classes }}
+        helperText={renderCountElement()}
+        classes={{
+          root: classes.root
+        }}
+        InputLabelProps={{
+          classes: {
+            disabled: classes.labelDisabled,
+            error: classes.labelError
+          }
+        }}
+        InputProps={{
+          classes: {
+            error: classes.outilneError
+          }
+        }}
       />
     );
   }
@@ -150,11 +169,11 @@ const TextField = (props) => {
       InputLabelProps={{
         shrink: props.InputLabelProps?.shrink ? true : shrink,
         classes: {
-          root: classes.labelFilledRoot,
+          root: classes.labelRoot,
           filled: classes.labelFilled,
           shrink: classes.labelFilledShrink,
-          disabled: classes.labelFilledDisabled,
-          error: classes.labelFilledError
+          disabled: classes.labelDisabled,
+          error: classes.labelError
         }
       }}
       InputProps={{

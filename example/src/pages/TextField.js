@@ -8,7 +8,7 @@ import { Grid, Container } from '@material-ui/core';
 const App = () => {
   return (
     <Container>
-      <Grid container style={{ margin: 50 }}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1>Primary</h1>
         </Grid>
@@ -71,7 +71,6 @@ const App = () => {
             id="standard-multiline-flexible"
             label="Multiline"
             multiline
-            error
             rowsMax={4}
             maxlength={5}
             helperText="teste"
@@ -88,7 +87,7 @@ const App = () => {
           />
         </Grid>
       </Grid>
-      <Grid container style={{ margin: 50 }}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1>Secondary</h1>
         </Grid>
@@ -150,9 +149,31 @@ const App = () => {
             }}
           />
         </Grid>
+        <Grid item xs={3}>
+          <TextField
+            id="standard-multiline-flexible"
+            label="Multiline"
+            multiline
+            rowsMax={4}
+            maxlength={5}
+            helperText="teste"
+            color="secondary"
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <TextField
+            id="filled-multiline-static"
+            label="Multiline"
+            multiline
+            rows={4}
+            maxlength={5}
+            defaultValue="Default Value"
+            color="secondary"
+          />
+        </Grid>
       </Grid>
 
-      <Grid container style={{ margin: 50 }}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1>Primary</h1>
         </Grid>
@@ -214,8 +235,30 @@ const App = () => {
             }}
           />
         </Grid>
+        <Grid item xs={3}>
+          <TextField
+            id="standard-multiline-flexible"
+            label="Multiline"
+            variant="outlined"
+            multiline
+            rowsMax={4}
+            maxlength={5}
+            helperText="teste"
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <TextField
+            id="filled-multiline-static"
+            label="Multiline"
+            variant="outlined"
+            multiline
+            rows={4}
+            maxlength={5}
+            defaultValue="Default Value"
+          />
+        </Grid>
       </Grid>
-      <Grid container style={{ margin: 50 }}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1>Secondary outlined</h1>
         </Grid>
@@ -279,6 +322,30 @@ const App = () => {
                 </InputAdornment>
               )
             }}
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <TextField
+            id="standard-multiline-flexible"
+            label="Multiline"
+            multiline
+            rowsMax={4}
+            maxlength={5}
+            helperText="teste"
+            color="secondary"
+            variant="outlined"
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <TextField
+            id="filled-multiline-static"
+            label="Multiline"
+            multiline
+            rows={4}
+            maxlength={5}
+            defaultValue="Default Value"
+            color="secondary"
+            variant="outlined"
           />
         </Grid>
       </Grid>
