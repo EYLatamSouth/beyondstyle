@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles, fade } from '@material-ui/core/styles';
-import Checkbox from '@material-ui/core/Checkbox';
+// import Checkbox from '@material-ui/core/Checkbox';
+import { Checkbox as MuiCheck } from '@material-ui/core';
 import {
   CheckBoxRounded,
   CheckBoxOutlineBlankRounded,
@@ -36,10 +37,10 @@ const useStyles = makeStyles((theme) => ({
   })
 }));
 
-const MyCheckbox = (props) => {
+const Checkbox = (props) => {
   const classes = useStyles({ style: props.color });
   return (
-    <Checkbox
+    <MuiCheck
       {...props}
       checked={props.checked}
       name={props.name}
@@ -78,6 +79,6 @@ Checkbox.defaultProps = {
 
 export default (props) => (
   <Layout>
-    <MyCheckbox {...props} />
+    <Checkbox {...props} />
   </Layout>
 );

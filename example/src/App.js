@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { IconButton, Fab, Button, Text, MyCheckbox } from 'beyondstyle';
+import { IconButton, Fab, Button, Text, Checkbox } from 'beyondstyle';
 import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import {
@@ -443,23 +443,23 @@ const App = () => {
           <FormGroup row>
             <FormControlLabel
               labelPlacement='top'
-              control={<MyCheckbox name='primary' color='primary' />}
+              control={<Checkbox name='primary' color='primary' />}
               label='Primary'
             />
             <FormControlLabel
               labelPlacement='top'
-              control={<MyCheckbox name='secondary' color='secondary' />}
+              control={<Checkbox name='secondary' color='secondary' />}
               label='Secondary'
             />
             <FormControlLabel
               labelPlacement='top'
-              control={<MyCheckbox name='tertiary' color='tertiary' />}
+              control={<Checkbox name='tertiary' color='tertiary' />}
               label='Tertiary'
             />
             <FormControlLabel
               labelPlacement='top'
               control={
-                <MyCheckbox
+                <Checkbox
                   name='disabledButton'
                   color='primary'
                   label='Disabled'
@@ -487,28 +487,28 @@ const App = () => {
             <FormControlLabel
               labelPlacement='top'
               control={
-                <MyCheckbox name='primary' color='primary' indeterminate />
+                <Checkbox name='primary' color='primary' indeterminate />
               }
               label='Primary'
             />
             <FormControlLabel
               labelPlacement='top'
               control={
-                <MyCheckbox name='secondary' color='secondary' indeterminate />
+                <Checkbox name='secondary' color='secondary' indeterminate />
               }
               label='Secondary'
             />
             <FormControlLabel
               labelPlacement='top'
               control={
-                <MyCheckbox name='tertiary' color='tertiary' indeterminate />
+                <Checkbox name='tertiary' color='tertiary' indeterminate />
               }
               label='Tertiary'
             />
             <FormControlLabel
               labelPlacement='top'
               control={
-                <MyCheckbox
+                <Checkbox
                   name='disabledButton'
                   color='primary'
                   indeterminate
@@ -535,15 +535,15 @@ const App = () => {
             <FormLabel component='legend'>Primary</FormLabel>
             <FormGroup>
               <FormControlLabel
-                control={<MyCheckbox name='primaryA' color='primary' />}
+                control={<Checkbox name='primaryA' color='primary' />}
                 label='item'
               />
               <FormControlLabel
-                control={<MyCheckbox name='primaryB' color='primary' />}
+                control={<Checkbox name='primaryB' color='primary' />}
                 label='item'
               />
               <FormControlLabel
-                control={<MyCheckbox name='primaryC' color='primary' />}
+                control={<Checkbox name='primaryC' color='primary' />}
                 label='item'
               />
             </FormGroup>
@@ -553,15 +553,15 @@ const App = () => {
             <FormLabel component='legend'>Secondary</FormLabel>
             <FormGroup>
               <FormControlLabel
-                control={<MyCheckbox name='secondaryA' color='secondary' />}
+                control={<Checkbox name='secondaryA' color='secondary' />}
                 label='item'
               />
               <FormControlLabel
-                control={<MyCheckbox name='secondaryB' color='secondary' />}
+                control={<Checkbox name='secondaryB' color='secondary' />}
                 label='item'
               />
               <FormControlLabel
-                control={<MyCheckbox name='secondaryC' color='secondary' />}
+                control={<Checkbox name='secondaryC' color='secondary' />}
                 label='item'
               />
             </FormGroup>
@@ -571,15 +571,15 @@ const App = () => {
             <FormLabel component='legend'>Tertiary</FormLabel>
             <FormGroup>
               <FormControlLabel
-                control={<MyCheckbox name='tertiaryA' color='tertiary' />}
+                control={<Checkbox name='tertiaryA' color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
-                control={<MyCheckbox name='tertiaryB' color='tertiary' />}
+                control={<Checkbox name='tertiaryB' color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
-                control={<MyCheckbox name='tertiaryC' color='tertiary' />}
+                control={<Checkbox name='tertiaryC' color='tertiary' />}
                 label='item'
               />
             </FormGroup>
@@ -595,17 +595,17 @@ const App = () => {
             <FormGroup>
               <FormControlLabel
                 style={{ color: '#ffd400' }}
-                control={<MyCheckbox color='tertiary' />}
+                control={<Checkbox color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
                 style={{ color: '#ffd400' }}
-                control={<MyCheckbox color='tertiary' />}
+                control={<Checkbox color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
                 style={{ color: '#ffd400' }}
-                control={<MyCheckbox color='tertiary' />}
+                control={<Checkbox color='tertiary' />}
                 label='item'
               />
             </FormGroup>
