@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 import { TextField as Field } from '@material-ui/core';
 import { makeStyles, fade } from '@material-ui/core/styles';
-import Layout from '../layout';
-import FormHelperText from '@material-ui/core/FormHelperText';
+import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -13,9 +13,17 @@ const Page = () => (
       </Grid>
       <Grid item xs={12}>
         <Link to="/button">Button</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to="/icon-button">IconButton</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to="/fab">Fab</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to="/text">Text</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to="/text-field">TextField</Link>
       </Grid>
     </Grid>

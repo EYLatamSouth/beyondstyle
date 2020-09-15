@@ -2,11 +2,11 @@ import React from "react";
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import Home from './pages/Home';
-// import Button from './pages/Button';
-// import IconButton from './pages/IconButton';
-// import Fab from './pages/Fab';
-// import Text from './pages/Text';
-// import TextField from './pages/TextField';
+import Button from './pages/Button';
+import IconButton from './pages/IconButton';
+import Fab from './pages/Fab';
+import Text from './pages/Text';
+import TextField from './pages/TextField';
 import NotFoundPage from './pages/NotFoundPage';
 
 
@@ -16,14 +16,17 @@ class App extends React.Component {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
-          {/* <Route exact path='/button' component={Button} />
+          <Route exact path='/button' component={Button} />
           <Route exact path='/icon-button' component={IconButton} />
           <Route exact path='/fab' component={Fab} />
           <Route exact path='/text' component={Text} />
-          <Route exact path='/text-field' component={TextField} /> */}
+          <Route exact path='/text-field' component={TextField} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
     )
   }
 }
+
+export default App;
+
