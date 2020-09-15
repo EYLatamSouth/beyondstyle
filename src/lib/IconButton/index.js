@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   contained: (props) => ({
     color: theme.palette[props.color]
-      ? theme.palette.getContrastText(theme.palette[props.color].main)
+      ? theme.palette[props.color].contrastText
       : theme.palette.getContrastText(theme.palette.grey[300]),
     backgroundColor: theme.palette[props.color]
       ? theme.palette[props.color].main
