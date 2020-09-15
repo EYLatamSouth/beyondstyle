@@ -595,17 +595,17 @@ const App = () => {
             <FormGroup>
               <FormControlLabel
                 style={{ color: '#ffd400' }}
-                control={<MyCheckbox color='tertiaryA' />}
+                control={<MyCheckbox color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
                 style={{ color: '#ffd400' }}
-                control={<MyCheckbox color='tertiaryB' />}
+                control={<MyCheckbox color='tertiary' />}
                 label='item'
               />
               <FormControlLabel
                 style={{ color: '#ffd400' }}
-                control={<MyCheckbox color='tertiaryC' />}
+                control={<MyCheckbox color='tertiary' />}
                 label='item'
               />
             </FormGroup>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import { makeStyles, fade } from '@material-ui/core/styles';
 import Checkbox from '@material-ui/core/Checkbox';
 import {
   CheckBoxRounded,
@@ -16,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       color: theme.palette[props.style]
         ? `${theme.palette[props.style].dark} !important`
-        : theme.palette.grey[300]
+        : theme.palette.grey[300],
+      backgroundColor: fade(theme.palette.action.hover, 0.04)
     },
     '&.MuiIconButton-colorSecondary, &.PrivateSwitchBase-checked-162': {
       color: theme.palette[props.style]
@@ -41,9 +43,11 @@ const MyCheckbox = (props) => {
       {...props}
       checked={props.checked}
       name={props.name}
+      value={props.value}
       checkedIcon={<CheckBoxRounded />}
       icon={<CheckBoxOutlineBlankRounded />}
       indeterminateIcon={<IndeterminateCheckBoxRounded />}
+      onChange={props.handleChange}
       classes={{ ...classes }}
       color={
         props.color == 'primary' || props.color === 'secondary'
@@ -54,9 +58,23 @@ const MyCheckbox = (props) => {
   );
 };
 
-// Checkbox.propTypes = {};
+Checkbox.propTypes = {
+  checked: PropTypes.bool,
+  checkedIcon: PropTypes.node,
+  indeterminateIcon: PropTypes.node,
+  classes: PropTypes.object,
+  color: PropTypes.oneOf(['default', 'primary', 'secondary']),
+  disabled: PropTypes.bool,
+  indeterminate: PropTypes.bool,
+  onChange: PropTypes.func,
+  value: PropTypes.any
+};
 
-// Checkbox.defaultProps = {};
+Checkbox.defaultProps = {
+  color: 'default',
+  disabled: false,
+  ariaLabel: ''
+};
 
 export default (props) => (
   <Layout>
