@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -7,12 +7,12 @@ import IconButton from './pages/IconButton';
 import Fab from './pages/Fab';
 import Text from './pages/Text';
 import TextField from './pages/TextField';
+import RadioButton from './pages/RadioButton';
 import NotFoundPage from './pages/NotFoundPage';
-
 
 class App extends React.Component {
   render() {
-    return(
+    return (
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
@@ -21,12 +21,12 @@ class App extends React.Component {
           <Route exact path='/fab' component={Fab} />
           <Route exact path='/text' component={Text} />
           <Route exact path='/text-field' component={TextField} />
-          <Route path="*" component={NotFoundPage} />
+          <Route exact path='/radio-button' component={RadioButton} />
+          <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
-    )
+    );
   }
-};
+}
 
 export default App;
-
