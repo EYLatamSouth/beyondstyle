@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { IconButton, Fab, Button, Text } from 'beyondstyle';
-import DeleteIcon from '@material-ui/icons/Delete';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
 const App = () => {
@@ -21,23 +20,23 @@ const App = () => {
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <IconButton aria-label='primary'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='primary' color='primary'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='secondary' color='secondary'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='tertiary' color='tertiary'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='primary' disabled color='primary'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
         </div>
       </div>
@@ -46,15 +45,15 @@ const App = () => {
 
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <IconButton aria-label='primary' disabled variant='contained'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='primary' variant='contained'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='primary' color='primary' variant='contained'>
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton
@@ -62,11 +61,142 @@ const App = () => {
             color='secondary'
             variant='contained'
           >
-            <DeleteIcon />
+            <VisibilityIcon />
           </IconButton>
 
           <IconButton aria-label='primary' color='tertiary' variant='contained'>
-            <DeleteIcon />
+            <VisibilityIcon />
+          </IconButton>
+        </div>
+      </div>
+      <div style={containerStyles}>
+        <h1>contained button with icon</h1>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <IconButton aria-label='primary' disabled variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton aria-label='primary' variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton aria-label='primary' color='primary' variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton
+            aria-label='primary'
+            color='secondary'
+            variant='contained'
+          >
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton aria-label='primary' color='tertiary' variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+        </div>
+      </div>
+      <div style={containerStyles}>
+        <h1>contained button with icon</h1>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <IconButton aria-label='primary' disabled>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton aria-label='primary'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton aria-label='primary' color='primary'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton
+            aria-label='primary'
+            color='secondary'
+          >
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton aria-label='primary' color='tertiary'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+        </div>
+      </div>
+      <div style={containerStyles}>
+        <h1>contained button with icon</h1>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <IconButton size="small" disabled variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small" variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small" color='primary' variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton
+            size="small"
+            color='secondary'
+            variant='contained'
+          >
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small" color='tertiary' variant='contained'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+        </div>
+      </div>
+      <div style={containerStyles}>
+        <h1>contained button with icon</h1>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <IconButton size="small" disabled>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small">
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small" color='primary'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small" color='secondary'>
+            <VisibilityIcon />
+            Button
+          </IconButton>
+
+          <IconButton size="small" color='tertiary'>
+            <VisibilityIcon />
+            Button
           </IconButton>
         </div>
       </div>

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import IconButton from '@material-ui/core/IconButton';
 import Layout from '../Layout';
 import { makeStyles, fade } from '@material-ui/core/styles';
+import Button from '../Button';
 
 const useStyles = makeStyles((theme) => ({
   root: props => ({
@@ -46,19 +47,38 @@ const useStyles = makeStyles((theme) => ({
 const ButtonWithIcon = (props) => {
   const classes = useStyles({ color: props.color });
 
+  if (Array.isArray(props.children)) {
+    return (
+      <Button {...props}>
+        {props.children}
+      </Button>
+    )
+  }
+
   if (props.variant === 'contained') {
     return (
-      <IconButton {...props} classes={{
-        root: classes.contained,
-        disabled: classes.disabled
-      }}>
+      <IconButton
+        {...props}
+        classes={{
+          root: classes.contained,
+          disabled: classes.disabled
+        }}
+        color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}
+      >
         {props.children}
       </IconButton>
       )
   }
 
   return (
-    <IconButton {...props} classes={{...classes}}>
+    <IconButton
+      {...props}
+      classes={{
+        root: classes.root,
+        disabled: classes.disabled
+      }}
+      color={props.color == 'primary' || props.color == 'secondary' ? props.color : 'default'}
+    >
       {props.children}
     </IconButton>
   )
@@ -66,15 +86,12 @@ const ButtonWithIcon = (props) => {
 
 ButtonWithIcon.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string,
-  disabled: PropTypes.boolean,
-  variant: PropTypes.string
+  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  variant: PropTypes.oneOf(['contained', 'outlined']),
 }
 
 ButtonWithIcon.defaultProps = {
   color: 'default',
-  disabled: false,
-  ariaLabel: '',
   variant: 'outlined'
 };
 
