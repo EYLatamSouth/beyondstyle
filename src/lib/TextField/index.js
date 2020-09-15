@@ -86,6 +86,7 @@ const TextField = (props) => {
   const inputRef = useRef();
   const [shrink, setShrink] = useState(false);
   const [valueLength, setValueLength] = useState(0);
+  let helperTextComponent = 'p';
 
   const classes = useStyles({
     color: props.color,
@@ -128,6 +129,7 @@ const TextField = (props) => {
     if (!props.multiline) return props.helperText;
     if (!props.caractereslength) return props.helperText;
 
+    helperTextComponent = 'div';
     return (
       <div className='textarea-count-help'>
         <span>{valueLength}</span>/{props.caractereslength} caracteres
@@ -142,6 +144,7 @@ const TextField = (props) => {
         ref={inputRef}
         variant='outlined'
         helperText={renderCountElement()}
+        FormHelperTextProps={{ component: helperTextComponent }}
         classes={{
           root: classes.root
         }}
@@ -169,6 +172,7 @@ const TextField = (props) => {
       classes={{ root: classes.root }}
       onChange={onChange}
       helperText={renderCountElement()}
+      FormHelperTextProps={{ component: helperTextComponent }}
       InputLabelProps={{
         shrink: props.InputLabelProps?.shrink ? true : shrink,
         classes: {
