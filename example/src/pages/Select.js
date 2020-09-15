@@ -11,7 +11,7 @@ const Page = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Text variant="h3" component="h3">
-            Button
+            Dropdowns (select)
           </Text>
         </Grid>
         <Grid item xs={12}>
