@@ -27,6 +27,9 @@ const Page = () => (
         <Link to='/text-field'>TextField</Link>
       </Grid>
       <Grid item xs={12}>
+        <Link to='/check-box'>CheckBoxes</Link>
+      </Grid>    
+      <Grid item xs={12}>
         <Link to='/radio-button'>Radio Button</Link>
       </Grid>
     </Grid>
