@@ -31,6 +31,9 @@ const RadioButton = (props) => {
     <Radio
       {...props}
       classes={{ ...classes }}
+      onChange={props.handleChange}
+      name={props.name}
+      value={props.value}
       color={
         props.color == 'primary' || props.color == 'secondary'
           ? props.color
@@ -43,7 +46,9 @@ const RadioButton = (props) => {
 RadioButton.propTypes = {
   checked: PropTypes.bool,
   classes: PropTypes.object,
-  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary'])
+  color: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  onChange: PropTypes.func,
+  value: PropTypes.any
 };
 
 RadioButton.defaultProps = {
