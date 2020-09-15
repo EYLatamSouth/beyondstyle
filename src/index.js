@@ -5,6 +5,7 @@ import IconButton from './lib/IconButton';
 import Fab from './lib/Fab';
 import TextField from './lib/TextField';
 import Select from './lib/Select';
+import MenuItem from './lib/MenuItem';
 
 export {
   Button,
@@ -13,5 +14,6 @@ export {
   Layout,
   Text,
   TextField,
-  Select
+  Select,
+  MenuItem
 };
