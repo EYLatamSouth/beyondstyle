@@ -126,11 +126,11 @@ const TextField = (props) => {
 
   const renderCountElement = () => {
     if (!props.multiline) return props.helperText;
-    if (!props.caracteresLength) return props.helperText;
+    if (!props.caractereslength) return props.helperText;
 
     return (
       <div className='textarea-count-help'>
-        <span>{valueLength}</span>/{props.caracteresLength} caracteres
+        <span>{valueLength}</span>/{props.caractereslength} caracteres
       </div>
     );
   };
@@ -197,14 +197,14 @@ const TextField = (props) => {
 TextField.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary']),
   variant: PropTypes.oneOf(['filled', 'outlined']),
-  caracteresLength: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
+  caractereslength: PropTypes.number,
   onChange: PropTypes.func
 };
 
 TextField.defaultProps = {
   color: 'primary',
   variant: 'filled',
-  caracteresLength: false,
+  caractereslength: 0,
   onChange: () => {}
 };
 
