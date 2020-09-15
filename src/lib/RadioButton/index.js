@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Radio } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, fade } from '@material-ui/core/styles';
 import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       color: theme.palette[props.style]
         ? `${theme.palette[props.style].dark} !important`
-        : theme.palette.grey[300]
+        : theme.palette.grey[300],
+      backgroundColor: fade(theme.palette.action.hover, 0.04)
     },
     '&.MuiIconButton-colorSecondary': {
       color: theme.palette[props.style]
@@ -34,6 +35,7 @@ const RadioButton = (props) => {
       onChange={props.handleChange}
       name={props.name}
       value={props.value}
+      size='medium'
       color={
         props.color === 'primary' || props.color === 'secondary'
           ? props.color
