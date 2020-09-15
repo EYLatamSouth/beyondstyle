@@ -1,14 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from "prop-types"
 import { TextField as Field } from '@material-ui/core';
 import { makeStyles, fade } from '@material-ui/core/styles';
 import Layout from '../layout';
+import FormHelperText from '@material-ui/core/FormHelperText';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     '& .MuiFormHelperText-root': {
       letterSpacing: '0.004em',
       lineHeight: theme.typography.pxToRem(20),
+    },
+    '& .textarea-count-help': {
+      textAlign: 'right'
     }
   },
   labelFilledRoot: {
@@ -44,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
       '& .MuiIconButton-root': {
         color: theme.palette.grey[600],
       }
-    }
+    },
   },
   filledUnderline: props => ({
     '&:before': {
@@ -71,8 +75,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const TextField = (props) => {
-  const inputRef = React.useRef();
-  const [shrink, setShrink] = React.useState(false);
+  const inputRef = useRef();
+  const [shrink, setShrink] = useState(false);
+  const [valueLength, setValueLength] = useState(0);
+
   const classes = useStyles({
     color: props.color,
     startAdornment: !!props.InputProps?.startAdornment
@@ -102,10 +108,27 @@ const TextField = (props) => {
     }
   }
 
+  const onChange = (event) => {
+    setValueLength(event.target.value?.length);
+    props.onChange(event);
+  }
+
+  const renderCountElement = () => {
+    if (!props.multiline) return props.helperText;
+    if (!props.maxlength) return props.helperText;
+
+    return (
+      <div className="textarea-count-help">
+        <span>{valueLength}</span>/{props.maxlength} caracteres
+      </div>
+    )
+  }
+
   if (props.variant === 'outlined') {
     return (
       <Field
         {...props}
+        ref={inputRef}
         variant="outlined"
         classes={{...classes}}
       />
@@ -118,6 +141,8 @@ const TextField = (props) => {
       ref={inputRef}
       variant="filled"
       classes={{ root: classes.root }}
+      onChange={onChange}
+      helperText={renderCountElement()}
       InputLabelProps={{
         shrink: props.InputLabelProps?.shrink ? true : shrink,
         classes: {
@@ -146,11 +171,15 @@ const TextField = (props) => {
 TextField.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary']),
   variant: PropTypes.oneOf(['filled', 'outlined']),
+  maxlength: PropTypes.oneOfType([ PropTypes.number, PropTypes.bool ]),
+  onChange: PropTypes.func
 }
 
 TextField.defaultProps = {
   color: 'primary',
-  variant: 'filled'
+  variant: 'filled',
+  maxlength: false,
+  onChange: () => {}
 };
 
 
