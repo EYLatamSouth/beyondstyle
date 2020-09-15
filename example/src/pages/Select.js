@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { Grid, Container } from '@material-ui/core';
 import { Select, Text } from 'beyondstyle';
 import MenuItem from '@material-ui/core/MenuItem';
+import AccountCircle from '@material-ui/icons/AccountCircle';
 
-const NotFoundPage = () => {
+const Page = () => {
 
   return (
     <Container>
@@ -27,7 +28,10 @@ const NotFoundPage = () => {
           </Select>
         </Grid>
         <Grid item xs={3}>
-          <Select label="Filled Icon">
+          <Select
+            label="Filled Icon"
+            inputicon={AccountCircle}
+          >
             <MenuItem value={10}>Ten</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
             <MenuItem value={30}>Thirty</MenuItem>
@@ -64,4 +68,6 @@ const NotFoundPage = () => {
   )
 };
 
-export default NotFoundPage;
+
+
+export default Page;
