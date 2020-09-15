@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& .MuiFormHelperText-root': {
       letterSpacing: '0.004em',
-      lineHeight: theme.typography.pxToRem(20),
+      lineHeight: theme.typography.pxToRem(20)
     },
     '& .textarea-count-help': {
       textAlign: 'right'
@@ -16,16 +16,20 @@ const useStyles = makeStyles((theme) => ({
   },
   labelFilledRoot: {
     lineHeight: theme.typography.pxToRem(24),
-    fontSize: theme.typography.pxToRem(16),
+    fontSize: theme.typography.pxToRem(16)
   },
   labelFilledShrink: {
     fontSize: theme.typography.pxToRem(12)
   },
-  labelFilled: props => ({
-    transform: props.startAdornment ? 'translate(46px, 16px) scale(1)' : 'translate(12px, 16px) scale(1)',
+  labelFilled: (props) => ({
+    transform: props.startAdornment
+      ? 'translate(46px, 16px) scale(1)'
+      : 'translate(12px, 16px) scale(1)',
     '&.MuiInputLabel-shrink': {
-      transform: props.startAdornment ? 'translate(46px, 8px) scale(0.75)' : 'translate(12px, 8px) scale(0.75)',
-    },
+      transform: props.startAdornment
+        ? 'translate(46px, 8px) scale(0.75)'
+        : 'translate(12px, 8px) scale(0.75)'
+    }
   }),
   labelFilledDisabled: {
     color: `${fade(theme.palette.primary.main, 0.3)} !important`
@@ -36,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   filled: {
     backgroundColor: theme.palette.grey[100],
     '&:hover': {
-      backgroundColor: theme.palette.grey[100],
+      backgroundColor: theme.palette.grey[100]
     },
     '& .MuiInputAdornment-positionStart': {
       marginTop: `${0} !important`,
@@ -45,15 +49,15 @@ const useStyles = makeStyles((theme) => ({
     '& .MuiInputAdornment-positionEnd': {
       color: theme.palette.grey[600],
       '& .MuiIconButton-root': {
-        color: theme.palette.grey[600],
+        color: theme.palette.grey[600]
       }
-    },
-  },
-  filledUnderline: props => ({
-    '&:before': {
-      borderColor: theme.palette.grey[300],
     }
-  }),
+  },
+  filledUnderline: {
+    '&:before': {
+      borderColor: theme.palette.grey[300]
+    }
+  },
   filledFocused: {
     backgroundColor: `${theme.palette.grey[100]} !important`
   },
@@ -63,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
     '&.MuiFilledInput-underline.Mui-disabled': {
       '&:before': {
         borderBottomStyle: 'solid',
-        borderColor: 'transparent',
+        borderColor: 'transparent'
       },
       '&:hover:before': {
         borderColor: theme.palette.grey[300],
@@ -95,50 +99,51 @@ const TextField = (props) => {
       tag = 'textarea';
     }
 
-    return !!inputRef.current.getElementsByTagName(tag)[0].value
-  }
+    return !!inputRef.current.getElementsByTagName(tag)[0].value;
+  };
+
   const onFocus = () => {
     setShrink(true);
-  }
+  };
 
   const onBlur = () => {
     if (!hasValue()) {
       setShrink(false);
     }
-  }
+  };
 
   const onChange = (event) => {
     setValueLength(event.target.value?.length);
     props.onChange(event);
-  }
+  };
 
   const renderCountElement = () => {
     if (!props.multiline) return props.helperText;
     if (!props.maxlength) return props.helperText;
 
     return (
-      <div className="textarea-count-help">
+      <div className='textarea-count-help'>
         <span>{valueLength}</span>/{props.maxlength} caracteres
       </div>
-    )
-  }
+    );
+  };
 
   if (props.variant === 'outlined') {
     return (
       <Field
         {...props}
         ref={inputRef}
-        variant="outlined"
-        classes={{...classes}}
+        variant='outlined'
+        classes={{ ...classes }}
       />
-    )
+    );
   }
 
   return (
     <Field
       {...props}
       ref={inputRef}
-      variant="filled"
+      variant='filled'
       classes={{ root: classes.root }}
       onChange={onChange}
       helperText={renderCountElement()}
@@ -164,15 +169,15 @@ const TextField = (props) => {
         }
       }}
     />
-  )
-}
+  );
+};
 
 TextField.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary']),
   variant: PropTypes.oneOf(['filled', 'outlined']),
-  maxlength: PropTypes.oneOfType([ PropTypes.number, PropTypes.bool ]),
+  maxlength: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
   onChange: PropTypes.func
-}
+};
 
 TextField.defaultProps = {
   color: 'primary',
@@ -180,7 +185,6 @@ TextField.defaultProps = {
   maxlength: false,
   onChange: () => {}
 };
-
 
 export default (props) => (
   <Layout>
