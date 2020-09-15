@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from "prop-types"
 import IconButton from '@material-ui/core/IconButton';
+import Layout from '../Layout';
 import { makeStyles, fade } from '@material-ui/core/styles';
 import Button from '../Button';
-import Layout from '../layout';
 
 const useStyles = makeStyles((theme) => ({
   root: props => ({

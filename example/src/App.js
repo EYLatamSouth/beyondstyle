@@ -201,7 +201,7 @@ const App = () => {
         </div>
       </div>
       <div style={containerStyles}>
-        <Text variant="p" component="h2" gutterBottom>
+        <Text variant="h6" component="h2" gutterBottom>
         Floating action buttons
         </Text>
         <hr />
@@ -331,7 +331,7 @@ const App = () => {
         </div>
       </div>
       <div style={containerStyles}>
-        <Text variant="p" component="h2" gutterBottom>
+        <Text variant="h6" component="h2" gutterBottom>
         Button
         </Text>
         <hr />
@@ -393,7 +393,7 @@ const App = () => {
         </div>
       </div>
       <div style={containerStyles}>
-        <Text variant="p" component="h2" gutterBottom>
+        <Text variant="h6" component="h2" gutterBottom>
           Text
         </Text>
         <hr />
