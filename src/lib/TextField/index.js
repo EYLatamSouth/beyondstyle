@@ -104,7 +104,9 @@ const TextField = (props) => {
       tag = 'textarea';
     }
 
-    return !!inputRef.current.getElementsByTagName(tag)[0].value;
+    const value = inputRef.current.getElementsByTagName(tag)[0].value;
+    setValueLength(value?.length);
+    return !!value;
   };
 
   const onFocus = () => {
@@ -124,11 +126,11 @@ const TextField = (props) => {
 
   const renderCountElement = () => {
     if (!props.multiline) return props.helperText;
-    if (!props.maxlength) return props.helperText;
+    if (!props.maxLength) return props.helperText;
 
     return (
       <div className='textarea-count-help'>
-        <span>{valueLength}</span>/{props.maxlength} caracteres
+        <span>{valueLength}</span>/{props.maxLength} caracteres
       </div>
     );
   };
@@ -143,6 +145,7 @@ const TextField = (props) => {
         classes={{
           root: classes.root
         }}
+        onChange={onChange}
         InputLabelProps={{
           classes: {
             disabled: classes.labelDisabled,
@@ -194,14 +197,14 @@ const TextField = (props) => {
 TextField.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary']),
   variant: PropTypes.oneOf(['filled', 'outlined']),
-  maxlength: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
+  maxLength: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
   onChange: PropTypes.func
 };
 
 TextField.defaultProps = {
   color: 'primary',
   variant: 'filled',
-  maxlength: false,
+  maxLength: false,
   onChange: () => {}
 };
 
