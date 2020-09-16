@@ -39,7 +39,10 @@ const Page = () => (
         <Link to='/cards'>Cards</Link>
       </Grid>
       <Grid item xs={12}>
-        <Link to="/select">Select</Link>
+        <Link to='/select'>Select</Link>
+      </Grid>
+      <Grid item xs={12}>
+        <Link to='/divider'>Divider</Link>
       </Grid>
     </Grid>
   </Container>
