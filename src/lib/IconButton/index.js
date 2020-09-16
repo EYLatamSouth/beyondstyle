@@ -58,11 +58,7 @@ const ButtonWithIcon = (props) => {
   const classes = useStyles({ color: props.color });
 
   if (Array.isArray(props.children)) {
-    return (
-      <Button {...props}>
-        {props.children}
-      </Button>
-    );
+    return <Button {...props}>{props.children}</Button>;
   }
 
   if (props.variant === 'contained') {
