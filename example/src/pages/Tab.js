@@ -1,26 +1,7 @@
 import React from 'react';
-import { Text , Tab } from 'beyondstyle';
-import { Grid, Container, AppBar, Tabs, Box } from '@material-ui/core';
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Text>{children}</Text>
-        </Box>
-      )}
-    </div>
-  );
-}
+import { Text , Tab, Tabs } from 'beyondstyle';
+import { Grid, Container } from '@material-ui/core';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const App = () => {
   const [value, setValue] = React.useState(0);
@@ -37,23 +18,33 @@ const App = () => {
             Tab
           </Text>
         </Grid>
-        <Grid item xs={12}>
-          <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-              <Tab label="Item One" index={0} />
-              <Tab label="Item Two" index={1} />
-              <Tab label="Item Three" index={2} />
-            </Tabs>
-          </AppBar>
-          <TabPanel value={value} index={0}>
-            Item One
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            Item Two
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            Item Three
-          </TabPanel>
+        <Grid item xs={6}>
+          <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+            <Tab label="Label Tab" index={0} />
+            <Tab label="Label Tab" index={1} />
+            <Tab label="Label Tab" disabled index={2} />
+          </Tabs>
+        </Grid>
+        <Grid item xs={6}>
+          <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={0} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={1} />
+            <Tab label="Label Tab" disabled icon={<FavoriteIcon />} index={2} />
+          </Tabs>
+        </Grid>
+        <Grid item xs={6}>
+          <Tabs value={value} onChange={handleChange} textColor="secondary" aria-label="simple tabs example">
+            <Tab label="Label Tab" index={0} />
+            <Tab label="Label Tab" index={1} />
+            <Tab label="Label Tab" disabled index={2} />
+          </Tabs>
+        </Grid>
+        <Grid item xs={6}>
+          <Tabs value={value} onChange={handleChange} textColor="secondary" aria-label="simple tabs example">
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={0} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={1} />
+            <Tab label="Label Tab" disabled icon={<FavoriteIcon />} index={2} />
+          </Tabs>
         </Grid>
       </Grid>
     </Container>
