@@ -41,6 +41,7 @@ const RadioButton = (props) => {
           ? props.color
           : 'default'
       }
+      aria-label={props.ariaLabel}
     />
   );
 };
@@ -55,8 +56,7 @@ RadioButton.propTypes = {
 
 RadioButton.defaultProps = {
   color: 'default',
-  disabled: false,
-  ariaLabel: ''
+  disabled: false
 };
 
 export default (props) => (

@@ -33,7 +33,16 @@ const Page = () => (
         <Link to='/radio-button'>Radio Button</Link>
       </Grid>
       <Grid item xs={12}>
+        <Link to='/slider'>Slider</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to='/switch-control'>Switch Control</Link>
+      </Grid>
+      <Grid item xs={12}>
+        <Link to='/cards'>Cards</Link>
+      </Grid>
+      <Grid item xs={12}>
+        <Link to='/select'>Select</Link>
       </Grid>
     </Grid>
   </Container>
