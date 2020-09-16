@@ -11,6 +11,7 @@ import CheckBox from './lib/Checkbox';
 import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
+import Avatar from './lib/Avatar';
 
 export {
   Button,
@@ -25,5 +26,6 @@ export {
   CheckBox,
   Slider,
   Card,
-  CardContent
+  CardContent,
+  Avatar
 };
