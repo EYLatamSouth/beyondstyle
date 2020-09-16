@@ -25,13 +25,16 @@ const useStyles = makeStyles((theme) => ({
   },
   contained: (props) => ({
     color: theme.palette[props.color]
-      ? theme.palette.getContrastText(theme.palette[props.color].main)
+      ? theme.palette[props.color].contrastText
       : theme.palette.getContrastText(theme.palette.grey[300]),
     backgroundColor: theme.palette[props.color]
       ? theme.palette[props.color].main
       : theme.palette.grey[300],
     boxShadow: theme.shadows[2],
     borderRadius: '4px',
+    transition: theme.transitions.create('background-color', {
+      duration: theme.transitions.duration.short
+    }),
     '&:hover': {
       backgroundColor: theme.palette[props.color]
         ? theme.palette[props.color].dark
@@ -58,11 +61,7 @@ const ButtonWithIcon = (props) => {
   const classes = useStyles({ color: props.color });
 
   if (Array.isArray(props.children)) {
-    return (
-      <Button {...props}>
-        {props.children}
-      </Button>
-    );
+    return <Button {...props}>{props.children}</Button>;
   }
 
   if (props.variant === 'contained') {

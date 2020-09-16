@@ -4,20 +4,15 @@ import Layout from '../Layout';
 import PropTypes from 'prop-types';
 
 const Text = (props) => {
-
-  return (
-    <Typography {...props}>
-    {props.children}
-  </Typography>
-  );
+  return <Typography {...props}>{props.children}</Typography>;
 };
 
 Text.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
 export default (props) => (
   <Layout>
-    <Text {...props}></Text>
+    <Text {...props} />
   </Layout>
 );
