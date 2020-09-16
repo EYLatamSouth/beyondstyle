@@ -56,6 +56,30 @@ const useStyles = makeStyles((theme) => ({
 
 const Slider = (props) => {
   const classes = useStyles({ color: props.color });
+  const value = props.value ? props.value : props.defaultValue;
+  if (value?.length) {
+    return (
+      <Grid container spacing={1}>
+        <Grid item xs={2} className={classes.valueBlock}>
+          <span className={classes.value}>{value[0]}</span>
+        </Grid>
+        <Grid item xs={8}>
+          <SliderMui
+            {...props}
+            classes={{
+              rail: classes.rail,
+              thumbColorPrimary: classes.thumbColorPrimary,
+              active: classes.active,
+              thumbColorSecondary: classes.thumbColorSecondary
+            }}
+          />
+        </Grid>
+        <Grid item xs={2} className={classes.valueBlock}>
+          <span className={classes.value}>{value[1]}</span>
+        </Grid>
+      </Grid>
+    );
+  }
 
   return (
     <Grid container spacing={1}>
@@ -71,7 +95,7 @@ const Slider = (props) => {
         />
       </Grid>
       <Grid item xs={2} className={classes.valueBlock}>
-        <span className={classes.value}>{props.value}</span>
+        <span className={classes.value}>{value}</span>
       </Grid>
     </Grid>
   );
