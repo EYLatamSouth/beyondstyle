@@ -6,6 +6,7 @@ import RadioButton from './lib/RadioButton';
 import Fab from './lib/Fab';
 import TextField from './lib/TextField';
 import CheckBox from './lib/Checkbox';
+import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
 
@@ -18,6 +19,7 @@ export {
   TextField,
   RadioButton,
   CheckBox,
+  Slider
   Card,
   CardContent
 };
