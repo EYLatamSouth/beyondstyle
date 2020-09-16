@@ -66,8 +66,8 @@ const useStyles = makeStyles((theme) => ({
     }
   }),
   sizeSmall: {
-    minHeight: theme.spacing(4.5),
-    padding: `${theme.spacing(0.851)} ${theme.spacing(2.25)}`
+    minHeight: `${theme.spacing(4.5)}px !important`,
+    padding: `${theme.spacing(0.851)}px ${theme.spacing(2.25)}px`
   }
 }));
 
