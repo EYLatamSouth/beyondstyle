@@ -35,6 +35,9 @@ const Page = () => (
       <Grid item xs={12}>
         <Link to='/slider'>Slider</Link>
       </Grid>
+      <Grid item xs={12}>
+        <Link to='/cards'>Cards</Link>
+      </Grid>
     </Grid>
   </Container>
 );

@@ -9,6 +9,7 @@ import TextField from './pages/TextField';
 import CheckBox from './pages/CheckBox';
 import RadioButton from './pages/RadioButton';
 import Slider from './pages/Slider';
+import Cards from './pages/Cards';
 import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
@@ -25,6 +26,7 @@ class App extends React.Component {
           <Route exact path='/text-field' component={TextField} />
           <Route exact path='/radio-button' component={RadioButton} />
           <Route exact path='/slider' component={Slider} />
+          <Route exact path='/cards' component={Cards} />
           <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
