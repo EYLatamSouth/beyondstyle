@@ -6,5 +6,16 @@ import RadioButton from './lib/RadioButton';
 import Fab from './lib/Fab';
 import TextField from './lib/TextField';
 import CheckBox from './lib/Checkbox';
+import Slider from './lib/Slider';
 
-export { Button, Fab, IconButton, Layout, Text, TextField, RadioButton, CheckBox };
+export {
+  Button,
+  Fab,
+  IconButton,
+  Layout,
+  Text,
+  TextField,
+  RadioButton,
+  CheckBox,
+  Slider
+};
