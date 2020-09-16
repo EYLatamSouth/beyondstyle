@@ -79,7 +79,8 @@ const App = () => {
             />
             <FormControlLabel
               disabled
-              control={<SwitchControl color='primary' checked />}
+              control={<SwitchControl />}
+              control={<SwitchControl />}
               label='disabled'
             />
           </FormGroup>
@@ -128,7 +129,7 @@ const App = () => {
             />
             <FormControlLabel
               disabled
-              control={<SwitchControl color='secondary' checked />}
+              control={<SwitchControl color='secondary' />}
               label='disabled'
             />
           </FormGroup>
