@@ -78,6 +78,47 @@ const Page = () => (
         </IconButton>
       </Grid>
     </Grid>
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <Text variant="h1" component="h1">
+          Contained Icon button
+        </Text>
+      </Grid>
+      <Grid item xs={2}>
+        <IconButton aria-label='primary' disabled variant='contained'>
+          <DeleteIcon />
+          button
+        </IconButton>
+      </Grid>
+      <Grid item xs={2}>
+        <IconButton aria-label='primary' variant='contained'>
+          <DeleteIcon />
+          button
+        </IconButton>
+      </Grid>
+      <Grid item xs={2}>
+        <IconButton aria-label='primary' color='primary' variant='contained'>
+          <DeleteIcon />
+          button
+        </IconButton>
+      </Grid>
+      <Grid item xs={2}>
+        <IconButton
+          aria-label='primary'
+          color='secondary'
+          variant='contained'
+        >
+          <DeleteIcon />
+          button
+        </IconButton>
+      </Grid>
+      <Grid item xs={2}>
+        <IconButton aria-label='primary' color='tertiary' variant='contained'>
+          <DeleteIcon />
+          button
+        </IconButton>
+      </Grid>
+    </Grid>
   </Container>
 )
 

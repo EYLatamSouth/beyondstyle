@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
       : theme.palette.grey[300],
     boxShadow: theme.shadows[2],
     borderRadius: '4px',
+    transition: theme.transitions.create('background-color', {
+      duration: theme.transitions.duration.short
+    }),
     '&:hover': {
       backgroundColor: theme.palette[props.color]
         ? theme.palette[props.color].dark
