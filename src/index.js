@@ -5,6 +5,8 @@ import Text from './lib/Text';
 import RadioButton from './lib/RadioButton';
 import Fab from './lib/Fab';
 import TextField from './lib/TextField';
+import Select from './lib/Select';
+import MenuItem from './lib/MenuItem';
 import CheckBox from './lib/Checkbox';
 import Slider from './lib/Slider';
 import Card from './lib/Card';
@@ -17,6 +19,8 @@ export {
   Layout,
   Text,
   TextField,
+  Select,
+  MenuItem
   RadioButton,
   CheckBox,
   Slider
