@@ -20,10 +20,10 @@ export {
   Text,
   TextField,
   Select,
-  MenuItem
+  MenuItem,
   RadioButton,
   CheckBox,
-  Slider
+  Slider,
   Card,
   CardContent
 };
