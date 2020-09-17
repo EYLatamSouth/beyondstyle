@@ -1,5 +1,5 @@
 import React from 'react';
-import { SwitchControl, Text } from 'beyondstyle';
+import { Switch, Text } from 'beyondstyle';
 import { Grid, Container } from '@material-ui/core';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -43,8 +43,8 @@ const App = () => {
           <FormGroup row>
             <FormControlLabel
               control={
-                <SwitchControl
-                  control={<SwitchControl />}
+                <Switch
+                  control={<Switch />}
                   checked={state.checkedA}
                   onChange={handleChange}
                   name='checkedA'
@@ -55,7 +55,7 @@ const App = () => {
             />
             <FormControlLabel
               disabled
-              control={<SwitchControl color='primary' checked />}
+              control={<Switch color='primary' checked />}
               label='disabled'
             />
           </FormGroup>
@@ -67,8 +67,8 @@ const App = () => {
           <FormGroup row>
             <FormControlLabel
               control={
-                <SwitchControl
-                  control={<SwitchControl />}
+                <Switch
+                  control={<Switch />}
                   checked={state.checkedC}
                   onChange={handleChange}
                   name='checkedC'
@@ -79,8 +79,8 @@ const App = () => {
             />
             <FormControlLabel
               disabled
-              control={<SwitchControl />}
-              control={<SwitchControl />}
+              control={<Switch />}
+              control={<Switch />}
               label='disabled'
             />
           </FormGroup>
@@ -93,8 +93,8 @@ const App = () => {
           <FormGroup row>
             <FormControlLabel
               control={
-                <SwitchControl
-                  control={<SwitchControl />}
+                <Switch
+                  control={<Switch />}
                   checked={state.checkedScndA}
                   onChange={handleChange}
                   name='checkedScndA'
@@ -105,7 +105,7 @@ const App = () => {
             />
             <FormControlLabel
               disabled
-              control={<SwitchControl color='secondary' checked />}
+              control={<Switch color='secondary' checked />}
               label='disabled'
             />
           </FormGroup>
@@ -117,8 +117,8 @@ const App = () => {
           <FormGroup row>
             <FormControlLabel
               control={
-                <SwitchControl
-                  control={<SwitchControl />}
+                <Switch
+                  control={<Switch />}
                   checked={state.checkedScndD}
                   onChange={handleChange}
                   name='checkedScndD'
@@ -129,7 +129,7 @@ const App = () => {
             />
             <FormControlLabel
               disabled
-              control={<SwitchControl color='secondary' />}
+              control={<Switch color='secondary' />}
               label='disabled'
             />
           </FormGroup>
@@ -143,7 +143,7 @@ const App = () => {
           <FormGroup>
             <FormControlLabel
               control={
-                <SwitchControl
+                <Switch
                   checked={state.item1}
                   onChange={handleChangeGroup}
                   name='item1'
@@ -154,7 +154,7 @@ const App = () => {
             />
             <FormControlLabel
               control={
-                <SwitchControl
+                <Switch
                   checked={state.item2}
                   onChange={handleChangeGroup}
                   name='item2'
@@ -165,7 +165,7 @@ const App = () => {
             />
             <FormControlLabel
               control={
-                <SwitchControl
+                <Switch
                   checked={state.item3}
                   onChange={handleChangeGroup}
                   name='item3'
@@ -183,7 +183,7 @@ const App = () => {
           <FormGroup>
             <FormControlLabel
               control={
-                <SwitchControl
+                <Switch
                   checked={state.item1Scnd}
                   onChange={handleChangeGroup}
                   name='item1Scnd'
@@ -194,7 +194,7 @@ const App = () => {
             />
             <FormControlLabel
               control={
-                <SwitchControl
+                <Switch
                   checked={state.item2Scnd}
                   onChange={handleChangeGroup}
                   name='item2Scnd'
@@ -205,7 +205,7 @@ const App = () => {
             />
             <FormControlLabel
               control={
-                <SwitchControl
+                <Switch
                   checked={state.item3Scnd}
                   onChange={handleChangeGroup}
                   name='item3Scnd'

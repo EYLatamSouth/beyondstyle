@@ -8,7 +8,7 @@ import TextField from './lib/TextField';
 import Select from './lib/Select';
 import MenuItem from './lib/MenuItem';
 import CheckBox from './lib/Checkbox';
-import SwitchControl from './lib/SwitchControl';
+import Switch from './lib/SwitchControl';
 import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
@@ -27,5 +27,5 @@ export {
   Slider,
   Card,
   CardContent,
-  SwitchControl
+  Switch
 };
