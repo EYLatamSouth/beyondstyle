@@ -19,6 +19,15 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 0
     }
   },
+  textColorInherit: {
+    color: fade(theme.palette.common.white, 0.38),
+    '&.Mui-selected': {
+      color: theme.palette.common.white
+    },
+    '&:hover': {
+      backgroundColor: fade(theme.palette.common.white, 0.04)
+    }
+  },
   textColorPrimary: {
     color: fade(theme.palette.primary.main, 0.4),
     '&:hover': {
@@ -42,6 +51,11 @@ const Tab = (props) => {
       classes={{ ...classes }}
       id={`simple-tab-${props.index}`}
       aria-controls={`simple-tabpanel-${props.index}`}
+      textColor={
+        props.textColor === 'primary' || props.textColor === 'secondary'
+          ? props.textColor
+          : 'inherit'
+      }
     >
       {props.children}
     </TabMui>
@@ -51,7 +65,7 @@ const Tab = (props) => {
 Tab.propTypes = {
   children: PropTypes.node.isRequired,
   index: PropTypes.number.isRequired,
-  textColor: PropTypes.oneOf(['primary', 'secondary'])
+  textColor: PropTypes.oneOf(['primary', 'secondary', 'inherit'])
 };
 
 Tab.defaultProps = {

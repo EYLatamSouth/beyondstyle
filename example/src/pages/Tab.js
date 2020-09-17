@@ -33,6 +33,26 @@ const App = () => {
           </Tabs>
         </Grid>
         <Grid item xs={6}>
+          <Tabs value={value} onChange={handleChange} variant="scrollable">
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={0} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={1} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={2} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={3} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={4} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={5} />
+          </Tabs>
+        </Grid>
+        <Grid item xs={6}>
+          <Tabs value={value} onChange={handleChange} variant="scrollable">
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={0} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={1} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={2} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={3} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={4} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={5} />
+          </Tabs>
+        </Grid>
+        <Grid item xs={6}>
           <Tabs value={value} onChange={handleChange} textColor="secondary" aria-label="simple tabs example">
             <Tab label="Label Tab" index={0} />
             <Tab label="Label Tab" index={1} />
@@ -41,6 +61,22 @@ const App = () => {
         </Grid>
         <Grid item xs={6}>
           <Tabs value={value} onChange={handleChange} textColor="secondary" aria-label="simple tabs example">
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={0} />
+            <Tab label="Label Tab" icon={<FavoriteIcon />} index={1} />
+            <Tab label="Label Tab" disabled icon={<FavoriteIcon />} index={2} />
+          </Tabs>
+        </Grid>
+      </Grid>
+      <Grid container spacing={2} style={{ padding: '20px 0' }}>
+        <Grid item xs={6} style={{ backgroundColor: '#2e2e38' }}>
+          <Tabs value={value} onChange={handleChange} textColor="negative" aria-label="simple tabs example">
+            <Tab label="Label Tab" index={0} />
+            <Tab label="Label Tab" index={1} />
+            <Tab label="Label Tab" disabled index={2} />
+          </Tabs>
+        </Grid>
+        <Grid item xs={6} style={{ backgroundColor: '#1354a5' }}>
+          <Tabs value={value} onChange={handleChange} textColor="negative" aria-label="simple tabs example">
             <Tab label="Label Tab" icon={<FavoriteIcon />} index={0} />
             <Tab label="Label Tab" icon={<FavoriteIcon />} index={1} />
             <Tab label="Label Tab" disabled icon={<FavoriteIcon />} index={2} />
