@@ -30,13 +30,7 @@ const Page = () => (
         <Link to='/slider'>Slider</Link>
       </Grid>
       <Grid item xs={12}>
-         <Link to='/slider'>Slider</Link>
-       </Grid>
-      <Grid item xs={12}>
         <Link to='/cards'>Cards</Link>
-      </Grid>
-      <Grid item xs={12}>
-        <Link to='/select'>Select</Link>
       </Grid>
       <Grid item xs={12}>
         <Link to='/select'>Select</Link>
@@ -46,6 +40,9 @@ const Page = () => (
       </Grid>
       <Grid item xs={12}>
         <Link to='/controls'>Controls</Link>
+      </Grid>
+      <Grid item xs={12}>
+        <Link to='/tab'>Tab</Link>
       </Grid>
     </Grid>
   </Container>

@@ -13,6 +13,8 @@ import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
 import Divider from './lib/Divider';
+import Tabs from './lib/Tabs';
+import Tab from './lib/Tab';
 
 export {
   Button,
@@ -21,13 +23,15 @@ export {
   Layout,
   Text,
   TextField,
-  Select,
-  MenuItem,
   RadioButton,
   CheckBox,
+  Select,
+  MenuItem,
   Slider,
   Card,
   CardContent,
   Divider,
-  Switch
+  Switch,
+  Tabs,
+  Tab
 };
