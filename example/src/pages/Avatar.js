@@ -40,9 +40,10 @@ const App = () => {
             }}
             xs={6}
           >
-            <Avatar>H</Avatar>
-            <Avatar>A</Avatar>
-            <Avatar>A</Avatar>
+            <Avatar className='small'>AB</Avatar>
+            <Avatar className='medium'>AB</Avatar>
+            <Avatar className='large'>AB</Avatar>
+            <Avatar className='default'>AB</Avatar>
           </Grid>
         </Grid>
       </Grid>

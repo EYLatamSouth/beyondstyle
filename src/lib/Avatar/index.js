@@ -7,20 +7,25 @@ const useStyles = makeStyles((theme) => ({
   root: (props) => ({
     display: 'flex',
     '& > *': {
-      margin: theme.spacing(1)
+      margin: theme.spacing(1),
+      color: theme.palette.primary.main,
+      backgroundColor: theme.palette.grey.A100
     }
   }),
   large: {
     width: theme.spacing(7),
-    height: theme.spacing(7)
+    height: theme.spacing(7),
+    fontSize: theme.typography.pxToRem(24)
   },
   medium: {
     width: theme.spacing(6),
-    height: theme.spacing(6)
+    height: theme.spacing(6),
+    fontSize: theme.typography.pxToRem(18)
   },
   small: {
     width: theme.spacing(4),
-    height: theme.spacing(4)
+    height: theme.spacing(4),
+    fontSize: theme.typography.pxToRem(14)
   }
 }));
 
@@ -30,14 +35,16 @@ const Avatar = (props) => {
   return (
     <div className={classes.root}>
       <MuiAvatar
-        alt='Remy Sharp'
+        alt={props.alt}
         src={props.src}
         className={`
         ${props.className === 'large' ? classes.large : ''}
         ${props.className === 'small' ? classes.small : ''}
         ${props.className === 'medium' ? classes.medium : ''}
         `}
-      />
+      >
+        {props.children}
+      </MuiAvatar>
     </div>
   );
 };
