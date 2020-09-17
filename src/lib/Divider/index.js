@@ -1,13 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Divider as MuiDivider } from '@material-ui/core';
-import PropTypes from 'prop-types';
 import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
-  root: (props) => ({
+  root: {
     backgroundColor: theme.palette.divider
-  })
+  }
 }));
 
 const Divider = (props) => {
@@ -18,12 +18,16 @@ const Divider = (props) => {
       {...props}
       classes={{ ...classes }}
       orientation={props.orientation}
-    ></MuiDivider>
+    />
   );
 };
 
 Divider.propTypes = {
   orientation: PropTypes.oneOf(['horizontal', 'vertical'])
+};
+
+Divider.defaultProps = {
+  orientation: 'horizontal'
 };
 
 export default (props) => (
