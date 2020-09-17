@@ -12,6 +12,7 @@ import Switch from './lib/SwitchControl';
 import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
+import Divider from './lib/Divider';
 
 export {
   Button,
@@ -27,5 +28,6 @@ export {
   Slider,
   Card,
   CardContent,
+  Divider,
   Switch
 };

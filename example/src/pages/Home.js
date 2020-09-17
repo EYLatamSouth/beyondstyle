@@ -39,6 +39,12 @@ const Page = () => (
         <Link to='/select'>Select</Link>
       </Grid>
       <Grid item xs={12}>
+        <Link to='/select'>Select</Link>
+      </Grid>
+      <Grid item xs={12}>
+        <Link to='/divider'>Divider</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to='/controls'>Controls</Link>
       </Grid>
     </Grid>
