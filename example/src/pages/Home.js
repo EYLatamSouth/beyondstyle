@@ -27,13 +27,7 @@ const Page = () => (
         <Link to='/text-field'>TextField</Link>
       </Grid>
       <Grid item xs={12}>
-        <Link to='/check-box'>CheckBoxes</Link>
-      </Grid>
-      <Grid item xs={12}>
-        <Link to='/radio-button'>Radio Button</Link>
-      </Grid>
-      <Grid item xs={12}>
-        <Link to='/switch-control'>Switch Control</Link>
+        <Link to='/slider'>Slider</Link>
       </Grid>
       <Grid item xs={12}>
          <Link to='/slider'>Slider</Link>
@@ -42,7 +36,10 @@ const Page = () => (
         <Link to='/cards'>Cards</Link>
       </Grid>
       <Grid item xs={12}>
-        <Link to="/select">Select</Link>
+        <Link to='/select'>Select</Link>
+      </Grid>
+      <Grid item xs={12}>
+        <Link to='/controls'>Controls</Link>
       </Grid>
     </Grid>
   </Container>
