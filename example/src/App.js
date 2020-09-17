@@ -12,6 +12,7 @@ import Cards from './pages/Cards';
 import Divider from './pages/Divider';
 import Controls from './pages/Controls';
 import Tab from './pages/Tab';
+import Badge from './pages/Badge';
 import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Route exact path='/divider' component={Divider} />
           <Route exact path='/controls' component={Controls} />
           <Route exact path='/tab' component={Tab} />
+          <Route exact path='/badge' component={Badge} />
           <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
