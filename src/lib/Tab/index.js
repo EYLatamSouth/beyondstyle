@@ -56,14 +56,11 @@ const Tab = (props) => {
           ? props.textColor
           : 'inherit'
       }
-    >
-      {props.children}
-    </TabMui>
+    />
   );
 };
 
 Tab.propTypes = {
-  children: PropTypes.node.isRequired,
   index: PropTypes.number.isRequired,
   textColor: PropTypes.oneOf(['primary', 'secondary', 'inherit'])
 };
