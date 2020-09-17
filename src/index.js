@@ -16,6 +16,7 @@ import Avatar from './lib/Avatar';
 import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
+import Tooltip from './lib/Tooltip';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
 
@@ -38,6 +39,7 @@ export {
   Switch,
   Tabs,
   Tab,
+  Tooltip,
   CircularProgress,
   LinearProgress
 };

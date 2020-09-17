@@ -9,6 +9,7 @@ import FilledInput from '@material-ui/core/FilledInput';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import InputAdornment from '@material-ui/core/InputAdornment';
+import { clone, omit } from 'lodash';
 import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
@@ -97,6 +98,8 @@ const Select = (props) => {
     shrink: props.InputLabelProps?.shrink ? true : shrink
   });
 
+  const otherProps = omit(clone(props), ['onOpen', 'onClose', 'onChange']);
+
   let startAdornment = null;
   const InputComponent = {
     outlined: OutlinedInput,
@@ -142,16 +145,16 @@ const Select = (props) => {
   }
 
   return (
-    <FormControl {...props} fullWidth>
+    <FormControl {...otherProps} fullWidth>
       <InputLabel
-        {...props}
+        {...otherProps}
         classes={{
-          root: props.variant === 'filled' ? classes.labelRoot : {},
+          root: props.variant === 'filled' ? classes.labelRoot : null,
           disabled: classes.labelDisabled,
           error: classes.labelError,
           filled: classes.labelFilled,
           outlined: classes.labelOutlined,
-          shrink: props.variant === 'filled' ? classes.labelFilledShrink : {}
+          shrink: props.variant === 'filled' ? classes.labelFilledShrink : null
         }}
         shrink={props.InputLabelProps?.shrink ? true : shrink}
       >
@@ -177,7 +180,7 @@ const Select = (props) => {
         }}
         input={
           <InputComponent
-            {...props}
+            {...otherProps}
             startAdornment={startAdornment}
             classes={{
               root: classes.inputRoot,
