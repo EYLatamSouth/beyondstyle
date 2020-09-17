@@ -42,13 +42,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Avatar = (props) => {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <MuiAvatar
-        alt={props.alt}
-        src={props.src}
-        icon={props.icon}
+        {...props}
         className={`${
           props.className === 'large'
             ? classes.large
