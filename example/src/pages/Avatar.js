@@ -22,10 +22,10 @@ const App = () => {
             }}
             xs={6}
           >
-            <Avatar src='' />
-            <Avatar className='medium' src='' />
-            <Avatar className='default' src='' />
-            <Avatar className='small' src='' />
+            <Avatar src='/static/images/1.png' className='small' />
+            <Avatar src='/static/images/1.png' className='medium' />
+            <Avatar src='/static/images/1.png' className='large' />
+            <Avatar src='/static/images/1.png' className='default' />
           </Grid>
         </Grid>
         <Grid item xs={12}>
