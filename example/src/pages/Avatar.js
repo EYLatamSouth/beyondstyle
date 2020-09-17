@@ -40,7 +40,7 @@ const App = () => {
             </div>
             <div style={containerStyles}>
               <Text component={'span'} variant={'body2'} gutterBottom>
-                44px
+                48px
               </Text>
               <Avatar
                 alt='avatar image'
@@ -92,7 +92,7 @@ const App = () => {
             </div>
             <div style={containerStyles}>
               <Text component={'span'} variant={'body2'} gutterBottom>
-                44px
+                48px
               </Text>
               <Avatar alt='avatar letter' className='medium'>
                 AB
@@ -140,7 +140,7 @@ const App = () => {
             </div>
             <div style={containerStyles}>
               <Text component={'span'} variant={'body2'} gutterBottom>
-                44px
+                48px
               </Text>
               <Avatar
                 alt='icon avatar'
