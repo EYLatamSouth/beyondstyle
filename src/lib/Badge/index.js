@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Layout from '../Layout';
 import Text from '../Text';
 import { makeStyles, fade } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   badge: (props) => ({
@@ -21,6 +22,32 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(12),
     lineHeight: theme.typography.pxToRem(20),
     letterSpacing: '0.004em',
+  },
+  contained: (props) => ({
+    color: theme.palette[props.color]
+      ? theme.palette[props.color].contrastText
+      : theme.palette.contrastText,
+    backgroundColor: theme.palette[props.color]
+      ? theme.palette[props.color].main
+      : theme.palette.grey[300],
+    '&:hover': {
+      backgroundColor: theme.palette[props.color]
+        ? theme.palette[props.color].dark
+        : theme.palette.grey[300],
+      boxShadow: theme.shadows[2]
+    },
+    boxShadow: theme.shadows[1],
+    borderRadius: props.variant === 'normal'
+      ? 4 : 14,
+  }),
+  label: {
+    fontSize: theme.typography.pxToRem(12),
+    lineHeight: theme.typography.pxToRem(20),
+    letterSpacing: '0.004em',
+    textTransform: 'none'
+  },
+  sizeSmall: {
+    padding: `2px 8px`
   }
 }));
 
@@ -29,6 +56,23 @@ const Badge = (props) => {
     color: props.color,
     variant: props.variant
   });
+
+  if (props.buttonProps) {
+    return (
+      <Button
+        variant='contained'
+        size='small'
+        classes={{
+          contained: classes.contained,
+          label: classes.label,
+          sizeSmall: classes.sizeSmall
+        }}
+        {...props.buttonProps}
+      >
+        {props.label}
+      </Button>
+    )
+  }
 
   return (
     <span className={classes.badge}>
@@ -42,7 +86,8 @@ const Badge = (props) => {
 Badge.propTypes = {
   label: PropTypes.string.isRequired,
   color: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'success', 'error', 'warning']),
-  variant: PropTypes.oneOf(['normal', 'pill'])
+  variant: PropTypes.oneOf(['normal', 'pill']),
+  buttonProps: PropTypes.object
 };
 
 Badge.defaultProps ={
