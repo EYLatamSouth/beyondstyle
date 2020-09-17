@@ -16,6 +16,7 @@ import Avatar from './lib/Avatar';
 import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
+import Tooltip from './lib/Tooltip';
 
 export {
   Button,
@@ -35,5 +36,6 @@ export {
   Divider,
   Switch,
   Tabs,
-  Tab
+  Tab,
+  Tooltip
 };
