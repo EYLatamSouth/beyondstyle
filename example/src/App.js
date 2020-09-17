@@ -13,6 +13,7 @@ import Avatar from './pages/Avatar';
 import Divider from './pages/Divider';
 import Controls from './pages/Controls';
 import Tab from './pages/Tab';
+import ProgressIndicators from './pages/ProgressIndicators';
 import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
@@ -33,6 +34,11 @@ class App extends React.Component {
           <Route exact path='/divider' component={Divider} />
           <Route exact path='/controls' component={Controls} />
           <Route exact path='/tab' component={Tab} />
+          <Route
+            exact
+            path='/progress-indicator'
+            component={ProgressIndicators}
+          />
           <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>

@@ -47,6 +47,9 @@ const Page = () => (
       <Grid item xs={12}>
         <Link to='/avatar'>Avatar</Link>
       </Grid>
+      <Grid item xs={12}>
+        <Link to='/progress-indicator'>ProgressIndicators</Link>
+      </Grid>
     </Grid>
   </Container>
 );
