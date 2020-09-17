@@ -4,6 +4,11 @@ import { Grid, Container } from '@material-ui/core';
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 
 const App = () => {
+  const containerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  };
   return (
     <Container>
       <Grid container>
@@ -23,29 +28,49 @@ const App = () => {
             }}
             xs={6}
           >
-            <Avatar
-              alt='avatar image'
-              src='/static/images/1.png'
-              className='small'
-            />
-            <Avatar
-              alt='avatar image'
-              src='/static/images/1.png'
-              className='medium'
-            />
-            <Avatar
-              alt='avatar image'
-              src='/static/images/1.png'
-              className='large'
-            />
-            <Avatar
-              alt='avatar image'
-              src='/static/images/1.png'
-              className='default'
-            />
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                32px
+              </Text>
+              <Avatar
+                alt='avatar image'
+                src='/static/images/1.png'
+                className='small'
+              />
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                44px
+              </Text>
+              <Avatar
+                alt='avatar image'
+                src='/static/images/1.png'
+                className='medium'
+              />
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                56px
+              </Text>
+              <Avatar
+                alt='avatar image'
+                src='/static/images/1.png'
+                className='large'
+              />
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                40px
+              </Text>
+              <Avatar
+                alt='avatar image'
+                src='/static/images/1.png'
+                className='default'
+              />
+            </div>
           </Grid>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Text variant='h6' component='h2' gutterBottom>
             Letter avatars
           </Text>
@@ -57,18 +82,38 @@ const App = () => {
             }}
             xs={6}
           >
-            <Avatar alt='avatar letter' className='small'>
-              AB
-            </Avatar>
-            <Avatar alt='avatar letter' className='medium'>
-              AB
-            </Avatar>
-            <Avatar alt='avatar letter' className='large'>
-              AB
-            </Avatar>
-            <Avatar alt='avatar letter' className='default'>
-              AB
-            </Avatar>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                32px
+              </Text>
+              <Avatar alt='avatar letter' className='small'>
+                AB
+              </Avatar>
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                44px
+              </Text>
+              <Avatar alt='avatar letter' className='medium'>
+                AB
+              </Avatar>
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                56px
+              </Text>
+              <Avatar alt='avatar letter' className='large'>
+                AB
+              </Avatar>
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                40px
+              </Text>
+              <Avatar alt='avatar letter' className='default'>
+                AB
+              </Avatar>
+            </div>
           </Grid>
         </Grid>
         <Grid item xs={12}>
@@ -83,26 +128,46 @@ const App = () => {
             }}
             xs={6}
           >
-            <Avatar
-              alt='icon avatar'
-              className='small'
-              icon={<PersonRoundedIcon />}
-            ></Avatar>
-            <Avatar
-              alt='icon avatar'
-              className='medium'
-              icon={<PersonRoundedIcon />}
-            ></Avatar>
-            <Avatar
-              alt='icon avatar'
-              className='large'
-              icon={<PersonRoundedIcon />}
-            ></Avatar>
-            <Avatar
-              alt='icon avatar'
-              className='default'
-              icon={<PersonRoundedIcon />}
-            ></Avatar>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                32px
+              </Text>
+              <Avatar
+                alt='icon avatar'
+                className='small'
+                icon={<PersonRoundedIcon />}
+              />
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                44px
+              </Text>
+              <Avatar
+                alt='icon avatar'
+                className='medium'
+                icon={<PersonRoundedIcon />}
+              />
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                56px
+              </Text>
+              <Avatar
+                alt='icon avatar'
+                className='large'
+                icon={<PersonRoundedIcon />}
+              />
+            </div>
+            <div style={containerStyles}>
+              <Text component={'span'} variant={'body2'} gutterBottom>
+                40px
+              </Text>
+              <Avatar
+                alt='icon avatar'
+                className='default'
+                icon={<PersonRoundedIcon />}
+              />
+            </div>
           </Grid>
         </Grid>
       </Grid>
