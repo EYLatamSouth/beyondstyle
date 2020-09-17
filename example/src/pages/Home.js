@@ -44,6 +44,9 @@ const Page = () => (
       <Grid item xs={12}>
         <Link to='/tab'>Tab</Link>
       </Grid>
+      <Grid item xs={12}>
+        <Link to='/avatar'>Avatar</Link>
+      </Grid>
     </Grid>
   </Container>
 );
