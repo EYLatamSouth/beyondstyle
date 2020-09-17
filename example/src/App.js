@@ -9,6 +9,7 @@ import TextField from './pages/TextField';
 import Select from './pages/Select';
 import Slider from './pages/Slider';
 import Cards from './pages/Cards';
+import Avatar from './pages/Avatar';
 import Divider from './pages/Divider';
 import Controls from './pages/Controls';
 import Tab from './pages/Tab';
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route exact path='/select' component={Select} />
           <Route exact path='/slider' component={Slider} />
           <Route exact path='/cards' component={Cards} />
+          <Route exact path='/avatar' component={Avatar} />
           <Route exact path='/divider' component={Divider} />
           <Route exact path='/controls' component={Controls} />
           <Route exact path='/tab' component={Tab} />
