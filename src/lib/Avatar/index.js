@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Avatar as MuiAvatar } from '@material-ui/core';
-import { makeStyles, fade } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
@@ -15,17 +16,27 @@ const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(7),
     height: theme.spacing(7),
-    fontSize: theme.typography.pxToRem(24)
+    fontSize: theme.typography.pxToRem(24),
+
+    '& .MuiSvgIcon-root': {
+      fontSize: theme.typography.pxToRem(56)
+    }
   },
   medium: {
     width: theme.spacing(6),
     height: theme.spacing(6),
-    fontSize: theme.typography.pxToRem(18)
+    fontSize: theme.typography.pxToRem(18),
+    '& .MuiSvgIcon-root': {
+      fontSize: theme.typography.pxToRem(44)
+    }
   },
   small: {
     width: theme.spacing(4),
     height: theme.spacing(4),
-    fontSize: theme.typography.pxToRem(14)
+    fontSize: theme.typography.pxToRem(14),
+    '& .MuiSvgIcon-root': {
+      fontSize: theme.typography.pxToRem(32)
+    }
   }
 }));
 
@@ -37,16 +48,31 @@ const Avatar = (props) => {
       <MuiAvatar
         alt={props.alt}
         src={props.src}
-        className={`
-        ${props.className === 'large' ? classes.large : ''}
-        ${props.className === 'small' ? classes.small : ''}
-        ${props.className === 'medium' ? classes.medium : ''}
+        icon={props.icon}
+        className={`${
+          props.className === 'large'
+            ? classes.large
+            : '' || props.className === 'large'
+            ? classes.large
+            : '' || props.className === 'medium'
+            ? classes.medium
+            : ''
+            ? props.className
+            : 'default'
+        }
         `}
       >
         {props.children}
       </MuiAvatar>
     </div>
   );
+};
+
+Avatar.propTypes = {
+  alt: PropTypes.string,
+  children: PropTypes.node,
+  src: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default (props) => (
