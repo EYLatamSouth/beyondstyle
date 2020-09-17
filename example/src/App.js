@@ -6,8 +6,11 @@ import IconButton from './pages/IconButton';
 import Fab from './pages/Fab';
 import Text from './pages/Text';
 import TextField from './pages/TextField';
-import CheckBox from './pages/CheckBox';
-import RadioButton from './pages/RadioButton';
+import Select from './pages/Select';
+import Slider from './pages/Slider';
+import Cards from './pages/Cards';
+import Divider from './pages/Divider';
+import Controls from './pages/Controls';
 import Tab from './pages/Tab';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -21,9 +24,12 @@ class App extends React.Component {
           <Route exact path='/icon-button' component={IconButton} />
           <Route exact path='/fab' component={Fab} />
           <Route exact path='/text' component={Text} />
-          <Route exact path='/check-box' component={CheckBox} />
           <Route exact path='/text-field' component={TextField} />
-          <Route exact path='/radio-button' component={RadioButton} />
+          <Route exact path='/select' component={Select} />
+          <Route exact path='/slider' component={Slider} />
+          <Route exact path='/cards' component={Cards} />
+          <Route exact path='/divider' component={Divider} />
+          <Route exact path='/controls' component={Controls} />
           <Route exact path='/tab' component={Tab} />
           <Route path='*' component={NotFoundPage} />
         </Switch>
