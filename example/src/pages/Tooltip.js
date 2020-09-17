@@ -12,13 +12,16 @@ const App = () => {
           </Text>
           <Divider />
           <div style={{ display: 'flex' }}>
-            <Tooltip title='Add' placement='bottom-end'>
+            <Tooltip id='one-line' title='One line' placement='bottom-end'>
               <Button>One line</Button>
             </Tooltip>
-            <Tooltip title='Add' placement='bottom-end'>
+            <Tooltip title='One line Two Lines' placement='bottom-end'>
               <Button>Two lines</Button>
             </Tooltip>
-            <Tooltip title='Add' placement='bottom-end'>
+            <Tooltip
+              title='One line Two Lines Three Lines'
+              placement='bottom-end'
+            >
               <Button>Three lines</Button>
             </Tooltip>
           </div>
