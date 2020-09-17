@@ -8,6 +8,7 @@ import TextField from './lib/TextField';
 import Select from './lib/Select';
 import MenuItem from './lib/MenuItem';
 import CheckBox from './lib/Checkbox';
+import Switch from './lib/SwitchControl';
 import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
@@ -25,5 +26,6 @@ export {
   CheckBox,
   Slider,
   Card,
-  CardContent
+  CardContent,
+  Switch
 };
