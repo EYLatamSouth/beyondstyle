@@ -16,6 +16,7 @@ import Avatar from './lib/Avatar';
 import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
+import Badge from './lib/Badge';
 import Tooltip from './lib/Tooltip';
 
 export {
@@ -37,5 +38,6 @@ export {
   Switch,
   Tabs,
   Tab,
+  Badge,
   Tooltip
 };
