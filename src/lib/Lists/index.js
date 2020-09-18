@@ -11,40 +11,32 @@ import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  root: (props) => ({
     width: '100%',
     maxWidth: 360,
-    backgroundColor: theme.palette.background.paper
-  }
+    backgroundColor: theme.palette.background.paper,
+    '& .MuiListItem-root': {
+      '&:nth-child(even)': {
+        // left: "-4%",
+        // bottom: "auto",
+        backgroundColor: theme.palette.grey[50]
+      }
+    }
+  })
 }));
 
-const Lists = () => {
+const Lists = (props) => {
   const classes = useStyles();
 
   return (
-    <List className={classes.root}>
+    <List {...props} className={classes.root}>
       <ListItem>
-        {/* <ListItemAvatar>
-          <Avatar>
-            <ImageIcon />
-          </Avatar>
-        </ListItemAvatar> */}
         <ListItemText primary='Primary text' secondary='Secondary text' />
       </ListItem>
       <ListItem>
-        {/* <ListItemAvatar>
-          <Avatar>
-            <WorkIcon />
-          </Avatar>
-        </ListItemAvatar> */}
         <ListItemText primary='Primary text' secondary='Secondary text' />
       </ListItem>
       <ListItem>
-        {/* <ListItemAvatar>
-          <Avatar>
-            <BeachAccessIcon />
-          </Avatar>
-        </ListItemAvatar> */}
         <ListItemText primary='Primary text' secondary='Secondary text' />
       </ListItem>
     </List>
