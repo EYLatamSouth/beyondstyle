@@ -12,10 +12,12 @@ import Switch from './lib/SwitchControl';
 import Slider from './lib/Slider';
 import Card from './lib/Card';
 import CardContent from './lib/CardContent';
+import Avatar from './lib/Avatar';
 import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
 import Badge from './lib/Badge';
+import Tooltip from './lib/Tooltip';
 
 export {
   Button,
@@ -31,9 +33,11 @@ export {
   Slider,
   Card,
   CardContent,
+  Avatar,
   Divider,
   Switch,
   Tabs,
   Tab,
-  Badge
+  Badge,
+  Tooltip
 };
