@@ -43,6 +43,5 @@ export {
   Tooltip,
   CircularProgress,
   LinearProgress,
-  Badge,
-  Tooltip
+  Badge
 };
