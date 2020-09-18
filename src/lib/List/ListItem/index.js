@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { ListItem as MuiListItem } from '@material-ui/core';
-import Layout from '../Layout';
+import Layout from '../../Layout';
 
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
