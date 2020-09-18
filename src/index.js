@@ -22,7 +22,9 @@ import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
 import List from './lib/List';
 import ListItem from './lib/List/ListItem';
+import ListItemTag from './lib/List/ListItemTag';
 import ListItemText from './lib/List/ListItemText';
+import ListItemIcon from './lib/List/ListItemIcon';
 import ListItemSecondaryAction from './lib/List/ListItemSecondaryAction';
 
 export {
@@ -50,6 +52,8 @@ export {
   Badge,
   List,
   ListItem,
+  ListItemTag,
   ListItemText,
+  ListItemIcon,
   ListItemSecondaryAction
 };

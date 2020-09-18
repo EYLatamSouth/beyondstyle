@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { ListItem as MuiListItem } from '@material-ui/core';
+import ListItem from '@material-ui/core/ListItem';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
+
 import Layout from '../../Layout';
 
 const useStyles = makeStyles((theme) => ({
@@ -13,26 +15,30 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.grey[50]
       }
     }
+  }),
+  iconProps: (props) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start'
   })
-  // iconProps: (props) => ({
-  //   display: 'flex',
-  //   flexDirection: 'column',
-  //   alignItems: 'flex-start'
-  // })
 }));
 
-const ListItem = (props) => {
+const ListItemTag = (props) => {
   const classes = useStyles();
 
   return (
-    <MuiListItem {...props} className={`${classes.root}`}>
+    <ListItem
+      {...props}
+      className={`${classes.root} ${classes.iconProps}
+  `}
+    >
       {props.children}
-    </MuiListItem>
+    </ListItem>
   );
 };
 
 export default (props) => (
   <Layout>
-    <ListItem {...props} />
+    <ListItemTag {...props} />
   </Layout>
 );
