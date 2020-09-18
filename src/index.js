@@ -17,6 +17,9 @@ import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
 import Tooltip from './lib/Tooltip';
+import Table from './lib/Table';
+import TableRow from './lib/TableRow';
+import TableCell from './lib/TableCell';
 
 export {
   Button,
@@ -37,5 +40,8 @@ export {
   Switch,
   Tabs,
   Tab,
-  Tooltip
+  Tooltip,
+  Table,
+  TableRow,
+  TableCell
 };

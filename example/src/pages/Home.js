@@ -50,6 +50,9 @@ const Page = () => (
       <Grid item xs={12}>
         <Link to='/tooltip'>Tooltip</Link>
       </Grid>
+      <Grid item xs={12}>
+        <Link to='/table'>Table</Link>
+      </Grid>
     </Grid>
   </Container>
 );
