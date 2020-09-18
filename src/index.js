@@ -18,6 +18,8 @@ import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
 import Badge from './lib/Badge';
 import Tooltip from './lib/Tooltip';
+import CircularProgress from './lib/CircularProgress';
+import LinearProgress from './lib/LinearProgress.js';
 
 export {
   Button,
@@ -38,6 +40,9 @@ export {
   Switch,
   Tabs,
   Tab,
+  Tooltip,
+  CircularProgress,
+  LinearProgress,
   Badge,
   Tooltip
 };

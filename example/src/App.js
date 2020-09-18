@@ -15,6 +15,7 @@ import Controls from './pages/Controls';
 import Tab from './pages/Tab';
 import Badge from './pages/Badge';
 import Tooltip from './pages/Tooltip';
+import ProgressIndicators from './pages/ProgressIndicators';
 import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
@@ -37,6 +38,11 @@ class App extends React.Component {
           <Route exact path='/tab' component={Tab} />
           <Route exact path='/badge' component={Badge} />
           <Route exact path='/tooltip' component={Tooltip} />
+          <Route
+            exact
+            path='/progress-indicator'
+            component={ProgressIndicators}
+          />
           <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
