@@ -20,7 +20,9 @@ import Badge from './lib/Badge';
 import Tooltip from './lib/Tooltip';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
-import Lists from './lib/Lists';
+import List from './lib/List';
+import ListItem from './lib/ListItem';
+import ListItemText from './lib/ListItemText';
 
 export {
   Button,
@@ -45,5 +47,7 @@ export {
   CircularProgress,
   LinearProgress,
   Badge,
-  Lists
+  List,
+  ListItem,
+  ListItemText
 };

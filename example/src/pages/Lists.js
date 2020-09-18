@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Lists } from 'beyondstyle';
+import { Text, List, ListItem, ListItemText } from 'beyondstyle';
 import { Grid, Container } from '@material-ui/core';
 
 const App = () => {
@@ -13,7 +13,38 @@ const App = () => {
           <hr />
         </Grid>
         <Grid item xs={12}>
-          <Lists />
+          <List>
+            <ListItem>
+              <ListItemText
+                primary='Primary Text'
+                secondary='Secondary Text'
+              ></ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary='Primary Text'
+                secondary='Secondary Text'
+              ></ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary='Primary Text'
+                secondary='Secondary Text'
+              ></ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary='Primary Text'
+                secondary='Secondary Text'
+              ></ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary='Primary Text'
+                secondary='Secondary Text'
+              ></ListItemText>
+            </ListItem>
+          </List>
         </Grid>
       </Grid>
     </Container>
