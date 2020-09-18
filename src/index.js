@@ -23,6 +23,7 @@ import LinearProgress from './lib/LinearProgress.js';
 import List from './lib/List';
 import ListItem from './lib/List/ListItem';
 import ListItemText from './lib/List/ListItemText';
+import ListItemSecondaryAction from './lib/List/ListItemSecondaryAction';
 
 export {
   Button,
@@ -49,5 +50,6 @@ export {
   Badge,
   List,
   ListItem,
-  ListItemText
+  ListItemText,
+  ListItemSecondaryAction
 };
