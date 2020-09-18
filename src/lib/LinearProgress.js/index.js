@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
       : theme.palette.text.primary,
     '& .MuiLinearProgress-root': {
       backgroundColor: fade(
-        theme.palette[props.color]
-          ? theme.palette[props.color].main
+        theme.palette[props.style]
+          ? theme.palette[props.style].main
           : theme.palette.action.active,
         0.24
       )
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const LinearProgress = (props) => {
-  const classes = useStyles();
+  const classes = useStyles({ style: props.color });
 
   return (
     <div className={classes.root}>

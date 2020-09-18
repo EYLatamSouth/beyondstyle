@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const CircularProgress = (props) => {
-  const classes = useStyles();
+  const classes = useStyles({ style: props.color });
 
   return (
     <div className={classes.root}>
