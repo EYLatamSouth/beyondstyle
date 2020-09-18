@@ -13,6 +13,7 @@ import Avatar from './pages/Avatar';
 import Divider from './pages/Divider';
 import Controls from './pages/Controls';
 import Tab from './pages/Tab';
+import Badge from './pages/Badge';
 import Tooltip from './pages/Tooltip';
 import ProgressIndicators from './pages/ProgressIndicators';
 import NotFoundPage from './pages/NotFoundPage';
@@ -35,6 +36,7 @@ class App extends React.Component {
           <Route exact path='/divider' component={Divider} />
           <Route exact path='/controls' component={Controls} />
           <Route exact path='/tab' component={Tab} />
+          <Route exact path='/badge' component={Badge} />
           <Route exact path='/tooltip' component={Tooltip} />
           <Route
             exact

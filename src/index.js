@@ -16,6 +16,7 @@ import Avatar from './lib/Avatar';
 import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
+import Badge from './lib/Badge';
 import Tooltip from './lib/Tooltip';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
@@ -41,5 +42,7 @@ export {
   Tab,
   Tooltip,
   CircularProgress,
-  LinearProgress
+  LinearProgress,
+  Badge,
+  Tooltip
 };

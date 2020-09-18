@@ -42,9 +42,18 @@ const useStyles = makeStyles((theme) => ({
     color: `${theme.palette.error.main} !important`
   },
   inputRoot: (props) => ({
-    backgroundColor: theme.palette.grey[100],
+    backgroundColor: props.variant === 'filled'
+      ? theme.palette.grey[100]
+      : 'transparent',
     '&:hover': {
-      backgroundColor: theme.palette.grey[100]
+      backgroundColor: props.variant === 'filled'
+        ? theme.palette.grey[100]
+        : 'transparent'
+    },
+    '& .MuiSelect-root': {
+      backgroundColor: props.variant === 'filled'
+      ? theme.palette.grey[100]
+      : 'transparent'
     },
     '& .MuiInputAdornment-positionStart': {
       marginTop: `${0} !important`,
@@ -65,11 +74,15 @@ const useStyles = makeStyles((theme) => ({
       borderColor: theme.palette.grey[300]
     }
   },
-  filledFocused: {
-    backgroundColor: `${theme.palette.grey[100]} !important`
-  },
-  filledDisabled: {
-    backgroundColor: `${theme.palette.grey[100]} !important`,
+  filledFocused: (props) => ({
+    backgroundColor: props.variant === 'filled'
+      ? `${theme.palette.grey[100]} !important`
+      : 'transparent'
+  }),
+  filledDisabled: (props) => ({
+    backgroundColor: props.variant === 'filled'
+      ? `${theme.palette.grey[100]} !important`
+      : 'transparent',
     color: `${fade(theme.palette.primary.main, 0.3)} !important`,
     '&.MuiFilledInput-underline.Mui-disabled': {
       '&:before': {
@@ -81,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
         borderWidth: 2
       }
     }
-  },
+  }),
   outilneError: {
     '& .MuiOutlinedInput-notchedOutline': {
       borderColor: `${theme.palette.error.main} !important`
@@ -95,6 +108,7 @@ const Select = (props) => {
   const classes = useStyles({
     color: props.color,
     startAdornment: props.inputicon,
+    variant: props.variant,
     shrink: props.InputLabelProps?.shrink ? true : shrink
   });
 
@@ -167,9 +181,6 @@ const Select = (props) => {
         onOpen={onOpen}
         onChange={onChange}
         IconComponent={UnfoldMoreRoundedIcon}
-        classes={{
-          filled: classes.filled
-        }}
         MenuProps={{
           PaperProps: {
             elevation: 3,
