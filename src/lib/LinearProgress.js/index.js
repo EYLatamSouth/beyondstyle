@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, fade } from '@material-ui/core/styles';
 import { LinearProgress as MuiLinearProgress } from '@material-ui/core';
 import Layout from '../Layout';
 
@@ -8,7 +8,15 @@ const useStyles = makeStyles((theme) => ({
   root: (props) => ({
     color: theme.palette[props.style]
       ? theme.palette[props.style].main
-      : theme.palette.text.primary
+      : theme.palette.text.primary,
+    '& .MuiLinearProgress-root': {
+      backgroundColor: fade(
+        theme.palette[props.color]
+          ? theme.palette[props.color].main
+          : theme.palette.action.active,
+        0.24
+      )
+    }
   })
 }));
 
