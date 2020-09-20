@@ -16,12 +16,15 @@ import Avatar from './lib/Avatar';
 import Divider from './lib/Divider';
 import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
+import Badge from './lib/Badge';
 import Tooltip from './lib/Tooltip';
 import Table from './lib/Table';
 import TableRow from './lib/TableRow';
 import TableCell from './lib/TableCell';
 import TableCellBadge from './lib/TableCellBadge';
 import TableContainer from './lib/TableContainer';
+import CircularProgress from './lib/CircularProgress';
+import LinearProgress from './lib/LinearProgress.js';
 
 export {
   Button,
@@ -47,5 +50,8 @@ export {
   TableRow,
   TableCell,
   TableCellBadge,
-  TableContainer
+  TableContainer,
+  CircularProgress,
+  LinearProgress,
+  Badge
 };
