@@ -10,13 +10,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Table = (props) => {
-  const classes = useStyles({ mode: props.mode });
+  const classes = useStyles({ mode: props.mode, size: props.size });
 
   return <TableMui {...props} classes={{ ...classes }}>{props.children}</TableMui>;
 };
 
 Table.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  size: PropTypes.oneOf(['medium', 'small'])
+};
+
+Table.defaultProps = {
+  size: 'medium'
 };
 
 export default (props) => (

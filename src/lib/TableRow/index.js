@@ -6,11 +6,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: 'transparent',
     '&:nth-of-type(odd)': {
       backgroundColor: props.mode === 'striped'
         ? theme.palette.grey[50]
-        : theme.palette.common.white
+        : 'transparent'
     },
     '& td[class^="MuiTableCell-root-"], th[class^="MuiTableCell-root-"]': {
       borderBottom: 'unset'

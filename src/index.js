@@ -20,6 +20,8 @@ import Tooltip from './lib/Tooltip';
 import Table from './lib/Table';
 import TableRow from './lib/TableRow';
 import TableCell from './lib/TableCell';
+import TableCellBadge from './lib/TableCellBadge';
+import TableContainer from './lib/TableContainer';
 
 export {
   Button,
@@ -43,5 +45,7 @@ export {
   Tooltip,
   Table,
   TableRow,
-  TableCell
+  TableCell,
+  TableCellBadge,
+  TableContainer
 };
