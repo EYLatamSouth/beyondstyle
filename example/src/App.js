@@ -16,8 +16,10 @@ import Tab from './pages/Tab';
 import Badge from './pages/Badge';
 import Tooltip from './pages/Tooltip';
 import Table from './pages/Table';
+import Pagination from './pages/Pagination';
 import ProgressIndicators from './pages/ProgressIndicators';
 import Breadcrumbs from './pages/Breadcrumbs';
+import Lists from './pages/Lists';
 import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
@@ -41,12 +43,14 @@ class App extends React.Component {
           <Route exact path='/badge' component={Badge} />
           <Route exact path='/tooltip' component={Tooltip} />
           <Route exact path='/table' component={Table} />
+          <Route exact path='/pagination' component={Pagination} />
           <Route
             exact
             path='/progress-indicator'
             component={ProgressIndicators}
           />
           <Route exact path='/breadcrumbs' component={Breadcrumbs} />
+          <Route exact path='/lists' component={Lists} />
           <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
