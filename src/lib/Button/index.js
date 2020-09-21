@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
           : theme.palette.grey[300],
         0.04
       )
+    },
+    '&.MuiButton-text': {
+      minHeight: theme.spacing(4.5),
+      minWidth: theme.spacing(10.5)
     }
   }),
   label: {
