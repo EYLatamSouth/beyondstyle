@@ -32,7 +32,6 @@ import TablePagination from './lib/TablePagination';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress';
 import Breadcrumbs from './lib/Breadcrumbs';
-import LinearProgress from './lib/LinearProgress.js';
 import Dialog from './lib/Dialog';
 import DialogActions from './lib/DialogActions';
 import DialogContent from './lib/DialogContent';
