@@ -1,10 +1,9 @@
 import React from 'react';
 import {
-  Table, Text,
+  Table, Text, TableFooter,
   TableContainer, TablePagination, TableRow,
 } from 'beyondstyle';
 
-import TableFooter from '@material-ui/core/TableFooter';
 import Paper from '@material-ui/core/Paper';
 import { Container, Grid } from '@material-ui/core';
 
