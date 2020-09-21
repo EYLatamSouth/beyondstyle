@@ -30,6 +30,11 @@ import TableCellActions from './lib/TableCellActions';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
 import Dialog from './lib/Dialog';
+import DialogActions from './lib/DialogActions';
+import DialogContent from './lib/DialogContent';
+import DialogContentText from './lib/DialogContentText';
+import DialogTitle from './lib/DialogTitle';
+
 
 export {
   Button,
@@ -63,5 +68,9 @@ export {
   CircularProgress,
   LinearProgress,
   Badge,
-  Dialog
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions
 };
