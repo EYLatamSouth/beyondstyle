@@ -1,44 +1,41 @@
 import React from 'react';
-import { TableCell as TableCellMui } from '@material-ui/core';
-import Layout from '../Layout';
 import PropTypes from 'prop-types';
-import { makeStyles, fade } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
+import { clone, omit } from 'lodash';
+
+import Layout from '../Layout';
+import TableCell from '../TableCell';
+import Badge from '../Badge';
 
 const useStyles = makeStyles((theme) => ({
-  root: (props) => ({
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
-    paddingLeft: theme.spacing(3),
-    paddingRight: theme.spacing(3),
-    '&:first-child': {
-      paddingLeft: theme.spacing(4.5),
-      paddingRight: theme.spacing(4.5),
-    }
-  }),
-  sizeSmall: {
-    padding: '18px  28px !important',
-    borderBottom: `1px solid ${fade(theme.palette.primary.main, 0.2)} !important`,
-    '&:first-child': {
-      paddingLeft: theme.spacing(3.5),
-      paddingRight: theme.spacing(3.5),
+  root: {
+    '& .badge:first-child': {
+      marginRight: theme.spacing(1)
     }
   }
 }));
 
-const TableCell = (props) => {
+const TableCellBadge = (props) => {
   const classes = useStyles();
-  return <TableCellMui {...props} classes={{ ...classes }}>{props.children}</TableCellMui>;
+  const Props = omit(clone(props), ['itens']);
+
+  if (!props.itens) return null;
+
+  return (
+    <TableCell {...Props} classes={{ ...classes }}>
+      {props.itens.map((item, index) => (
+        <Badge {...item} key={`badge-${item.label}-${index}`} />
+      ))}
+    </TableCell>
+  );
 };
 
-TableCell.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-TableCell.defaultProps = {
+TableCellBadge.propTypes = {
+  itens: PropTypes.array.isRequired
 };
 
 export default (props) => (
   <Layout>
-    <TableCell {...props} />
+    <TableCellBadge {...props} />
   </Layout>
 );

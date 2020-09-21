@@ -1,10 +1,12 @@
 import React from 'react';
-import { Text, Table, TableRow, TableCell, TableCellBadge, TableContainer } from 'beyondstyle';
+import {
+  Card, Text, TableBody, TableHead,
+  Table, TableRow, TableCell,
+  TableCellBadge, TableContainer, TableCellAvatar
+} from 'beyondstyle';
 import { Grid, Container } from '@material-ui/core';
-import TableBody from '@material-ui/core/TableBody';
-import TableHead from '@material-ui/core/TableHead';
 import Paper from '@material-ui/core/Paper';
-import Card from '@material-ui/core/Card';
+import { Link } from 'react-router-dom';
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -22,7 +24,13 @@ const rows = [
 const App = () => {
   const badgeItens = [
     {
-
+      label: 'primary',
+      buttonProps: { component: Link, to: '/' }
+    },
+    {
+      label: 'Secondary',
+      variant: 'pill',
+      color: 'secondary'
     }
   ]
   return (
@@ -38,15 +46,23 @@ const App = () => {
             <Table aria-label="simple table" component={Card}>
               <TableBody>
                 <TableRow mode="striped">
-                  <TableCell>Avatar</TableCell>
+                  <TableCellAvatar avatarProps={{
+                    alt: 'avatar letter',
+                    children: 'AB',
+                    className: 'medium'
+                  }} />
                   <TableCell>Eduardo Basso</TableCell>
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
-                  <TableCell align="right">badges</TableCell>
+                  <TableCellBadge align="right" itens={badgeItens} />
                   <TableCell align="right">actions</TableCell>
                 </TableRow>
                 <TableRow mode="striped">
-                  <TableCell>Avatar</TableCell>
+                  <TableCellAvatar avatarProps={{
+                    alt: 'avatar letter',
+                    children: 'AB',
+                    className: 'medium'
+                  }} />
                   <TableCell>Eduardo Basso</TableCell>
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
@@ -62,19 +78,27 @@ const App = () => {
             <Table aria-label="simple table" component={Card}>
               <TableBody>
                 <TableRow>
-                  <TableCell>Avatar</TableCell>
+                  <TableCellAvatar avatarProps={{
+                    alt: 'avatar letter',
+                    children: 'AB',
+                    className: 'medium'
+                  }} />
                   <TableCell>Eduardo Basso</TableCell>
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
-                  <TableCell align="right">badges</TableCell>
+                  <TableCellBadge align="right" itens={badgeItens} />
                   <TableCell align="right">actions</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>Avatar</TableCell>
+                  <TableCellAvatar avatarProps={{
+                    alt: 'avatar letter',
+                    children: 'AB',
+                    className: 'medium'
+                  }} />
                   <TableCell>Eduardo Basso</TableCell>
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
-                  <TableCell align="right">badges</TableCell>
+                  <TableCellBadge align="right" itens={badgeItens} />
                   <TableCell align="right">actions</TableCell>
                 </TableRow>
               </TableBody>
@@ -110,7 +134,7 @@ const App = () => {
           </TableContainer>
         </Grid>
         <Grid item xs={6}>
-          <TableContainer border>
+          <TableContainer>
             <Table aria-label="simple table" size="small" component={Card}>
               <TableHead>
                 <TableRow>

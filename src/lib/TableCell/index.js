@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 const TableCell = (props) => {
   const classes = useStyles();
-  return <TableCellMui {...props} classes={{ ...classes }}>{props.children}</TableCellMui>;
+  return <TableCellMui {...props} classes={{ ...classes, ...props.classes }}>{props.children}</TableCellMui>;
 };
 
 TableCell.propTypes = {
