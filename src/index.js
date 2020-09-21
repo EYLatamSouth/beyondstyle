@@ -28,7 +28,8 @@ import TableCellBadge from './lib/TableCellBadge';
 import TableCellAvatar from './lib/TableCellAvatar';
 import TableCellActions from './lib/TableCellActions';
 import CircularProgress from './lib/CircularProgress';
-import LinearProgress from './lib/LinearProgress.js';
+import LinearProgress from './lib/LinearProgress';
+import Breadcrumbs from './lib/Breadcrumbs';
 
 export {
   Button,
@@ -61,5 +62,6 @@ export {
   TableCellActions,
   CircularProgress,
   LinearProgress,
-  Badge
+  Badge,
+  Breadcrumbs
 };
