@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Card, Text, TableBody, TableHead,
   Table, TableRow, TableCell,
-  TableCellBadge, TableContainer, TableCellAvatar, TableCellActions
+  TableCellBadge, TableContainer, TableCellAvatar, TableCellActions,
+  CheckBox
 } from 'beyondstyle';
 import { Grid, Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
@@ -42,55 +43,57 @@ const App = () => {
           </Text>
         </Grid>
         <Grid item xs={12}>
-          <TableContainer component={Card}>
-            <Table aria-label="simple table">
-              <TableBody>
-                <TableRow mode="striped">
-                  <TableCellAvatar avatarProps={{
-                    alt: 'avatar letter',
-                    children: 'AB',
-                    className: 'medium'
-                  }} />
-                  <TableCell>Eduardo Basso</TableCell>
-                  <TableCell align="right">eduardo@email.com</TableCell>
-                  <TableCell align="right">+55 99 9999-9999</TableCell>
-                  <TableCellBadge align="right" itens={badgeItens} />
-                  <TableCellActions
-                    align="right"
-                    onRowUpdateProps={{
-                      onClick: () => console.log('update')
-                    }}
-                    onRowDeleteProps={{
-                      onClick: () => console.log('delete')
-                    }}
-                  />
-                </TableRow>
-                <TableRow mode="striped">
-                  <TableCellAvatar avatarProps={{
-                    alt: 'avatar letter',
-                    children: 'AB',
-                    className: 'medium'
-                  }} />
-                  <TableCell>Eduardo Basso</TableCell>
-                  <TableCell align="right">eduardo@email.com</TableCell>
-                  <TableCell align="right">+55 99 9999-9999</TableCell>
-                  <TableCellBadge align="right" itens={badgeItens} />
-                  <TableCellActions
-                    align="right"
-                    onRowUpdateProps={{
-                      onClick: () => console.log('update')
-                    }}
-                    onRowDeleteProps={{
-                      onClick: () => console.log('delete')
-                    }}
-                  />
-                </TableRow>
-              </TableBody>
-            </Table>
-          </TableContainer>
+          <Card elevation={0}>
+            <TableContainer>
+              <Table aria-label="simple table">
+                <TableBody>
+                  <TableRow mode="striped">
+                    <TableCellAvatar avatarProps={{
+                      alt: 'avatar letter',
+                      children: 'AB',
+                      className: 'medium'
+                    }} />
+                    <TableCell>Eduardo Basso</TableCell>
+                    <TableCell align="right">eduardo@email.com</TableCell>
+                    <TableCell align="right">+55 99 9999-9999</TableCell>
+                    <TableCellBadge align="right" itens={badgeItens} />
+                    <TableCellActions
+                      align="right"
+                      onRowUpdateProps={{
+                        onClick: () => console.log('update')
+                      }}
+                      onRowDeleteProps={{
+                        onClick: () => console.log('delete')
+                      }}
+                    />
+                  </TableRow>
+                  <TableRow mode="striped">
+                    <TableCellAvatar avatarProps={{
+                      alt: 'avatar letter',
+                      children: 'AB',
+                      className: 'medium'
+                    }} />
+                    <TableCell>Eduardo Basso</TableCell>
+                    <TableCell align="right">eduardo@email.com</TableCell>
+                    <TableCell align="right">+55 99 9999-9999</TableCell>
+                    <TableCellBadge align="right" itens={badgeItens} />
+                    <TableCellActions
+                      align="right"
+                      onRowUpdateProps={{
+                        onClick: () => console.log('update')
+                      }}
+                      onRowDeleteProps={{
+                        onClick: () => console.log('delete')
+                      }}
+                    />
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Card>
         </Grid>
         <Grid item xs={12}>
-          <TableContainer component={Card}>
+          <TableContainer component={Card} elevation={0}>
             <Table aria-label="simple table">
               <TableBody>
                 <TableRow>
@@ -151,6 +154,11 @@ const App = () => {
               <TableBody>
                 {rows.map((row) => (
                   <TableRow key={row.cell1}>
+                    <TableCell padding="checkbox">
+                      <CheckBox
+                        inputProps={{ 'aria-label': 'select all desserts' }}
+                      />
+                    </TableCell>
                     <TableCell>
                       {row.cell1}
                     </TableCell>
@@ -164,7 +172,7 @@ const App = () => {
           </TableContainer>
         </Grid>
         <Grid item xs={6}>
-          <TableContainer component={Card}>
+          <TableContainer component={Card} elevation={0}>
             <Table aria-label="simple table" size="small">
               <TableHead>
                 <TableRow>
