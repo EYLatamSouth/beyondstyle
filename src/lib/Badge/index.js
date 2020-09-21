@@ -4,6 +4,7 @@ import Layout from '../Layout';
 import Text from '../Text';
 import { makeStyles, fade } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import clsx from 'clsx';
 
 const useStyles = makeStyles((theme) => ({
   badge: (props) => ({
@@ -62,6 +63,7 @@ const Badge = (props) => {
       <Button
         variant='contained'
         size='small'
+        className='badge'
         classes={{
           contained: classes.contained,
           label: classes.label,
@@ -75,7 +77,7 @@ const Badge = (props) => {
   }
 
   return (
-    <span className={classes.badge}>
+    <span className={clsx(classes.badge, 'badge')}>
       <Text variant='caption' classes={{ root: classes.textRoot }}>
         {props.label}
       </Text>

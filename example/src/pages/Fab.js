@@ -1,6 +1,5 @@
 import React from 'react';
-import { IconButton, Fab, Button, Text } from 'beyondstyle';
-import DeleteIcon from '@material-ui/icons/Delete';
+import { Fab, Text } from 'beyondstyle';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { Grid, Container } from '@material-ui/core';
 

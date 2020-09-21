@@ -18,6 +18,15 @@ import Tabs from './lib/Tabs';
 import Tab from './lib/Tab';
 import Badge from './lib/Badge';
 import Tooltip from './lib/Tooltip';
+import TableContainer from './lib/TableContainer';
+import Table from './lib/Table';
+import TableHead from './lib/TableHead';
+import TableBody from './lib/TableBody';
+import TableRow from './lib/TableRow';
+import TableCell from './lib/TableCell';
+import TableCellBadge from './lib/TableCellBadge';
+import TableCellAvatar from './lib/TableCellAvatar';
+import TableCellActions from './lib/TableCellActions';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
 
@@ -41,6 +50,15 @@ export {
   Tabs,
   Tab,
   Tooltip,
+  TableContainer,
+  Table,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+  TableCellBadge,
+  TableCellAvatar,
+  TableCellActions,
   CircularProgress,
   LinearProgress,
   Badge
