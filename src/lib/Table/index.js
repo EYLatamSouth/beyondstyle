@@ -1,18 +1,11 @@
 import React from 'react';
-import { Table as TableMui } from '@material-ui/core';
-import Layout from '../Layout';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { Table as TableMui } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-  root: (props) => ({
-  })
-}));
+import Layout from '../Layout';
 
 const Table = (props) => {
-  const classes = useStyles({ mode: props.mode, size: props.size });
-
-  return <TableMui {...props} classes={{ ...classes }}>{props.children}</TableMui>;
+  return <TableMui {...props}>{props.children}</TableMui>;
 };
 
 Table.propTypes = {

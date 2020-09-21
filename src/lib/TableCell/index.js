@@ -6,21 +6,24 @@ import { makeStyles, fade } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
     paddingLeft: theme.spacing(3),
     paddingRight: theme.spacing(3),
+    minHeight: theme.spacing(12),
+    height: theme.spacing(12),
     '&:first-child': {
       paddingLeft: theme.spacing(4.5),
       paddingRight: theme.spacing(4.5),
     }
   }),
   sizeSmall: {
-    padding: '18px  28px !important',
+    height: `${theme.spacing(7.75)}px !important`,
+    minHeight: `${theme.spacing(7.75)}px !important`,
+    paddingLeft: `${theme.spacing(2.25)}px !important`,
+    paddingRight: `${theme.spacing(2.25)}px !important`,
     borderBottom: `1px solid ${fade(theme.palette.primary.main, 0.2)} !important`,
     '&:first-child': {
-      paddingLeft: theme.spacing(3.5),
-      paddingRight: theme.spacing(3.5),
+      paddingLeft: `${theme.spacing(3.5)}px !important`,
+      paddingRight: `${theme.spacing(3.5)}px !important`
     }
   }
 }));
