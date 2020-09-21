@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { ListItemSecondaryAction as MuiListItemSecondaryAction } from '@material-ui/core';
 import Layout from '../../Layout';
@@ -24,6 +25,11 @@ const ListItemSecondaryAction = (props) => {
       {props.children}
     </MuiListItemSecondaryAction>
   );
+};
+
+ListItemSecondaryAction.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
 export default (props) => (

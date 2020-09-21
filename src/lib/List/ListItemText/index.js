@@ -32,12 +32,22 @@ const ListItemText = (props) => {
         </Text>
       }
       className={classes.root}
-    ></MuiListItemText>
+    >
+      {props.children}
+    </MuiListItemText>
   );
 };
 
-Text.propTypes = {
-  children: PropTypes.node
+ListItemText.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  primary: PropTypes.node,
+  secondary: PropTypes.node
+};
+
+ListItemText.defaultProps = {
+  disableTypography: false,
+  inset: false
 };
 
 export default (props) => (
