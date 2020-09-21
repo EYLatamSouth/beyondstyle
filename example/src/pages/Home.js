@@ -57,6 +57,9 @@ const Page = () => (
         <Link to='/table'>Table</Link>
       </Grid>
       <Grid item xs={12}>
+        <Link to='/pagination'>Pagination</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to='/progress-indicator'>ProgressIndicators</Link>
       </Grid>
     </Grid>
