@@ -63,6 +63,9 @@ const Page = () => (
         <Link to='/progress-indicator'>ProgressIndicators</Link>
       </Grid>
       <Grid item xs={12}>
+        <Link to='/breadcrumbs'>Breadcrumbs</Link>
+      </Grid>
+      <Grid item xs={12}>
         <Link to='/lists'>Lists</Link>
       </Grid>
     </Grid>

@@ -30,6 +30,8 @@ import TableCellActions from './lib/TableCellActions';
 import TableFooter from './lib/TableFooter';
 import TablePagination from './lib/TablePagination';
 import CircularProgress from './lib/CircularProgress';
+import LinearProgress from './lib/LinearProgress';
+import Breadcrumbs from './lib/Breadcrumbs';
 import LinearProgress from './lib/LinearProgress.js';
 import List from './lib/List';
 import ListItem from './lib/List/ListItem';
@@ -72,6 +74,7 @@ export {
   CircularProgress,
   LinearProgress,
   Badge,
+  Breadcrumbs,
   List,
   ListItem,
   ListItemTag,
