@@ -7,8 +7,11 @@ const useStyles = makeStyles((theme) => ({
   root: (props) => ({
     paddingRight: theme.spacing(1.5),
     color: theme.palette.primary.light,
-    '& > button': {
+    '& > button[class^="MuiButtonBase-root-"]': {
       left: theme.spacing(2.5)
+    },
+    '& > p[class^="MuiTypography-root-"]': {
+      textAlign: 'end'
     }
   })
 }));
