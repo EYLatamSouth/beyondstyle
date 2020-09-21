@@ -6,8 +6,12 @@ import Layout from '../../Layout';
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
     minWidth: 0,
+    paddingBottom: theme.spacing(1),
     '& svg[class^="MuiSvgIcon-root-"]': {
       fill: theme.palette.primary.main
+    },
+    '& span[class^="makeStyles-badge-"]': {
+      marginRight: theme.spacing(1.2) //'11px'
     }
   })
 }));
