@@ -27,14 +27,23 @@ import TableCell from './lib/TableCell';
 import TableCellBadge from './lib/TableCellBadge';
 import TableCellAvatar from './lib/TableCellAvatar';
 import TableCellActions from './lib/TableCellActions';
+import TableFooter from './lib/TableFooter';
+import TablePagination from './lib/TablePagination';
 import CircularProgress from './lib/CircularProgress';
+import LinearProgress from './lib/LinearProgress';
+import Breadcrumbs from './lib/Breadcrumbs';
 import LinearProgress from './lib/LinearProgress.js';
 import Dialog from './lib/Dialog';
 import DialogActions from './lib/DialogActions';
 import DialogContent from './lib/DialogContent';
 import DialogContentText from './lib/DialogContentText';
 import DialogTitle from './lib/DialogTitle';
-
+import List from './lib/List';
+import ListItem from './lib/List/ListItem';
+import ListItemTag from './lib/List/ListItemTag';
+import ListItemText from './lib/List/ListItemText';
+import ListItemIcon from './lib/List/ListItemIcon';
+import ListItemSecondaryAction from './lib/List/ListItemSecondaryAction';
 
 export {
   Button,
@@ -65,6 +74,8 @@ export {
   TableCellBadge,
   TableCellAvatar,
   TableCellActions,
+  TableFooter,
+  TablePagination,
   CircularProgress,
   LinearProgress,
   Badge,
@@ -72,5 +83,12 @@ export {
   DialogTitle,
   DialogContent,
   DialogContentText,
-  DialogActions
+  DialogActions,
+  Breadcrumbs,
+  List,
+  ListItem,
+  ListItemTag,
+  ListItemText,
+  ListItemIcon,
+  ListItemSecondaryAction
 };
