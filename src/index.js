@@ -33,6 +33,11 @@ import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress';
 import Breadcrumbs from './lib/Breadcrumbs';
 import LinearProgress from './lib/LinearProgress.js';
+import Dialog from './lib/Dialog';
+import DialogActions from './lib/DialogActions';
+import DialogContent from './lib/DialogContent';
+import DialogContentText from './lib/DialogContentText';
+import DialogTitle from './lib/DialogTitle';
 import List from './lib/List';
 import ListItem from './lib/List/ListItem';
 import ListItemTag from './lib/List/ListItemTag';
@@ -74,6 +79,11 @@ export {
   CircularProgress,
   LinearProgress,
   Badge,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
   Breadcrumbs,
   List,
   ListItem,

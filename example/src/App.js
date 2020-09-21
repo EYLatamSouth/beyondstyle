@@ -18,6 +18,7 @@ import Tooltip from './pages/Tooltip';
 import Table from './pages/Table';
 import Pagination from './pages/Pagination';
 import ProgressIndicators from './pages/ProgressIndicators';
+import Dialog from './pages/Dialog';
 import Breadcrumbs from './pages/Breadcrumbs';
 import Lists from './pages/Lists';
 import NotFoundPage from './pages/NotFoundPage';
@@ -49,6 +50,7 @@ class App extends React.Component {
             path='/progress-indicator'
             component={ProgressIndicators}
           />
+          <Route exact path='/dialog' component={Dialog} />
           <Route exact path='/breadcrumbs' component={Breadcrumbs} />
           <Route exact path='/lists' component={Lists} />
           <Route path='*' component={NotFoundPage} />
