@@ -29,6 +29,7 @@ import TableCellAvatar from './lib/TableCellAvatar';
 import TableCellActions from './lib/TableCellActions';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
+import Dialog from './lib/Dialog';
 
 export {
   Button,
@@ -61,5 +62,6 @@ export {
   TableCellActions,
   CircularProgress,
   LinearProgress,
-  Badge
+  Badge,
+  Dialog
 };

@@ -17,6 +17,7 @@ import Badge from './pages/Badge';
 import Tooltip from './pages/Tooltip';
 import Table from './pages/Table';
 import ProgressIndicators from './pages/ProgressIndicators';
+import Dialog from './pages/Dialog';
 import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
@@ -45,6 +46,7 @@ class App extends React.Component {
             path='/progress-indicator'
             component={ProgressIndicators}
           />
+          <Route exact path='/dialog' component={Dialog} />
           <Route path='*' component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
