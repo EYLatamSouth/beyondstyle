@@ -2,22 +2,22 @@ import React from 'react';
 import {
   Card, Text, TableBody, TableHead,
   Table, TableRow, TableCell,
-  TableCellBadge, TableContainer, TableCellAvatar
+  TableCellBadge, TableContainer, TableCellAvatar, TableCellActions
 } from 'beyondstyle';
 import { Grid, Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import { Link } from 'react-router-dom';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(cell1, cell2, cell3, cell4) {
+  return { cell1, cell2, cell3, cell4 };
 }
 
 const rows = [
   createData('Cell A1', 'Cell B1', 'Cell C1', 1),
-  createData('Cell A1', 'Cell B1', 'Cell C1', 1),
-  createData('Cell A1', 'Cell B1', 'Cell C1', 1),
-  createData('Cell A1', 'Cell B1', 'Cell C1', 1),
-  createData('Cell A1', 'Cell B1', 'Cell C1', 1),
+  createData('Cell A2', 'Cell B2', 'Cell C2', 2),
+  createData('Cell A3', 'Cell B3', 'Cell C3', 3),
+  createData('Cell A4', 'Cell B4', 'Cell C4', 4),
+  createData('Cell A5', 'Cell B5', 'Cell C5', 5),
 ];
 
 
@@ -42,8 +42,8 @@ const App = () => {
           </Text>
         </Grid>
         <Grid item xs={12}>
-          <TableContainer>
-            <Table aria-label="simple table" component={Card}>
+          <TableContainer component={Card}>
+            <Table aria-label="simple table">
               <TableBody>
                 <TableRow mode="striped">
                   <TableCellAvatar avatarProps={{
@@ -55,7 +55,15 @@ const App = () => {
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
                   <TableCellBadge align="right" itens={badgeItens} />
-                  <TableCell align="right">actions</TableCell>
+                  <TableCellActions
+                    align="right"
+                    onRowUpdateProps={{
+                      onClick: () => console.log('update')
+                    }}
+                    onRowDeleteProps={{
+                      onClick: () => console.log('delete')
+                    }}
+                  />
                 </TableRow>
                 <TableRow mode="striped">
                   <TableCellAvatar avatarProps={{
@@ -67,15 +75,23 @@ const App = () => {
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
                   <TableCellBadge align="right" itens={badgeItens} />
-                  <TableCell align="right">actions</TableCell>
+                  <TableCellActions
+                    align="right"
+                    onRowUpdateProps={{
+                      onClick: () => console.log('update')
+                    }}
+                    onRowDeleteProps={{
+                      onClick: () => console.log('delete')
+                    }}
+                  />
                 </TableRow>
               </TableBody>
             </Table>
           </TableContainer>
         </Grid>
         <Grid item xs={12}>
-          <TableContainer>
-            <Table aria-label="simple table" component={Card}>
+          <TableContainer component={Card}>
+            <Table aria-label="simple table">
               <TableBody>
                 <TableRow>
                   <TableCellAvatar avatarProps={{
@@ -87,7 +103,15 @@ const App = () => {
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
                   <TableCellBadge align="right" itens={badgeItens} />
-                  <TableCell align="right">actions</TableCell>
+                  <TableCellActions
+                    align="right"
+                    onRowUpdateProps={{
+                      onClick: () => console.log('update')
+                    }}
+                    onRowDeleteProps={{
+                      onClick: () => console.log('delete')
+                    }}
+                  />
                 </TableRow>
                 <TableRow>
                   <TableCellAvatar avatarProps={{
@@ -99,34 +123,40 @@ const App = () => {
                   <TableCell align="right">eduardo@email.com</TableCell>
                   <TableCell align="right">+55 99 9999-9999</TableCell>
                   <TableCellBadge align="right" itens={badgeItens} />
-                  <TableCell align="right">actions</TableCell>
+                  <TableCellActions
+                    align="right"
+                    onRowUpdateProps={{
+                      onClick: () => console.log('update')
+                    }}
+                    onRowDeleteProps={{
+                      onClick: () => console.log('delete')
+                    }}
+                  />
                 </TableRow>
               </TableBody>
             </Table>
           </TableContainer>
         </Grid>
         <Grid item xs={6}>
-          <TableContainer>
-            <Table aria-label="simple table" size="small" component={Paper} variant="outlined">
+          <TableContainer component={Paper} variant="outlined">
+            <Table aria-label="simple table" size="small">
               <TableHead>
                 <TableRow>
-                  <TableCell>Dessert (100g serving)</TableCell>
-                  <TableCell align="right">Calories</TableCell>
-                  <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                  <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                  <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                  <TableCell>Header A</TableCell>
+                  <TableCell align="right">Header B</TableCell>
+                  <TableCell align="right">Header C</TableCell>
+                  <TableCell align="right">Header D</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
-                  <TableRow key={row.name}>
+                  <TableRow key={row.cell1}>
                     <TableCell>
-                      {row.name}
+                      {row.cell1}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.cell2}</TableCell>
+                    <TableCell align="right">{row.cell3}</TableCell>
+                    <TableCell align="right">{row.cell4}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -134,27 +164,25 @@ const App = () => {
           </TableContainer>
         </Grid>
         <Grid item xs={6}>
-          <TableContainer>
-            <Table aria-label="simple table" size="small" component={Card}>
+          <TableContainer component={Card}>
+            <Table aria-label="simple table" size="small">
               <TableHead>
                 <TableRow>
-                  <TableCell>Dessert (100g serving)</TableCell>
-                  <TableCell align="right">Calories</TableCell>
-                  <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                  <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                  <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                  <TableCell>Header A</TableCell>
+                  <TableCell align="right">Header B</TableCell>
+                  <TableCell align="right">Header C</TableCell>
+                  <TableCell align="right">Header D</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
-                  <TableRow key={row.name} mode="striped">
+                  <TableRow key={row.cell1} mode="striped">
                     <TableCell>
-                      {row.name}
+                      {row.cell1}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.cell2}</TableCell>
+                    <TableCell align="right">{row.cell3}</TableCell>
+                    <TableCell align="right">{row.cell4}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Grid, Container } from '@material-ui/core';
 import { Select, MenuItem, Text } from 'beyondstyle';
 import AccountCircle from '@material-ui/icons/AccountCircle';

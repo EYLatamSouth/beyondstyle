@@ -26,6 +26,7 @@ import TableRow from './lib/TableRow';
 import TableCell from './lib/TableCell';
 import TableCellBadge from './lib/TableCellBadge';
 import TableCellAvatar from './lib/TableCellAvatar';
+import TableCellActions from './lib/TableCellActions';
 import CircularProgress from './lib/CircularProgress';
 import LinearProgress from './lib/LinearProgress.js';
 
@@ -57,6 +58,7 @@ export {
   TableCell,
   TableCellBadge,
   TableCellAvatar,
+  TableCellActions,
   CircularProgress,
   LinearProgress,
   Badge
