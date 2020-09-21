@@ -7,11 +7,10 @@ import {
   ListItemSecondaryAction,
   Badge,
   Button,
-  ListItemTag
-  // ListItemIcon
+  ListItemTag,
+  ListItemIcon
 } from 'beyondstyle';
 import { Grid, Container } from '@material-ui/core';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const App = () => {

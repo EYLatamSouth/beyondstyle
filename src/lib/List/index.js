@@ -5,14 +5,12 @@ import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
   root: (props) => ({
-    width: '100%',
-    maxWidth: 360,
     padding: 0,
+    width: '100%',
+    maxWidth: theme.spacing(45),
     backgroundColor: theme.palette.background.paper,
     '& > li': {
       '&:nth-child(even)': {
-        // left: "-4%",
-        // bottom: "auto",
         backgroundColor: theme.palette.grey[50]
       }
     }
@@ -21,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 
 const List = (props) => {
   const classes = useStyles();
-
   return <MuiList {...props} className={classes.root}></MuiList>;
 };
 
