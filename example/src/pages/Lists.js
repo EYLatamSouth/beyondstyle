@@ -208,7 +208,7 @@ const App = () => {
               <ListItem>
                 <ListItemText primary='Primary Text'></ListItemText>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -216,7 +216,7 @@ const App = () => {
               <ListItem>
                 <ListItemText primary='Primary Text'></ListItemText>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -224,7 +224,7 @@ const App = () => {
               <ListItem>
                 <ListItemText primary='Primary Text'></ListItemText>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -232,7 +232,7 @@ const App = () => {
               <ListItem>
                 <ListItemText primary='Primary Text'></ListItemText>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -256,7 +256,7 @@ const App = () => {
                 ></ListItemText>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -268,7 +268,7 @@ const App = () => {
                 ></ListItemText>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -280,7 +280,7 @@ const App = () => {
                 ></ListItemText>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -292,7 +292,7 @@ const App = () => {
                 ></ListItemText>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -428,7 +428,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -440,7 +440,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -452,7 +452,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -464,7 +464,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -493,7 +493,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -510,7 +510,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -527,7 +527,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -545,7 +545,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                 </ListItemSecondaryAction>
@@ -573,7 +573,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
 
@@ -589,7 +589,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -604,7 +604,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -619,7 +619,7 @@ const App = () => {
                   <Badge label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -651,7 +651,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -671,7 +671,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -691,7 +691,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -712,7 +712,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -743,7 +743,7 @@ const App = () => {
                   <Badge variant='pill' label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
 
@@ -759,7 +759,7 @@ const App = () => {
                   <Badge variant='pill' label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -774,7 +774,7 @@ const App = () => {
                   <Badge variant='pill' label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -789,7 +789,7 @@ const App = () => {
                   <Badge variant='pill' label='Secondary' color='secondary' />
                 </ListItemIcon>
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -821,7 +821,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -841,7 +841,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -861,7 +861,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>
@@ -882,7 +882,7 @@ const App = () => {
                 </ListItemIcon>
 
                 <ListItemSecondaryAction>
-                  <Text body='2' gutterBottom>
+                  <Text variant='body2' gutterBottom>
                     Text
                   </Text>
                   <Button color='primary' size='small'>

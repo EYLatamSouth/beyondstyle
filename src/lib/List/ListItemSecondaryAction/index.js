@@ -4,19 +4,20 @@ import { ListItemSecondaryAction as MuiListItemSecondaryAction } from '@material
 import Layout from '../../Layout';
 
 const useStyles = makeStyles((theme) => ({
-  root: (props) => ({})
+  root: (props) => ({
+    paddingRight: theme.spacing(1.5),
+    color: theme.palette.primary.light,
+    '& > button': {
+      left: theme.spacing(2.5)
+    }
+  })
 }));
 
 const ListItemSecondaryAction = (props) => {
   const classes = useStyles();
 
   return (
-    <MuiListItemSecondaryAction
-      {...props}
-      primary={props.primary}
-      secondary={props.secondary}
-      className={classes.root}
-    >
+    <MuiListItemSecondaryAction {...props} className={classes.root}>
       {props.children}
     </MuiListItemSecondaryAction>
   );
