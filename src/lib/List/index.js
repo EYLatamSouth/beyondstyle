@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: theme.spacing(45),
     backgroundColor: theme.palette.background.paper,
     '& > li': {
+      minHeight: theme.spacing(6.25),
       '&:nth-child(even)': {
         backgroundColor: theme.palette.grey[50]
       }
