@@ -108,7 +108,7 @@ ButtonWithIcon.propTypes = {
 };
 
 ButtonWithIcon.defaultProps = {
-  color: 'default',
+  color: 'primary',
   variant: 'outlined'
 };
 
