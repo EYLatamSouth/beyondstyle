@@ -29,16 +29,18 @@ const App = () => {
             Breadcrumbs
           </Text>
         </Grid>
-        <Grid item xs={2} style={{ display: 'flex'}} justify='space-around'>
-          <IconButton disabled variant="contained">
-            <FavoriteRoundedIcon />
-          </IconButton>
-          <IconButton disabled variant="contained">
-            <FavoriteRoundedIcon />
-          </IconButton>
-          <IconButton disabled variant="contained">
-            <FavoriteRoundedIcon />
-          </IconButton>
+        <Grid item xs={2}>
+          <Grid container justify='space-around'>
+            <IconButton disabled variant="contained">
+              <FavoriteRoundedIcon />
+            </IconButton>
+            <IconButton disabled variant="contained">
+              <FavoriteRoundedIcon />
+            </IconButton>
+            <IconButton disabled variant="contained">
+              <FavoriteRoundedIcon />
+            </IconButton>
+          </Grid>
         </Grid>
       </Grid>
     </Container>
