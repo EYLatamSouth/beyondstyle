@@ -71,7 +71,7 @@ CheckBox.propTypes = {
 };
 
 CheckBox.defaultProps = {
-  color: 'default',
+  color: 'primary',
   disabled: false
 };
 
