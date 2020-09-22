@@ -7,8 +7,8 @@ export default {
     colors: {
       primary: '#2e2e38',
       header: {
-        text: 'rgba(12, 12, 14, 0.87)',
-        bg: '#f6f6fa'
+        text: '#fff',
+        bg: '#2e2e38'
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Container, Typography, Link, Button, IconButton, SvgIcon } from '@material-ui/core';
+import { AppBar, Toolbar, Container, Typography, Link, IconButton, SvgIcon } from '@material-ui/core';
 import { Layout } from 'beyondstyle';
 
 import { Logo } from '../Logo';
@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       textDecoration: 'none'
     }
+  },
+  mainHeading: {
+    marginLeft: theme.spacing(1.5)
   },
   mainNav: {
     flexGrow: '1',
@@ -39,8 +42,9 @@ export const Header = () => {
       <AppBar position="relative" color="primary" className={classes.noElevation}>
         <Toolbar component={Container} maxWidth={false} justify="space-between">
           <Link href="/" color="inherit" className={classes.linkHome}>
-            <Logo />
-            <Typography component="h1" variant="h6">
+            <Logo mini />
+            <Typography component="h1" variant="h6" className={classes.mainHeading}>
+              <span className={classes.bold}>Beyond</span>
               <span className={classes.thin}>Style</span>
             </Typography>
           </Link>

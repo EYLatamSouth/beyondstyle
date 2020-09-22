@@ -1,0 +1,78 @@
+---
+name: Text fields
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { Button } from 'beyondstyle';
+import { AddRounded } from '@material-ui/icons';
+
+# Text fields
+
+Text fields.
+
+### About
+
+Text fields.
+
+## Properties
+
+<Props of={Button} />
+
+## Import
+
+```js
+import { Button } from 'beyondstyle';
+```
+
+## Usage
+
+### Contained
+
+<Playground>
+  <Button variant="contained" color="primary">
+    Button
+  </Button>
+  <Button variant="contained" color="primary" disabled>
+    Button
+  </Button>
+  <Button variant="contained" color="primary" size="small">
+    Button
+  </Button>
+</Playground>
+
+### Outlined
+
+<Playground>
+  <Button variant="outlined" color="primary">
+    Button
+  </Button>
+  <Button variant="outlined" color="primary" disabled>
+    Button
+  </Button>
+  <Button variant="outlined" color="primary" size="small">
+    Button
+  </Button>
+</Playground>
+
+### Text button
+
+<Playground>
+  <Button color="primary">
+    Button
+  </Button>
+  <Button color="primary" disabled>
+    Button
+  </Button>
+  <Button color="primary" size="small">
+    Button
+  </Button>
+</Playground>
+
+### Secondary color
+
+<Playground>
+  <Button variant="contained" color="secondary">Button</Button>
+  <Button variant="outlined" color="secondary">Button</Button>
+  <Button color="secondary" size="small">Button</Button>
+</Playground>

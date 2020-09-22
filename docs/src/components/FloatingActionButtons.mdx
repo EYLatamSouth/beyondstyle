@@ -1,5 +1,5 @@
 ---
-name: Floating action buttons
+name: "Floating action buttons"
 menu: Components
 ---
 
@@ -30,26 +30,75 @@ import { Fab } from 'beyondstyle';
 ## Usage
 
 <Playground>
-  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-    <div style={{ margin: 8 }}>
-      <Fab aria-label="primary" color="primary">
-        <AddRounded />
-      </Fab>
-    </div>
-    <div style={{ margin: 8 }}>
-      <Fab aria-label="secondary" color="secondary">
-        <AddRounded />
-      </Fab>
-    </div>
-    <div style={{ margin: 8 }}>
-      <Fab aria-label="tertiary" color="tertiary">
-        <AddRounded />
-      </Fab>
-    </div>
-    <div style={{ margin: 8 }}>
-      <Fab aria-label="primary" disabled color="primary">
-        <AddRounded />
-      </Fab>
-    </div>
-  </div>
+  <Fab aria-label="primary" color="primary">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="secondary" color="secondary">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="tertiary" color="tertiary">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="primary" disabled color="primary">
+    <AddRounded />
+  </Fab>
+</Playground>
+
+### Small
+
+<Playground>
+  <Fab aria-label="primary" color="primary" size="small">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="secondary" color="secondary" size="small">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="tertiary" color="tertiary" size="small">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="primary" disabled color="primary" size="small">
+    <AddRounded />
+  </Fab>
+</Playground>
+
+### Extended (with text)
+
+<Playground>
+  <Fab aria-label="primary" variant="extended" color="primary">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="secondary" variant="extended" color="secondary">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="tertiary" variant="extended" color="tertiary">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="primary" variant="extended" disabled color="primary">
+    <AddRounded />
+    Button
+  </Fab>
+</Playground>
+
+### Small extended
+
+<Playground>
+  <Fab aria-label="primary" variant="extended" color="primary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="secondary" variant="extended" color="secondary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="tertiary" variant="extended" color="tertiary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="primary" variant="extended" disabled color="primary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
 </Playground>

@@ -8,13 +8,20 @@ import logoMiniInverted from './beyondlabs-logo_mini-inverted.png';
 const useStyles = makeStyles((theme) => ({
   logoContainer: {
     display: 'flex',
-    alignItems: 'center',
-    marginRight: theme.spacing(2)
+    alignItems: 'center'
   }
 }));
 
-export const Logo = () => {
+export const Logo = ({ mini }) => {
   const classes = useStyles();
+
+  if (mini) {
+    return (
+      <div className={classes.logoContainer}>
+        <img src={logoMiniInverted} alt="BeyondLabs logo" width="auto" height="32" />
+      </div>
+    );
+  }
 
   return (
     <div className={classes.logoContainer}>
