@@ -1,0 +1,104 @@
+---
+name: "Floating action buttons"
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { Fab } from 'beyondstyle';
+import { AddRounded } from '@material-ui/icons';
+
+# Floating action buttons
+
+A floating action button (FAB) represents the primary action of a screen.
+
+### About
+
+A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center.
+
+Only use a FAB if it is the most suitable way to present a screen's primary action.
+
+## Properties
+
+<Props of={Fab} />
+
+## Import
+
+```js
+import { Fab } from 'beyondstyle';
+```
+
+## Usage
+
+<Playground>
+  <Fab aria-label="primary" color="primary">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="secondary" color="secondary">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="tertiary" color="tertiary">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="primary" disabled color="primary">
+    <AddRounded />
+  </Fab>
+</Playground>
+
+### Small
+
+<Playground>
+  <Fab aria-label="primary" color="primary" size="small">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="secondary" color="secondary" size="small">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="tertiary" color="tertiary" size="small">
+    <AddRounded />
+  </Fab>
+  <Fab aria-label="primary" disabled color="primary" size="small">
+    <AddRounded />
+  </Fab>
+</Playground>
+
+### Extended (with text)
+
+<Playground>
+  <Fab aria-label="primary" variant="extended" color="primary">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="secondary" variant="extended" color="secondary">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="tertiary" variant="extended" color="tertiary">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="primary" variant="extended" disabled color="primary">
+    <AddRounded />
+    Button
+  </Fab>
+</Playground>
+
+### Small extended
+
+<Playground>
+  <Fab aria-label="primary" variant="extended" color="primary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="secondary" variant="extended" color="secondary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="tertiary" variant="extended" color="tertiary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+  <Fab aria-label="primary" variant="extended" disabled color="primary" size="small">
+    <AddRounded />
+    Button
+  </Fab>
+</Playground>

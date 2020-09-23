@@ -1,6 +1,6 @@
 {
   "name": "beyondstyle",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Library of shared components of BeyondLabs.",
   "keywords": [
     "design-system",
@@ -52,6 +52,7 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1"
   },
   "peerDependencies": {
@@ -63,5 +64,10 @@
     "node": ">=10"
   },
   "module": "dist/index.modern.js",
-  "source": "src/index.js"
+  "source": "src/index.js",
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "lodash": "^4.17.20",
+    "prop-types": "^15.7.2"
+  }
 }
