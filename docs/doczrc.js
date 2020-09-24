@@ -4,7 +4,7 @@ export default {
   description: 'Components explorer of BeyondLabs.',
   repository: 'https://github.com/EYLatamSouth/beyondstyle.git',
   ignore: [
-    'readme.md',
+    'README.md',
     'changelog.md',
     'code_of_conduct.md',
     'contributing.md',
