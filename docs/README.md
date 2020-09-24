@@ -20,7 +20,7 @@ To run the style guide install before all depedencies.
 npm install
 ```
 
-## Basic usage_optional
+## Basic usage
 
 Gatasby provides a local instance to access the documentation. You can use the ```gastsby develop``` or just use our NPM command:
 
@@ -71,7 +71,7 @@ Then copy the folder ```public``` to root of your desirable platform.
 ## Built With
 
 * [Gatsby](https://www.gatsbyjs.com/) - The react framework for content management
-* [Docz](https://www.docz.site/ - Template for Style Guide for Gatsby
+* [Docz](https://www.docz.site/) - Template for Style Guide for Gatsby
 * [BeyondStyle](https://www.npmjs.com/package/beyondstyle) - The BeyondLabs Design System 😍
 
 ## Contributing

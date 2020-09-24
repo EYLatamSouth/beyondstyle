@@ -6,7 +6,7 @@
       "Home",
       "Components"
     ],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "repository": "https://github.com/EYLatamSouth/beyondstyle.git",
     "native": false,
     "themeConfig": {
@@ -18,7 +18,14 @@
         }
       }
     },
-    "separator": "-"
+    "separator": "-",
+    "ignore": [
+      "readme.md",
+      "changelog.md",
+      "code_of_conduct.md",
+      "contributing.md",
+      "license.md"
+    ]
   },
   "entries": [
     {
@@ -26,7 +33,7 @@
       "value": {
         "id": "04c6e90faac2675aa89e2176d2eec7d8",
         "filepath": "README.md",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/README.md",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/README.md",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/README.md",
         "hidden": false,
         "slug": "readme",
@@ -50,9 +57,9 @@
             "value": "Installing"
           },
           {
-            "slug": "basic-usage_optional",
+            "slug": "basic-usage",
             "depth": 2,
-            "value": "Basic usage_optional"
+            "value": "Basic usage"
           },
           {
             "slug": "customizations",
@@ -89,7 +96,7 @@
         "menu": "Components",
         "id": "077aeae1b002d455d727e703158327f8",
         "filepath": "src/components/Avatar.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Avatar.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Avatar.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Avatar.mdx",
         "hidden": false,
         "slug": "src-components-avatar",
@@ -140,7 +147,7 @@
         "menu": "Components",
         "id": "00140aa69a66ca53d03a794509843436",
         "filepath": "src/components/Badges.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Badges.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Badges.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Badges.mdx",
         "hidden": false,
         "slug": "src-components-badges",
@@ -196,7 +203,7 @@
         "menu": "Components",
         "id": "5a733ad950da6c95577bbf7cb31609de",
         "filepath": "src/components/Buttons.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Buttons.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Buttons.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Buttons.mdx",
         "hidden": false,
         "slug": "src-components-buttons",
@@ -247,7 +254,7 @@
         "menu": "Components",
         "id": "b43a4df0ea9eabe5035f38d386e44f70",
         "filepath": "src/components/ButtonsWithIcons.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/ButtonsWithIcons.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/ButtonsWithIcons.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/ButtonsWithIcons.mdx",
         "hidden": false,
         "slug": "src-components-buttons-with-icons",
@@ -293,7 +300,7 @@
         "menu": "Components",
         "id": "bd4084304fbceced13cac3624ee924b9",
         "filepath": "src/components/Cards.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Cards.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Cards.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Cards.mdx",
         "hidden": false,
         "slug": "src-components-cards",
@@ -354,7 +361,7 @@
         "menu": "Components",
         "id": "a2da5b06553483d2bd2430adfd5c93e3",
         "filepath": "src/components/Dividers.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Dividers.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Dividers.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Dividers.mdx",
         "hidden": false,
         "slug": "src-components-dividers",
@@ -415,7 +422,7 @@
         "menu": "Components",
         "id": "424b23f64ac8180ce4550703213c364c",
         "filepath": "src/components/Dropdowns.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Dropdowns.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Dropdowns.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Dropdowns.mdx",
         "hidden": false,
         "slug": "src-components-dropdowns",
@@ -476,7 +483,7 @@
         "menu": "Components",
         "id": "d8353ccaef934e9518561f222a03c14c",
         "filepath": "src/components/FloatingActionButtons.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/FloatingActionButtons.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/FloatingActionButtons.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/FloatingActionButtons.mdx",
         "hidden": false,
         "slug": "src-components-floating-action-buttons",
@@ -528,20 +535,20 @@
     {
       "key": "src/components/ProgressIndicators.mdx",
       "value": {
-        "name": "Sliders",
+        "name": "Progress indicators",
         "menu": "Components",
         "id": "4703462f58b01380fc8588790622b6f0",
         "filepath": "src/components/ProgressIndicators.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/ProgressIndicators.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/ProgressIndicators.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/ProgressIndicators.mdx",
         "hidden": false,
         "slug": "src-components-progress-indicators",
         "route": "/src-components-progress-indicators",
         "headings": [
           {
-            "slug": "sliders",
+            "slug": "progress-indicators",
             "depth": 1,
-            "value": "Sliders"
+            "value": "Progress indicators"
           },
           {
             "slug": "about",
@@ -593,7 +600,7 @@
         "menu": "Components",
         "id": "52fd2ae9855e1ef8756537c517e5934f",
         "filepath": "src/components/SelectionControls.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/SelectionControls.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/SelectionControls.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/SelectionControls.mdx",
         "hidden": false,
         "slug": "src-components-selection-controls",
@@ -654,7 +661,7 @@
         "menu": "Components",
         "id": "6d6f04e929c3e1e33533dd680c8612d2",
         "filepath": "src/components/Sliders.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Sliders.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Sliders.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Sliders.mdx",
         "hidden": false,
         "slug": "src-components-sliders",
@@ -711,20 +718,20 @@
     {
       "key": "src/components/Tables.mdx",
       "value": {
-        "name": "Selection controls",
+        "name": "Tables",
         "menu": "Components",
         "id": "4b5ab3da8b9f6d51f14363b2356490c8",
         "filepath": "src/components/Tables.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Tables.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Tables.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Tables.mdx",
         "hidden": false,
         "slug": "src-components-tables",
         "route": "/src-components-tables",
         "headings": [
           {
-            "slug": "selection-controls",
+            "slug": "tables",
             "depth": 1,
-            "value": "Selection controls"
+            "value": "Tables"
           },
           {
             "slug": "about",
@@ -776,7 +783,7 @@
         "menu": "Components",
         "id": "91f56848ebda28a2ec7bcabc82201316",
         "filepath": "src/components/Tabs.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Tabs.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Tabs.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Tabs.mdx",
         "hidden": false,
         "slug": "src-components-tabs",
@@ -837,7 +844,7 @@
         "menu": "Components",
         "id": "c8a64a66dda17d60664ef43f8527bda8",
         "filepath": "src/components/TextFields.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/TextFields.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/TextFields.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/TextFields.mdx",
         "hidden": false,
         "slug": "src-components-text-fields",
@@ -898,7 +905,7 @@
         "menu": "Components",
         "id": "34653d4003a301ed4d707c5ab451633e",
         "filepath": "src/components/Tooltips.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/components/Tooltips.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/components/Tooltips.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/components/Tooltips.mdx",
         "hidden": false,
         "slug": "src-components-tooltips",
@@ -954,7 +961,7 @@
         "route": "/",
         "id": "522b7407e210088f3588b943aec44115",
         "filepath": "src/pages/index.mdx",
-        "fullpath": "/Users/eduardo.basso/Repositories/EYLatamSouth/beyondstyle/docs/src/pages/index.mdx",
+        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/src/pages/index.mdx",
         "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/src/pages/index.mdx",
         "hidden": false,
         "slug": "src-pages-index",
@@ -987,17 +994,6 @@
       ]
     },
     {
-      "key": "src/gatsby-theme-docz/components/Logo/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Logo",
-          "methods": [],
-          "actualName": "Logo"
-        }
-      ]
-    },
-    {
       "key": "src/gatsby-theme-docz/components/MainContainer/index.js",
       "value": [
         {
@@ -1005,6 +1001,17 @@
           "displayName": "MainContainer",
           "methods": [],
           "actualName": "MainContainer"
+        }
+      ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Logo/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logo",
+          "methods": [],
+          "actualName": "Logo"
         }
       ]
     },

@@ -4,7 +4,7 @@ menu: Components
 ---
 
 import { Playground, Props } from 'docz';
-import { Link } from 'react-router-dom';
+import { Link } from '@reach/router';
 import { Badge } from 'beyondstyle';
 
 # Badges
@@ -28,55 +28,129 @@ import { Badge } from 'beyondstyle';
 ### Normal
 
 <Playground>
-  <Badge label="primary" />
-  <Badge label="Secondary" color="secondary" />
-  <Badge label="Tertiary" color="tertiary" />
-  <Badge label="Success" color="success" />
-  <Badge label="Error" color="error" />
-  <Badge label="Warning" color="warning" />
+  <Badge label='primary' />
+  <Badge label='Secondary' color='secondary' />
+  <Badge label='Tertiary' color='tertiary' />
+  <Badge label='Success' color='success' />
+  <Badge label='Error' color='error' />
+  <Badge label='Warning' color='warning' />
 </Playground>
 
 ### Pill badges
 
 <Playground>
-  <Badge label="primary" variant="pill" />
-  <Badge label="Secondary" variant="pill" color="secondary" />
-  <Badge label="Tertiary" variant="pill" color="tertiary" />
-  <Badge label="Success" variant="pill" color="success" />
-  <Badge label="Error" variant="pill" color="error" />
-  <Badge label="Warning" variant="pill" color="warning" />
+  <Badge label='primary' variant='pill' />
+  <Badge label='Secondary' variant='pill' color='secondary' />
+  <Badge label='Tertiary' variant='pill' color='tertiary' />
+  <Badge label='Success' variant='pill' color='success' />
+  <Badge label='Error' variant='pill' color='error' />
+  <Badge label='Warning' variant='pill' color='warning' />
 </Playground>
 
 ### Badges as links
 
 <Playground>
-  <Badge label="primary" buttonProps={{ component: Link, to: '/' }} />
-  <Badge label="Secondary" buttonProps={{ component: Link, to: '/' }} color="secondary" />
-  <Badge label="Tertiary" buttonProps={{ component: Link, to: '/' }} color="tertiary" />
-  <Badge label="Success" buttonProps={{ component: Link, to: '/' }} color="success" />
-  <Badge label="Error" buttonProps={{ component: Link, to: '/' }} color="error" />
-  <Badge label="Warning" buttonProps={{ component: Link, to: '/' }} color="warning" />
-  <Badge label="primary" variant="pill" buttonProps={{ component: Link, to: '/' }} />
-  <Badge label="Secondary" variant="pill" buttonProps={{ component: Link, to: '/' }} color="secondary" />
-  <Badge label="Tertiary" variant="pill" buttonProps={{ component: Link, to: '/' }} color="tertiary" />
-  <Badge label="Success" variant="pill" buttonProps={{ component: Link, to: '/' }} color="success" />
-  <Badge label="Error" variant="pill" buttonProps={{ component: Link, to: '/' }} color="error" />
-  <Badge label="Warning" variant="pill" buttonProps={{ component: Link, to: '/' }} color="warning" />
+  <Badge label='primary' buttonProps={{ component: Link, to: '/' }} />
+  <Badge
+    label='Secondary'
+    buttonProps={{ component: Link, to: '/' }}
+    color='secondary'
+  />
+  <Badge
+    label='Tertiary'
+    buttonProps={{ component: Link, to: '/' }}
+    color='tertiary'
+  />
+  <Badge
+    label='Success'
+    buttonProps={{ component: Link, to: '/' }}
+    color='success'
+  />
+  <Badge
+    label='Error'
+    buttonProps={{ component: Link, to: '/' }}
+    color='error'
+  />
+  <Badge
+    label='Warning'
+    buttonProps={{ component: Link, to: '/' }}
+    color='warning'
+  />
+  <Badge
+    label='primary'
+    variant='pill'
+    buttonProps={{ component: Link, to: '/' }}
+  />
+  <Badge
+    label='Secondary'
+    variant='pill'
+    buttonProps={{ component: Link, to: '/' }}
+    color='secondary'
+  />
+  <Badge
+    label='Tertiary'
+    variant='pill'
+    buttonProps={{ component: Link, to: '/' }}
+    color='tertiary'
+  />
+  <Badge
+    label='Success'
+    variant='pill'
+    buttonProps={{ component: Link, to: '/' }}
+    color='success'
+  />
+  <Badge
+    label='Error'
+    variant='pill'
+    buttonProps={{ component: Link, to: '/' }}
+    color='error'
+  />
+  <Badge
+    label='Warning'
+    variant='pill'
+    buttonProps={{ component: Link, to: '/' }}
+    color='warning'
+  />
 </Playground>
 
 ### Badges as buttons
 
 <Playground>
-  <Badge label="primary" buttonProps={{ type: 'button' }} />
-  <Badge label="Secondary" buttonProps={{ type: 'button' }} color="secondary" />
-  <Badge label="Tertiary" buttonProps={{ type: 'button' }} color="tertiary" />
-  <Badge label="Success" buttonProps={{ type: 'button' }} color="success" />
-  <Badge label="Error" buttonProps={{ type: 'button' }} color="error" />
-  <Badge label="Warning" buttonProps={{ type: 'button' }} color="warning" />
-  <Badge label="primary" variant="pill" buttonProps={{ type: 'button' }} />
-  <Badge label="Secondary" variant="pill" buttonProps={{ type: 'button' }} color="secondary" />
-  <Badge label="Tertiary" variant="pill" buttonProps={{ type: 'button' }} color="tertiary" />
-  <Badge label="Success" variant="pill" buttonProps={{ type: 'button' }} color="success" />
-  <Badge label="Error" variant="pill" buttonProps={{ type: 'button' }} color="error" />
-  <Badge label="Warning" variant="pill" buttonProps={{ type: 'button' }} color="warning" />
+  <Badge label='primary' buttonProps={{ type: 'button' }} />
+  <Badge label='Secondary' buttonProps={{ type: 'button' }} color='secondary' />
+  <Badge label='Tertiary' buttonProps={{ type: 'button' }} color='tertiary' />
+  <Badge label='Success' buttonProps={{ type: 'button' }} color='success' />
+  <Badge label='Error' buttonProps={{ type: 'button' }} color='error' />
+  <Badge label='Warning' buttonProps={{ type: 'button' }} color='warning' />
+  <Badge label='primary' variant='pill' buttonProps={{ type: 'button' }} />
+  <Badge
+    label='Secondary'
+    variant='pill'
+    buttonProps={{ type: 'button' }}
+    color='secondary'
+  />
+  <Badge
+    label='Tertiary'
+    variant='pill'
+    buttonProps={{ type: 'button' }}
+    color='tertiary'
+  />
+  <Badge
+    label='Success'
+    variant='pill'
+    buttonProps={{ type: 'button' }}
+    color='success'
+  />
+  <Badge
+    label='Error'
+    variant='pill'
+    buttonProps={{ type: 'button' }}
+    color='error'
+  />
+  <Badge
+    label='Warning'
+    variant='pill'
+    buttonProps={{ type: 'button' }}
+    color='warning'
+  />
 </Playground>
