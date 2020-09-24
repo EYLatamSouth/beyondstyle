@@ -1,4 +1,6 @@
-# Beyondstule Style Guide
+![Azure Static Web Apps CI/CD](https://github.com/EYLatamSouth/beyondstyle/workflows/Azure%20Static%20Web%20Apps%20CI/CD/badge.svg)
+
+# BeyondStyle Guide
 
 This style guide was build to allow developers and designers to access our Design System and explore the components.
 
