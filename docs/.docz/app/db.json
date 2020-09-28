@@ -20,7 +20,7 @@
     },
     "separator": "-",
     "ignore": [
-      "readme.md",
+      "README.md",
       "changelog.md",
       "code_of_conduct.md",
       "contributing.md",
@@ -28,67 +28,6 @@
     ]
   },
   "entries": [
-    {
-      "key": "README.md",
-      "value": {
-        "id": "04c6e90faac2675aa89e2176d2eec7d8",
-        "filepath": "README.md",
-        "fullpath": "/Users/michel.fernandes/Google Drive/EY/Projetos/JS/beyondstyle/docs/README.md",
-        "link": "https://github.com/EYLatamSouth/beyondstyle/edit/master/docs/README.md",
-        "hidden": false,
-        "slug": "readme",
-        "route": "/readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "beyondstule-style-guide",
-            "depth": 1,
-            "value": "Beyondstule Style Guide"
-          },
-          {
-            "slug": "prerequisites",
-            "depth": 3,
-            "value": "Prerequisites"
-          },
-          {
-            "slug": "installing",
-            "depth": 3,
-            "value": "Installing"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "customizations",
-            "depth": 2,
-            "value": "Customizations"
-          },
-          {
-            "slug": "deployment",
-            "depth": 2,
-            "value": "Deployment"
-          },
-          {
-            "slug": "built-with",
-            "depth": 2,
-            "value": "Built With"
-          },
-          {
-            "slug": "contributing",
-            "depth": 2,
-            "value": "Contributing"
-          },
-          {
-            "slug": "authors",
-            "depth": 2,
-            "value": "Authors"
-          }
-        ]
-      }
-    },
     {
       "key": "src/components/Avatar.mdx",
       "value": {
@@ -983,13 +922,13 @@
   ],
   "props": [
     {
-      "key": "src/gatsby-theme-docz/components/Header/index.js",
+      "key": "src/gatsby-theme-docz/components/Logo/index.js",
       "value": [
         {
           "description": "",
-          "displayName": "Header",
+          "displayName": "Logo",
           "methods": [],
-          "actualName": "Header"
+          "actualName": "Logo"
         }
       ]
     },
@@ -1001,17 +940,6 @@
           "displayName": "MainContainer",
           "methods": [],
           "actualName": "MainContainer"
-        }
-      ]
-    },
-    {
-      "key": "src/gatsby-theme-docz/components/Logo/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Logo",
-          "methods": [],
-          "actualName": "Logo"
         }
       ]
     },
@@ -1043,6 +971,17 @@
               "required": false
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/components/Header/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "actualName": "Header"
         }
       ]
     }
