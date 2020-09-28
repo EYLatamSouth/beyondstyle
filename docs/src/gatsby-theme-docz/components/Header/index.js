@@ -52,7 +52,7 @@ export const Header = () => {
         color='primary'
         className={classes.noElevation}
       >
-        <Toolbar component={Container} maxWidth={500} justify='space-between'>
+        <Toolbar component={Container} maxWidth={false} justify='space-between'>
           <Link href='/' color='inherit' className={classes.linkHome}>
             <Logo mini />
             <Typography
