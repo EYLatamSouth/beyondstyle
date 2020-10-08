@@ -5,6 +5,7 @@ node_modules
 build
 dist
 .rpt2_cache
+styleguide
 
 # OS
 .DS_Store
