@@ -1,0 +1,87 @@
+---
+title: Front matter
+---
+
+import {BorderBox} from '@primer/components'
+import {StatusLabel, SourceLink} from '@primer/gatsby-theme-doctocat'
+
+When you create a Markdown file (`.md` or `.mdx`) in `src/pages/`, you can define variables to provide additional information about that page. This information is called front matter and is set between triple dashes starting on the first line of the file:
+
+```
+---
+title: Example title
+---
+```
+
+Doctocat recognizes some specific front matter variables described below.
+
+## Title and description
+
+`title` is used to render the page heading and generate the [page title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title). `description` is used to create a [meta description tag](https://moz.com/learn/seo/meta-description) which is important for SEO. We recommend setting `title` and `description` for every page:
+
+```markdown
+---
+title: My page title
+description: My page description
+---
+```
+
+## Status
+
+You can add a status label to any page by setting a `status` variable in the frontmatter:
+
+```markdown
+---
+status: Stable
+---
+```
+
+Doctocat comes with a few predefined statuses that have colors associated with them:
+
+| Status         | Output                                |
+| -------------- | ------------------------------------- |
+| `Stable`       | <StatusLabel status="Stable" />       |
+| `New`          | <StatusLabel status="New" />          |
+| `Experimental` | <StatusLabel status="Experimental" /> |
+| `Review`       | <StatusLabel status="Review" />       |
+| `Deprecated`   | <StatusLabel status="Deprecated" />   |
+
+Custom statuses will render a gray dot:
+
+<StatusLabel status="My custom status" />
+
+## Source
+
+Sometimes it's useful to provide quick access to relevant source code. You can use the `source` front matter variable to do that:
+
+```
+---
+source: https://github.com/path/to/code
+---
+```
+
+If the `source` front matter variable is defined, Doctocat will add a source code link to the top of the page, like this:
+
+<BorderBox p={4} mb={3}>
+  <SourceLink href="#" />
+</BorderBox>
+
+<Note>
+
+
+This source code link is not the same as the "Edit this page on GitHub" link that is automatically added to the bottom of every page. The source code link should point to code that is relevant to the page. The "Edit this page on GitHub" link points to the Markdown file for the page itself.
+
+</Note>
+
+
+## Additional contributors
+
+If you have the `repository` in `package.json` and `repoRootPath` in `gatsby-config.js` setup correctly (as desribed in the [customization](/usage/customization#contributors) guide), Doctocat will automatically display contributors on the bottom of every page. These contributors are determined by commits. However, we know that commits aren't the only way to contribute. To give credit to people who aren't listed in the commit history but still contributed, use the `additionalContributors` front matter variable to list their GitHub usernames, for example:
+
+```markdown
+---
+additionalContributors:
+  - ashygee
+  - emplums
+---
+```

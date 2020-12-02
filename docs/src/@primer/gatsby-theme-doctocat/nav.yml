@@ -1,0 +1,33 @@
+- title: Getting started
+  url: /getting-started
+  children:
+    - title: Gatsby CLI
+      url: /getting-started/gatsby-cli
+- title: Usage
+  url: /usage
+  children:
+    - title: Local development
+      url: /usage/local-development
+    - title: Customization
+      url: /usage/customization
+    - title: Front matter
+      url: /usage/front-matter
+    - title: Live code
+      url: /usage/live-code
+    - title: Deployment
+      url: /usage/deployment
+    - title: Using images
+      url: /usage/using-images
+- title: Components
+  url: /components
+  children:
+    - title: Button
+      url: /components/button
+    - title: Caption
+      url: /components/caption
+    - title: Do/Don't
+      url: /components/do-dont
+    - title: Note
+      url: /components/note
+- title: Contributing
+  url: /contributing
